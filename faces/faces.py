@@ -1,6 +1,8 @@
 s = 'this shit is :('
 for i in s:
-    if i == "i":
-        s.replace("i", "🙁")
+    if i == ":(":
+        s = s.replace(":(", "🙁")
+    elif i == ":)":
+        s = s.replace(":)", "🙂")
 print(s)
 
