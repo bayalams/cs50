@@ -1,13 +1,12 @@
 def main():
     s = input()
-    
+    convert(s)
 
 
-def convert(s):
+def convert(s_1):
 
-    for i in s:
+    for i in s_1:
         if i == ":(" or i == ":)":
             i.replace(":(", "🙁") or i. replace(":)", "🙂")
 
-    print(s)
-    return s
+    return s_1
