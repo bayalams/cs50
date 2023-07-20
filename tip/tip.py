@@ -1,5 +1,5 @@
 d = input("insert ammount: ")
-print(d.replace("$", ""))
+print(f'd = {d.replace("$", "")}')
 
 
 
