@@ -1,5 +1,6 @@
 d = input("insert ammount: ")
-print(f'd = {d.replace("$", "")}')
+d = float(d.replace("$", ""))
+print(d)
 
 
 
