@@ -6,7 +6,3 @@
 #     print("$0")
 # else:
 #     print("nope")
-
-from keyword import iskeyword
-
-print(iskeyword('fora'))
