@@ -1,3 +1,7 @@
 greeting = input("Greeting: ")
 
-if greetingr[]
+if greeting(range(0, 4)) == "hello":
+    print("$0")
+else:
+    print("$100")
+
