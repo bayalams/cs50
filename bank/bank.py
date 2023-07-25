@@ -1,7 +1,11 @@
 greeting = input("Greeting: ")
+greeting = greeting.split(" ")
+print(greeting)
 
-if greeting.index[0, 4] == "hello":
-    print("$0")
+if greeting[0] == "hello":
+    print("%0")
 else:
-    print("$100")
+    print("nope")
+
+
 
