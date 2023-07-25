@@ -1,8 +1,8 @@
 greeting = input("Greeting: ")
-greeting = greeting.split(" ")
+greeting = greeting.lower()
 print(greeting)
 
-if greeting[0] == "hello":
+if greeting[0:4] == "hello":
     print("%0")
 else:
     print("nope")
