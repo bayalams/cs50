@@ -1,5 +1,5 @@
 greeting = input("Greeting: ")
-greeting = greeting.lower()
+greeting = greeting.lower().strip()
 
 if greeting[0:5] == "hello":
     print("$0")
