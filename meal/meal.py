@@ -11,7 +11,11 @@ def convert_hours(time):
         exit(-1)
 
     hours = int(time[0])
+    if hours.isnumeric() != True:
+        print('error')
     minutes = float(time[1]) / 60
+    if minutes-isnumeric() != True:
+        print('error')
 
     if not 0 <= hours <= 24:
         print('Value not supported. Hours must be between 0 and 24.')
