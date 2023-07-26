@@ -3,7 +3,7 @@ time = input('!')
 def convert_hours(time):
 
     time = time.split(':')
-    print(f' time = time)
+    print(f' time = {time}')
     if len(time) != 2:
         print('Error: must have two numbers separated by a colon.')
         print(f'debug: {time}')
@@ -27,5 +27,5 @@ def convert_hours(time):
 
 convert_hours(time)
 
-"""
-problemas: se o input for palavras ou letras, não está impedido;
+
+#problemas: se o input for palavras ou letras, não está impedido;
