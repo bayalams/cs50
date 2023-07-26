@@ -4,9 +4,9 @@ if len(expression.split(" ")) != 3:
     print(f'debug: {expression} {expression.split(" ")}')
     exit(-1)
 
-if x, z 
-
 x, y, z = expression.split(" ")
+
+
 
 
 
