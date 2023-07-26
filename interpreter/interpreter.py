@@ -1,6 +1,6 @@
 expression = input("expression: ")
 if len(expression.split(" ")) != 3:
-    print("error")
+    print("error: the input expression should contain two operands and one operator. usage example: 1 + 1.")
     exit(-1)
 
 x, y, z = expression.split(" ")
