@@ -12,7 +12,7 @@ def convert_hours(time):
 
     hours = time[0]
     minutes = time[1]
-    if hours.isnumeric() != True and minutes.isnumeric() != True:
+    if hours.isnumeric() != True or minutes.isnumeric() != True:
         print('Error: values must be numerical.')
         print(f'debug: hours = {hours}; minutes = {minutes}')
         exit(-1)
