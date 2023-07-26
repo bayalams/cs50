@@ -1,6 +1,6 @@
 expression = input("expression: ")
 if len(expression.split(" ")) != 3:
-    print("error: the input expression should contain two operands and one operator. usage example: 1 + 1.")
+    print("error: the input expression should contain two operands and one operator, with a space between operand and operator and operator and operand. Usage example: 1 + 1.")
     print(f'debug: {expression} {expression.split(" ")}')
     exit(-1)
 
