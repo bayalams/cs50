@@ -43,3 +43,4 @@ elif y == '/':
     print(x / z)
 else:
     print('error: input not supported')
+    exit(-1)
