@@ -7,15 +7,15 @@ if len(expression.split(" ")) != 3:
 list_expression = expression.split(" ")
 print(list_expression)
 
-x = float(list_expression[0])
+x = list_expression[0]
 y = list_expression[1]
-z = float(list_expression[2])
+z = list_expression[2]
 
 print(x)
 print(y)
 print(z)
 
-if isnumeric(x) != True:
+if x.isnumeric() != True:
     print('x must be a numeric character. For example: 1, 3.1, 1999')
     print(f'debug: {x}')
     exit(-1)
@@ -25,9 +25,10 @@ if y not in ['+', '-', '*', '/']:
     print(f'debug: {y}')
     exit(-1)
 
-if isnumeric(z) != True:
+if z.isnumeric() != True:
     print('z must be a numeric character. For example: 1, 3.1, 1999')
     print(f'debug: {z}')
     exit(-1)
 
-
+x = float(x)
+z = float(z)
