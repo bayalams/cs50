@@ -5,15 +5,15 @@ if len(expression.split(" ")) != 3:
     exit(-1)
 
 list_expression = expression.split(" ")
-print(list_expression)
+#print(list_expression)
 
 x = list_expression[0]
 y = list_expression[1]
 z = list_expression[2]
 
-print(x)
-print(y)
-print(z)
+# print(x)
+# print(y)
+# print(z)
 
 if x.isnumeric() != True:
     print('error: x must be a numeric character. For example: 1, 3.1, 1999')
