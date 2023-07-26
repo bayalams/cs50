@@ -10,25 +10,26 @@ def convert_hours(time):
         print(f'debug: {time}')
         exit(-1)
 
-    hours = time[0]
-    minutes = time[1]
-    if hours.isnumeric() != True or minutes.isnumeric() != True:
-        print('Error: values must be numerical.')
-        print(f'debug: hours = {hours}; minutes = {minutes}')
-        exit(-1)
+    hours = int(time[0])
+    minutes = float(time[1] / 60)
 
-    # if not 0 <= hours <= 24:
-    #     print('Value not supported. Hours must be between 0 and 24.')
-    #     print(f'debug: hours = {hours}')
-
-    # if not 0 <= minutes <= 1:
-    #     print('Value not supported. Minutes must be between 0 and 1')
-    #     print(f'debug: minutes = {minutes}')
+    # if hours.isnumeric() != True or minutes.isnumeric() != True:
+    #     print('Error: values must be numerical.')
+    #     print(f'debug: hours = {hours}; minutes = {minutes}')
     #     exit(-1)
 
-    # s = hours + minutes
-    # print(s)
-    # return s
+    if not 0 <= hours <= 24:
+        print('Value not supported. Hours must be between 0 and 24.')
+        print(f'debug: hours = {hours}')
+
+    if not 0 <= minutes <= 1:
+        print('Value not supported. Minutes must be between 0 and 1')
+        print(f'debug: minutes = {minutes}')
+        exit(-1)
+
+    s = hours + minutes
+    print(s)
+    return s
 
 convert_hours(time)
 
