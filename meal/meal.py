@@ -2,10 +2,11 @@ time = input('!')
 
 def convert_hours(time):
 
-    time = time.split(':')
-    print(f' time = {time}')
+    time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
+    print(f'time = {time}')
+
     if len(time) != 2:
-        print('Error: must have two numbers separated by a colon.')
+        print('Error: must have two numbers separated by a colon. Example: 12:34.')
         print(f'debug: {time}')
         exit(-1)
 
@@ -28,4 +29,4 @@ def convert_hours(time):
 convert_hours(time)
 
 
-#problemas: se o input for palavras ou letras, não está impedido;
+#problemas: se o input for palavras ou letras, gera erro por causa do int e do float, mas não é apanhado antes; quebra o código;
