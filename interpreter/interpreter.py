@@ -16,22 +16,27 @@ print(y)
 print(z)
 
 if x.isnumeric() != True:
-    print('x must be a numeric character. For example: 1, 3.1, 1999')
+    print('error: x must be a numeric character. For example: 1, 3.1, 1999')
     print(f'debug: {x}')
     exit(-1)
 
 if y not in ['+', '-', '*', '/']:
-    print('y must be an operator. For example: +, -, *, /')
+    print('error: y must be an operator. For example: +, -, *, /')
     print(f'debug: {y}')
     exit(-1)
 
 if z.isnumeric() != True:
-    print('z must be a numeric character. For example: 1, 3.1, 1999')
+    print('error: z must be a numeric character. For example: 1, 3.1, 1999')
     print(f'debug: {z}')
     exit(-1)
 
 x = float(x)
 z = float(z)
+
+if y == '/' and z == 0:
+    print('error: float cannot be divided by 0')
+    print(f'debug: operator = {y} and second operand = {z}')
+    exit(-1)
 
 if y == '+':
     print(x + z)
