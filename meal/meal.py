@@ -23,3 +23,13 @@ print(b)
 0.5 = 30
 x = 20
 x = 40
+
+
+def convert_hours(time):
+    s = s.split(':')
+    print(s)
+
+    a = float(s[0])
+    b = float(s[1]) / 60
+
+    
