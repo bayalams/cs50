@@ -13,7 +13,7 @@ def main():
         exit(-1)
 
 
-def convert_hours(time):
+def convert(time):
 
     time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
     #print(f'time = {time}')
