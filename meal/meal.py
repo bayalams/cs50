@@ -1,7 +1,6 @@
 def main():
 
     time = input('!')
-    convert_hours(time)
 
     if 7 <= time <= 8:
         print('Breakfast time')
@@ -12,31 +11,32 @@ def main():
     else:
         exit(-1)
 
-def convert_hours(time):
 
-    time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
-    print(f'time = {time}')
+# def convert_hours(time):
 
-    if len(time) != 2:
-        print('Error: must have two numbers separated by a colon. Example: 12:34.')
-        print(f'debug: {time}')
-        exit(-1)
+#     time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
+#     print(f'time = {time}')
 
-    hours = int(time[0])
-    minutes = (float(time[1]) / 60)
+#     if len(time) != 2:
+#         print('Error: must have two numbers separated by a colon. Example: 12:34.')
+#         print(f'debug: {time}')
+#         exit(-1)
 
-    if not 0 <= hours <= 24:
-        print('Value not supported. Hours must be between 0 and 24.')
-        print(f'debug: hours = {hours}')
+#     hours = int(time[0])
+#     minutes = (float(time[1]) / 60)
 
-    if not 0 <= minutes <= 1:
-        print('Value not supported. Minutes must be between 0 and 1')
-        print(f'debug: minutes = {minutes}')
-        exit(-1)
+#     if not 0 <= hours <= 24:
+#         print('Value not supported. Hours must be between 0 and 24.')
+#         print(f'debug: hours = {hours}')
 
-    s = hours + minutes
-    print(s)
-    return s
+#     if not 0 <= minutes <= 1:
+#         print('Value not supported. Minutes must be between 0 and 1')
+#         print(f'debug: minutes = {minutes}')
+#         exit(-1)
+
+#     s = hours + minutes
+#     print(s)
+#     return s
 
 main()
 
