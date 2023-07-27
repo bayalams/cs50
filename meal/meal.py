@@ -39,7 +39,8 @@ def convert_hours(time):
     print(s)
     return s
 
-main()
+if __name__ == "__main__":
+    main()
 
 
 #problemas: se o input for palavras ou letras, gera erro por causa do int e do float, mas não é apanhado antes; quebra o código;
