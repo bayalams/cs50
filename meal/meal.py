@@ -1,5 +1,7 @@
 time = input('!')
 
+def main()
+
 def convert_hours(time):
 
     time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
