@@ -3,18 +3,18 @@ time = input('!')
 #     if tim
 
 
-def convert_hours(t):
+def convert_hours(time):
 
-    t = t.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
-    print(f'time = {t}')
+    time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
+    print(f'time = {time}')
 
-    if len(t) != 2:
+    if len(time) != 2:
         print('Error: must have two numbers separated by a colon. Example: 12:34.')
-        print(f'debug: {t}')
+        print(f'debug: {time}')
         exit(-1)
 
-    hours = int(t[0])
-    minutes = float(t[1] / 60)
+    hours = int(time[0])
+    minutes = float(time[1] / 60)
 
     # if hours.isnumeric() != True or minutes.isnumeric() != True:
     #     print('Error: values must be numerical.')
