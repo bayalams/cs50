@@ -1,6 +1,16 @@
-time = input('!')
+def main():
 
-def main()
+    time = input('!')
+    convert_hours(time)
+
+    if 7 <= time <= 8:
+        print('Breakfast time')
+    elif 12 < time <= 13:
+        print('Lunch')
+    elif 18 <= time <= 19:
+        print('Dinner')
+    else:
+        exit(-1)
 
 def convert_hours(time):
 
@@ -28,7 +38,7 @@ def convert_hours(time):
     print(s)
     return s
 
-convert_hours(time)
+main()
 
 
 #problemas: se o input for palavras ou letras, gera erro por causa do int e do float, mas não é apanhado antes; quebra o código;
