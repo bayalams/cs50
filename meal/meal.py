@@ -16,7 +16,7 @@ def main():
 def convert_hours(time):
 
     time = time.split(':') #único símbolo que separa os números e cria a lista. Inutiliza a utilização de outros símbolos.
-    print(f'time = {time}')
+    #print(f'time = {time}')
 
     if len(time) != 2:
         print('Error: must have two numbers separated by a colon. Example: 12:34.')
@@ -36,7 +36,7 @@ def convert_hours(time):
         exit(-1)
 
     s = hours + minutes
-    print(s)
+    #print(s)
     return s
 
 if __name__ == "__main__":
