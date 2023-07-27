@@ -1,6 +1,7 @@
-time = input('!')
+def main():
+    time = convert_hours(input('!'))
+    if tim
 
-def main(convert_hours):
 
 def convert_hours(time):
 
