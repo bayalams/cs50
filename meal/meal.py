@@ -4,11 +4,11 @@ def main():
     time = convert_hours(time)
 
     if 7 <= time <= 8:
-        print('Breakfast time')
+        print('breakfast time')
     elif 12 < time <= 13:
-        print('Lunch')
+        print('lunch')
     elif 18 <= time <= 19:
-        print('Dinner')
+        print('dinner')
     else:
         exit(-1)
 
