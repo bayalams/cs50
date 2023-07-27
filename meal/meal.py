@@ -1,6 +1,7 @@
 def main():
 
     time = input('!')
+    time = convert_hours(time)
 
     if 7 <= time <= 8:
         print('Breakfast time')
