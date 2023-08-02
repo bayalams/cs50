@@ -1,8 +1,9 @@
 case  = "camelCase"
 
+upper_list = []
+
 for i in case:
     if i.isupper():
-        print(i)
-
-print(f"i = {i}")
+        upper_list.append(i)
+print(upper_list)
 
