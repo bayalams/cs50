@@ -1,13 +1,14 @@
-case  = "camelCase"
+
+case = input("Write input: ")
 uppercase_letter = ""
 
 for i in case:
     if i.isupper():
         uppercase_letter = i
 
-print(uppercase_letter)
+for i in case:
+    if i == uppercase_letter:
+        case = case.replace(uppercase_letter, "_" + uppercase_letter)
 
-for uppercase_letter in case:
-    case = case.replace(uppercase_letter, "_" + uppercase_letter)
-
+case = case.lower()
 print(case)
