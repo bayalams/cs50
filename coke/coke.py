@@ -3,7 +3,7 @@
 
 amount = int(input("Insert coin: "))
 
-if amount != 10 and ammount != 25 and ammount != 5:
+if amount != 10 and amount != 25 and amount != 5:
     print("Error: Machine only accepts coins of 5, 10 or 25 cents.")
     exit(-1)
 
