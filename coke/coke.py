@@ -9,8 +9,8 @@ if ammount != 10 and ammount != 25 and ammount != 5:
 
 coke_price = 50
 
-while 
 ammount_due = coke_price - ammount
+print(f"ammount due: {ammount_due}")
 
 
 
