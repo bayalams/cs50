@@ -7,6 +7,7 @@ for i in case:
 
 print(uppercase_letter)
 
-print(list(case))
-upper_list = case.split(uppercase_letter)
-print(upper_list)
+for uppercase_letter in case:
+    case = case.replace(uppercase_letter, "_" + uppercase_letter)
+
+print(case)
