@@ -1,4 +1,4 @@
-case = input("Write input: ")
+case = "pythonIsTheBest"
 uppercase_letter = ""
 
 for i in case:
