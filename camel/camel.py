@@ -1,7 +1,7 @@
-case = "pythonIsTheBest"
+case = input("write input: ")
 uppercase_letter = []
 
-if case not isalpha():
+if not case.isalpha():
     print("Error: case must be comprised of letters. For example: camelCase")
     exit(-1)
 
