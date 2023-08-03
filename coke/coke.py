@@ -11,11 +11,9 @@ coke_price = 50
 amount_due = coke_price - amount
 
 while amount_due > 0:
-    coke_price - amount
+    print(f"amount due: {amount_due}")
     break
 
-
-print(f"amount due: {amount_due}")
 
 
 
