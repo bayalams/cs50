@@ -12,6 +12,7 @@ amount_due = coke_price - amount
 
 while amount_due > 0:
     print(f"amount due: {amount_due}")
+    amount = int(input("Insert coin: "))
     break
 
 
