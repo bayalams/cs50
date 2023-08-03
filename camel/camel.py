@@ -1,4 +1,3 @@
-
 case = input("Write input: ")
 uppercase_letter = ""
 
