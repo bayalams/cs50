@@ -1,21 +1,21 @@
 #1. somar até 50 cents - def ammount_due
 #2. a partir de 50 cents, subtrair def change_owed
 
-ammount = int(input("Insert coin: "))
+amount = int(input("Insert coin: "))
 
-if ammount != 10 and ammount != 25 and ammount != 5:
+if amount != 10 and ammount != 25 and ammount != 5:
     print("Error: Machine only accepts coins of 5, 10 or 25 cents.")
     exit(-1)
 
 coke_price = 50
-ammount_due = coke_price - ammount
+amount_due = coke_price - amount
 
-while ammount_due != 0:
-    coke_price - ammount
+while amount_due != 0:
+    coke_price - amount
     break
 
 
-print(f"ammount due: {ammount_due}")
+print(f"amount due: {amount_due}")
 
 
 
