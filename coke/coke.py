@@ -10,7 +10,7 @@ if amount != 10 and amount != 25 and amount != 5:
 coke_price = 50
 amount_due = coke_price - amount
 
-while amount_due != 0:
+while amount_due > 0:
     coke_price - amount
     break
 
