@@ -12,10 +12,12 @@ if len(plate) < 2 or len(plate) > 6:
 elif plate[:2].isalpha() != True:
     print("2. Invalid.")
 else:
-    print("valid.")
+    print("Valid.")
 
 for i in plate:
-    if i 
+    if i.isalpha() or i.isnumeric():
+        print(i)
+
 
 
 
