@@ -4,7 +4,6 @@
 # “No periods, spaces, or punctuation marks are allowed.”
 
 plate = input("Plate: ")
-plate = list(plate.upper())
 print(plate)
 list_plate = []
 
