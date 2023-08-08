@@ -10,9 +10,9 @@ print(plate)
 if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
 elif plate[:2].isalpha() != True:
-    print("Invalid.")
-elif plate.isalpha() or plate.isnumeric() != True:
-    print("Invalid.")
+    print("2. Invalid.")
+elif plate.isalpha() and plate.isnumeric() != True:
+    print("3. Invalid.")
 
 
 
