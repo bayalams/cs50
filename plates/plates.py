@@ -17,11 +17,14 @@ for i in plate:
     if i.isalpha() or i.isnumeric():
         #print(i)
         list_plate.append(i)
-print(list_plate)
+    else:
+        pass
 
 for i in plate[:2]:
     if i.isalpha() != True:
         print("2. Invalid.")
+    else:
+        pass
 
 
 
