@@ -4,6 +4,7 @@
 # “No periods, spaces, or punctuation marks are allowed.”
 
 plate = input("Plate: ")
+plate = plate.upper()
 print(plate)
 list_plate = []
 
@@ -19,6 +20,7 @@ for i in plate:
         list_plate.append(i)
     else:
         pass
+print(list_plate)
 
 for i in plate[:2]:
     if i.isalpha() != True:
