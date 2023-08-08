@@ -15,7 +15,7 @@ else:
 
 for i in plate:
     if i.isalpha() or i.isnumeric():
-        print(i)
+        #print(i)
         list_plate.append(i)
 print(list_plate)
 
