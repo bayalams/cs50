@@ -8,9 +8,14 @@ plate = plate.upper()
 print(plate)
 
 if len(plate) < 2 or len(plate) > 6:
-    print("Error: The plate must be between 2 and 6 characters long.")
+    print("1. Invalid.")
 elif plate[:2].isalpha() != True:
-    print("Error: All vanity plates must start with at least two letters.")
+    print("Invalid.")
+elif plate.isalpha() or plate.isnumeric() != True:
+    print("Invalid.")
+
+
+
 
 
 
