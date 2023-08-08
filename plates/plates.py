@@ -9,8 +9,9 @@ list_plate = []
 
 if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
-elif plate[:2].isalpha() != True:
-    print("2. Invalid.")
+elif for i in plate[:2]:
+        if i.isalpha() != True:
+            print("2. Invalid.")
 else:
     for i in plate:
         if i.isalpha() or i.isnumeric():
