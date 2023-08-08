@@ -4,7 +4,6 @@
 # “No periods, spaces, or punctuation marks are allowed.”
 
 plate = input("Plate: ")
-plate = plate.isupper()
 
 if len(plate) < 2 or len(plate) > 6:
     print("Error: The plate must be between 2 and 6 characters long.")
