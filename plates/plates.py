@@ -4,19 +4,18 @@
 # “No periods, spaces, or punctuation marks are allowed.”
 
 plate = input("Plate: ")
-plate = plate.upper()
+plate = list(plate.upper())
 print(plate)
+list_plate = []
 
 if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
 elif plate[:2].isalpha() != True:
     print("2. Invalid.")
 else:
-    print("Valid.")
-
-for i in plate:
-    if i.isalpha() or i.isnumeric():
-        print(i)
+    for i in plate:
+        if i.isalpha() or i.isnumeric():
+            print(i)
 
 
 
