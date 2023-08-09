@@ -8,7 +8,7 @@ plate = plate.upper()
 print(plate)
 list_plate = []
 
-if len(plate) < 2 or len(plate) > 6:
+while len(plate) < 2 or len(plate) > 6 or :
     print("1. Invalid.")
 else:
     pass
