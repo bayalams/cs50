@@ -26,10 +26,10 @@ for i in plate[:2]:
         pass
 
 if len(plate) % 2:
-    middle_even = (len(plate) / 2) + 1
+    middle_even = plate[(len(plate) / 2) + 1]
     print(middle_even)
 else:
-    middle_odd = len(plate) / 2
+    middle_odd = plate[len(plate) / 2]
     print(middle_odd)
 
 
