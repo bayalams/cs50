@@ -21,7 +21,7 @@ for i in plate:
 
 for i in plate[:2]:
     if i.isalpha() != True:
-        ("3. Invalid.")
+        print ("3. Invalid.")
     else:
         pass
 
