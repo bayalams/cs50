@@ -25,6 +25,9 @@ for i in plate[:2]:
     else:
         pass
 
+middle_ = len(case) % 2
+
+
 
 
 
