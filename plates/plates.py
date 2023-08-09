@@ -27,10 +27,10 @@ for i in plate[:2]:
 
 if len(plate) % 2 == 0:
     middle_even = plate[(len(plate) // 2) + 1]
-    print(middle_even)
+    print(f"Middle Even: {middle_even}")
 else:
     middle_odd = plate[len(plate) // 2]
-    print(middle_odd)
+    print(f"Middle Odd: {middle_odd}")
 
 
 
