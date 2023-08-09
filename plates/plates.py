@@ -6,27 +6,26 @@
 plate = input("Plate: ")
 plate = plate.upper()
 print(plate)
-list_plate = []
 
-if len(plate) < 2 or len(plate) > 6 or :
+
+if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
 else:
     pass
 
 
 for i in plate:
-    if i.isalpha() or i.isnumeric():
-        #print(i)
-        list_plate.append(i)
+    if i.isalpha() or i.isnumeric() != True:
+        print("2. Invalid")
     else:
-        pass
-print(list_plate)
+        for i in plate[:2]:
+            if i.isalpha() != True:
+                ("3. Invalid.")
+        else:
+            pass
 
-for i in plate[:2]:
-    if i.isalpha() != True:
-        print("2. Invalid.")
-    else:
-        pass
+
+
 
 
 
