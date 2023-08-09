@@ -10,7 +10,6 @@ print(plate)
 
 if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
-
 for i in plate:
     if not (i.isalpha() or i.isnumeric()):
         print("2. Invalid")
