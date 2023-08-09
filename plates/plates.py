@@ -7,15 +7,20 @@ plate = input("Plate: ")
 plate = plate.upper()
 print(plate)
 
-while for i in plate:
+
+if len(plate) < 2 or len(plate) > 6:
+    print("1. Invalid.")
+
+for i in plate:
     if not (i.isalpha() or i.isnumeric()):
         print("2. Invalid")
-    elif len(plate) < 2 or len(plate) > 6:
-        print("1. Invalid.")
     else:
         for i in plate[:2]:
             if i.isalpha() != True:
                 ("3. Invalid.")
+else:
+    print("valid")
+
 
 
 
