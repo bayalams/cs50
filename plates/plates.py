@@ -25,7 +25,12 @@ for i in plate[:2]:
     else:
         pass
 
-middle_ = len(case) % 2
+if len(plate) % 2:
+    middle_even = (len(plate) / 2) + 1
+    print(middle_even)
+else:
+    middle_odd = len(plate) / 2
+    print(middle_odd)
 
 
 
