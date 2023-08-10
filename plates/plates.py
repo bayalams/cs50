@@ -3,30 +3,46 @@
 # “Numbers cannot be used in the middle of a plate; they must come at the end. For example, AAA222 would be an acceptable … vanity plate; AAA22A would not be acceptable. The first number used cannot be a ‘0’.”
 # “No periods, spaces, or punctuation marks are allowed.”
 
-plate = input("Plate: ")
-plate = plate.upper()
-print(plate)
+def main():
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+        return
+    else:
+        print("Invalid")
+        return
+
+
+def is_valid(plate):
+
+    if length(plate) and char_type(plate) and initial_char_type(plate):
+        return True
+
 
 def length(plate):
 
     if len(plate) < 2 or len(plate) > 6:
-        print("1. Invalid.")
-        
+        return False
+    else:
+        return True
 
-else:
+def char_type(plate):
+
     for i in plate:
         if not (i.isalpha() or i.isnumeric()):
-            print("2. Invalid")
+            return False
         else:
-            pass
+            return True
+
+def initial_char_type(plate):
 
     for j in plate[:2]:
         if j.isalpha() != True:
-            print ("3. Invalid.")
-            break
+            return False
         else:
-            print("Valid.")
+            return True
 
+main()
 
 # if len(plate) % 2 == 0:
 #     middle_even = plate[(len(plate) // 2) - 1] + plate[(len(plate) // 2)]
