@@ -10,25 +10,25 @@ print(plate)
 
 if len(plate) < 2 or len(plate) > 6:
     print("1. Invalid.")
-elif for i in plate:
-    if not (i.isalpha() or i.isnumeric()):
-        print("2. Invalid")
-    else:
-        pass
 
-for i in plate[:2]:
-    if i.isalpha() != True:
-        print ("3. Invalid.")
-    else:
-        pass
-
-
-if len(plate) % 2 == 0:
-    middle_even = plate[(len(plate) // 2) - 1] + plate[(len(plate) // 2)]
-    print(f"Middle Even: {middle_even}")
 else:
-    middle_odd = plate[len(plate) // 2]
-    print(f"Middle Odd: {middle_odd}")
+    for i in plate:
+        if not (i.isalpha() or i.isnumeric()):
+            print("2. Invalid")
+        else:
+            for j in plate[:2]:
+                if j.isalpha() != True:
+                    print ("3. Invalid.")
+                else:
+                    pass
+
+
+# if len(plate) % 2 == 0:
+#     middle_even = plate[(len(plate) // 2) - 1] + plate[(len(plate) // 2)]
+#     print(f"Middle Even: {middle_even}")
+# else:
+#     middle_odd = plate[len(plate) // 2]
+#     print(f"Middle Odd: {middle_odd}")
 
 
 
