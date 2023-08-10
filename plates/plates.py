@@ -29,10 +29,10 @@ def length(plate):
 def char_type(plate):
 
     for i in plate:
-        if not i.isalnum():
-            return False
-        else:
+        if i.isalnum():
             return True
+        else:
+            return False
 
 def initial_char_type(plate):
 
