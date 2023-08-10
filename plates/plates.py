@@ -29,7 +29,7 @@ def length(plate):
 def char_type(plate):
 
     for i in plate:
-        if not (i.isalpha() or i.isnumeric()):
+        if not i.isalnum():
             return False
         else:
             return True
