@@ -53,7 +53,7 @@ def nested_number(plate):
                 else:
                     return True
         else:
-            return True
+            pass
 
 main()
 
