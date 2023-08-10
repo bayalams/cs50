@@ -16,11 +16,13 @@ else:
         if not (i.isalpha() or i.isnumeric()):
             print("2. Invalid")
         else:
-            for j in plate[:2]:
-                if j.isalpha() != True:
-                    print ("3. Invalid.")
-                else:
-                    pass
+            pass
+
+    for j in plate[:2]:
+        if j.isalpha() != True:
+            print ("3. Invalid.")
+        else:
+            pass
 
 
 # if len(plate) % 2 == 0:
