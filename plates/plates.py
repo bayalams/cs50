@@ -33,7 +33,7 @@ else:
     middle_odd = plate[len(plate) // 2]
     print(f"Middle Odd: {middle_odd}")
 
-if middle_odd or middle_even != 
+
 
 
 
