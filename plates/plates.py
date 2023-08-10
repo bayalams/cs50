@@ -15,7 +15,7 @@ def main():
 
 def is_valid(plate):
 
-    if length(plate) and char_type(plate) and initial_char_type(plate):
+    if length(plate) and char_type(plate) and initial_char_type(plate) and nested_number(plate):
         return True
 
 
@@ -42,14 +42,22 @@ def initial_char_type(plate):
         else:
             return True
 
+
+def nested_number(plate):
+
+    for i in plate:
+        if i.isnumeric():
+            for j in plate[:i]:
+                if j.isalpha():
+                    return False
+                else:
+                    return True
+        else:
+            return True
+
 main()
 
-# if len(plate) % 2 == 0:
-#     middle_even = plate[(len(plate) // 2) - 1] + plate[(len(plate) // 2)]
-#     print(f"Middle Even: {middle_even}")
-# else:
-#     middle_odd = plate[len(plate) // 2]
-#     print(f"Middle Odd: {middle_odd}")
+
 
 
 
