@@ -50,7 +50,7 @@ def nested_number(plate):
     for i in plate:
         a = a + 1
         if i.isnumeric():
-            for j in plate[:a]:
+            for j in plate[a:]:
                 if j.isalpha():
                     return False
                 else:
