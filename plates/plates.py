@@ -21,8 +21,11 @@ else:
     for j in plate[:2]:
         if j.isalpha() != True:
             print ("3. Invalid.")
+            break
         else:
             pass
+
+    print("Valid.")
 
 
 # if len(plate) % 2 == 0:
