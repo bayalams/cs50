@@ -30,9 +30,10 @@ def char_type(plate):
 
     for i in plate:
         if i.isalpha() or i.isnumeric():
-            return True
+            pass
         else:
             return False
+    return True
 
 def initial_char_type(plate):
 
