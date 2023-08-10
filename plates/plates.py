@@ -51,9 +51,11 @@ def nested_number(plate):
                 if j.isalpha():
                     return False
                 else:
-                    return True
+                    pass
+            return True
         else:
             pass
+    return True
 
 main()
 
