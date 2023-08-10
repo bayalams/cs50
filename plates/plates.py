@@ -23,9 +23,7 @@ else:
             print ("3. Invalid.")
             break
         else:
-            pass
-
-    print("Valid.")
+            print("Valid.")
 
 
 # if len(plate) % 2 == 0:
