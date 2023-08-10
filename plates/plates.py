@@ -45,7 +45,7 @@ def initial_char_type(plate):
 
 def nested_number(plate):
 
-    a = 0
+    a = -1
 
     for i in plate:
         a = a + 1
@@ -58,6 +58,7 @@ def nested_number(plate):
             return True
         else:
             pass
+
     return True
 
 main()
