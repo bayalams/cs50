@@ -7,9 +7,11 @@ plate = input("Plate: ")
 plate = plate.upper()
 print(plate)
 
+def length(plate):
 
-if len(plate) < 2 or len(plate) > 6:
-    print("1. Invalid.")
+    if len(plate) < 2 or len(plate) > 6:
+        print("1. Invalid.")
+        
 
 else:
     for i in plate:
