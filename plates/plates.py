@@ -45,7 +45,10 @@ def initial_char_type(plate):
 
 def nested_number(plate):
 
+    a = 0
+    
     for i in plate:
+        a = a + 1
         if i.isnumeric():
             a = i
             for j in plate[:a]:
