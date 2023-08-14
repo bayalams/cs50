@@ -24,5 +24,6 @@ fruit_calories = {
 fruit = input("Item: ")
 fruit = fruit.lower()
 
-for k, v in fruit_calories.items():
-    print(k, v)
+for fruit, calories in fruit_calories.items():
+    if fruit in fruit_calories:
+        
