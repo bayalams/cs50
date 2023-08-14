@@ -26,4 +26,6 @@ item = item.lower()
 
 if item in fruit_calories:
     print(fruit_calories[item])
+else:
+    exit(-1)
 
