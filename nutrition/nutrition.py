@@ -14,7 +14,7 @@ fruit_calories = {
     "peach": 60,
     "pear": 100,
     "pineapple": 50,
-    "plumes": 70,
+    "plums": 70,
     "strawberries": 50,
     "sweet cherries": 100,
     "tangerine": 50,
@@ -24,7 +24,6 @@ fruit_calories = {
 item = input("Item: ")
 item = item.lower()
 
-for fruit, calories in fruit_calories.items():
-    if item in fruit_calories:
-        print(calories)
+if item in fruit_calories:
+    print(calories)
 
