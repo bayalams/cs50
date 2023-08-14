@@ -20,3 +20,9 @@ fruit_calories: {
     "tangerine": 50,
     "watermelon": 80
 }
+
+fruit = input("Item: ")
+fruit = fruit.lower()
+
+for k in fruit_calories:
+    print(v)
