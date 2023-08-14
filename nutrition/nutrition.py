@@ -21,9 +21,10 @@ fruit_calories = {
     "watermelon": 80
 }
 
-fruit = input("Item: ")
-fruit = fruit.lower()
+item = input("Item: ")
+item = item.lower()
 
 for fruit, calories in fruit_calories.items():
-    for fruit in fruit_calories:
+    if item in fruit_calories:
         print(calories)
+
