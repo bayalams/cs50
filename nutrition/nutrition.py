@@ -21,11 +21,11 @@ fruit_calories = {
     "watermelon": 80
 }
 
-item = input("Item: ")
-item = item.lower()
+fruit = input("Item: ")
+fruit = fruit.lower()
 
-if item in fruit_calories:
-    print(fruit_calories[item])
+if fruit in fruit_calories:
+    print(fruit_calories[fruit])
 else:
     exit(-1)
 
