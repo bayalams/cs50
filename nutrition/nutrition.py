@@ -1,4 +1,4 @@
-fruit_calories: {
+fruit_calories = {
     "apple": 130,
     "avocado": 50,
     "banana": 110,
@@ -24,5 +24,3 @@ fruit_calories: {
 fruit = input("Item: ")
 fruit = fruit.lower()
 
-for k in fruit_calories:
-    print(v)
