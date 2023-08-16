@@ -11,6 +11,7 @@ while True:
 
         percentage = int((X / Y) * 100)
         print(f"{percentage}%")
+        
     except ZeroDivisionError:
         print("ZeroDivisionError")
     except ValueError:
