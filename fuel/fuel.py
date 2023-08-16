@@ -1,28 +1,25 @@
 #X or Y is not an integer
 # X is greater than Y, or Y is 0, instead prompt the user again.
-try:
-    while True:
-        try:
-            fuel = input("Fraction: ")
-            fuel = fuel.split("/")
-            #print(fuel)
+while True:
+    try:
+        fuel = input("Fraction: ")
+        fuel = fuel.split("/")
+        #print(fuel)
 
-            X = int(fuel[0])
-            Y = int(fuel[1])
+        X = int(fuel[0])
+        Y = int(fuel[1])
 
+        percentage = int((X / Y) * 100)
+        print(f"{percentage}%")
+    except ZeroDivisionError:
+        print("ZeroDivisionError")
+    except ValueError:
+        if fuel[1] == 'e':
+            Y = 10
+            # X = 10
             percentage = int((X / Y) * 100)
             print(f"{percentage}%")
-        except ZeroDivisionError:
-            print("ZeroDivisionError")
-        except ValueError:
-            if fuel[1] == 'e':
-                Y = 10
-                # X = 10
-                percentage = int((X / Y) * 100)
-                print(f"{percentage}%")
-            else:
-                print("ValueError")
-        except Exception as ex:
-            print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
-except Exception as ex:
-            print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
+        else:
+            print("ValueError")
+    except Exception as ex:
+        print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
