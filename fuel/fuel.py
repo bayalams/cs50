@@ -25,8 +25,6 @@ while True:
         exit(0)
 
     except ZeroDivisionError:
-        print("ZeroDivisionError")
+        pass
     except ValueError:
-        print("ValueError")
-    except Exception as ex:
-        print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
+        pass
