@@ -16,6 +16,11 @@ while True:
     #     print("ZeroDivisionError")
     except ValueError:
         print("ValueError")
-        
+        if fuel[1] == 'e':
+            Y = 10
+            percentage = int((X / Y) * 100)
+            print(f"{percentage}%")
+        else:
+            raise ZeroDivisionError
     except Exception as ex:
         print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
