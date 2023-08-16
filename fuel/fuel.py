@@ -16,4 +16,4 @@ except ZeroDivisionError:
 except ValueError:
     print("ValueError")
 except Exception:
-    print('Outra')
+    print(f"An exception of type {type(ex).__name__} occurred. Arguments:\n{ex.args}")
