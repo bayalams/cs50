@@ -12,6 +12,7 @@ try:
     percentage = int((X / Y) * 100)
     print(f"{percentage}%")
 except ZeroDivisionError:
+    Y = 
     print("ZeroDivisionError")
 except ValueError:
     print("ValueError")
