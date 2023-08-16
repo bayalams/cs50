@@ -16,7 +16,8 @@ while True:
             print(f"{percentage}%")
 
         if X > Y:
-            raise ValueError
+            pass
+
     except ZeroDivisionError:
         print("ZeroDivisionError")
     except ValueError:
