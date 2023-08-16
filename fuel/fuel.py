@@ -18,7 +18,7 @@ while True:
             Y = 10
             # X = 10
             percentage = int((X / Y) * 100)
-            print(f"{percentage}%")
+            print(f"{percentage}%")+
         else:
             print("ValueError")
     except Exception as ex:
