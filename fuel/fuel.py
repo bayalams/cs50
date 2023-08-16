@@ -7,9 +7,13 @@ while True:
         Y = int(fuel[1])
 
         percentage = int((X / Y) * 100)
-        print(f"{percentage}%")
 
-        if
+        if percentage >= 99:
+            print("F")
+        elif percentage <= 1:
+            print("E")
+        else:
+            print(f"{percentage}%")
 
     except ZeroDivisionError:
         print("ZeroDivisionError")
