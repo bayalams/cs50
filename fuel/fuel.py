@@ -1,5 +1,3 @@
-#X or Y is not an integer
-# X is greater than Y, or Y is 0, instead prompt the user again.
 while True:
     try:
         fuel = input("Fraction: ")
@@ -11,7 +9,7 @@ while True:
         percentage = int((X / Y) * 100)
         print(f"{percentage}%")
 
-        if 
+        if
 
     except ZeroDivisionError:
         print("ZeroDivisionError")
