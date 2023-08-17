@@ -10,14 +10,20 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+order = input("Item: ")
+order = order.title()
+
+
 total = 0
 
+for order, price in menu.items():
+    print()
 
 
-while True:
-    order = input("Item: ")
-    order = order.title()
-    total = total +
-    if order == "Exit":
-        pass
-        break
+#while True:
+  #  order = input("Item: ")
+   # order = order.title()
+    #total = total +
+   # if order == "Exit":
+    #    pass
+    #    break
