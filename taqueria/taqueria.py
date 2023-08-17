@@ -17,7 +17,7 @@ order = order.title()
 total = 0
 
 for order, price in menu.items():
-    print(price)
+    print(menu[price])
 
 
 #while True:
