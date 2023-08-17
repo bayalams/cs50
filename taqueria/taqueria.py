@@ -12,10 +12,12 @@ menu = {
 
 total = 0
 
+
+
 while True:
     order = input("Item: ")
     order = order.title()
-    total = total + 
+    total = total +
     if order == "Exit":
         pass
         break
