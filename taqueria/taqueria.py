@@ -15,4 +15,5 @@ while True:
     order = input("Item: ")
     order = order.title()
     if order == "Exit":
+        pass
         break
