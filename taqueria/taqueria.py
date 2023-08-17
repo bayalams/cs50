@@ -13,18 +13,17 @@ menu = {
 order = input("Item: ")
 order = order.title()
 
+total = 0
 
 if order in menu:
+
     price = menu[order] #não percebo como é que price imprime os preços mas é a key...
     price = "{:.2f}".format(price)
     print(f"${price}")
 
-total = 0
-price = float(price)
 
-for order, price in menu.items():
-    total = total + price
-print(total)
+
+
 
 
 #while True:
