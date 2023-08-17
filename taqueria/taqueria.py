@@ -22,9 +22,10 @@ while True:
             total = float(total) + float(menu[order])
             total = "{:.2f}".format(total)
             print(f"${total}")
-    except:
-
-
+    except EOFError:
+        pass
+    except KeyError:
+        pass
 
 
 #while True:
