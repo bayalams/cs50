@@ -28,3 +28,9 @@ while True:
         pass
     except ValueError:
         pass
+
+    #problemas:
+#:( input of 10/3 results in reprompt
+    #expected program to reject input, but it did not
+#:( input of 2/3 yields output of 67%
+    #expected "67%", not "66%\n"
