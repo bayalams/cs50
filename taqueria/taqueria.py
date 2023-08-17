@@ -23,7 +23,7 @@ while True:
             total = "{:.2f}".format(total)
             print(f"${total}")
     except EOFError:
-        pass
+        break
     except KeyError:
         pass
 
