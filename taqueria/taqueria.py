@@ -10,10 +10,12 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+total = 0
 
 while True:
     order = input("Item: ")
     order = order.title()
-    if order == "exit":
+    total = total + 
+    if order == "Exit":
         pass
         break
