@@ -20,9 +20,11 @@ if order in menu:
 
 total = 0
 
-for price in menu:
-    total = total + float(price)
-    print(price)
+print(price)
+
+#for price in menu:
+#    total = total + float(price)
+#    print(price)
 
 
 #while True:
