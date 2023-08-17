@@ -16,7 +16,6 @@ order = order.title()
 
 if order in menu:
     price = menu[order] #não percebo como é que price imprime os preços mas é a key...
-    print(price)
     price = "{:.2f}".format(price)
     print(f"${price}")
 
