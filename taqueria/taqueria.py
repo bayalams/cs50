@@ -23,8 +23,8 @@ total = 0
 price = float(price)
 
 
-for order, price in menu.items():
-    total = total + float(price)
+while True:
+    total = total + price
     print(total)
 
 
