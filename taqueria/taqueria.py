@@ -22,10 +22,9 @@ if order in menu:
 total = 0
 price = float(price)
 
-
-while True:
+for order, price in menu.items():
     total = total + price
-    print(total)
+print(total)
 
 
 #while True:
