@@ -11,8 +11,9 @@ menu = {
 }
 
 
-order = input("Item: ")
-order = order.title()
-
-if order == "control-d":
-    exit(0)
+while True:
+    order = input("Item: ")
+    order = order.title()
+    if order == "control-d":
+        print("exit")
+        break
