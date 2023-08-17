@@ -13,8 +13,12 @@ menu = {
 order = input("Item: ")
 order = order.title()
 
+for order, price in menu.items():
+    print(price)
+
 if order in menu:
-    price = menu[order]
+    price = menu[order] #não percebo como é que price imprime os preços mas é a key...
+    print(price)
     price = "{:.2f}".format(price)
     print(f"${price}")
 
@@ -23,9 +27,9 @@ price = float(price)
 print(price)
 print(type(price))
 
-for price in menu:
-    total = total + float(price)
-    print(price)
+#for price in menu:
+#    total = total + float(price)
+#    print(price)
 
 
 #while True:
