@@ -11,4 +11,7 @@ menu = {
 }
 
 while True:
-    ro
+    order = input("Item: ")
+    order = order.title()
+    if order == "control-d":
+        break
