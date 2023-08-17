@@ -26,12 +26,3 @@ while True:
         break
     except KeyError:
         pass
-
-
-#while True:
-  #  order = input("Item: ")
-   # order = order.title()
-    #total = total +
-   # if order == "Exit":
-    #    pass
-    #    break
