@@ -14,6 +14,6 @@ menu = {
 while True:
     order = input("Item: ")
     order = order.title()
-    if order == "Exit":
+    if order == "exit":
         pass
         break
