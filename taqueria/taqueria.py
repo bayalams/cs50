@@ -13,12 +13,14 @@ menu = {
 order = input("Item: ")
 order = order.title()
 
+if order in menu:
+    price = menu[order]
+    price = "{:.2f}".format(price)
+    print(price)
 
 total = 0
 
-if order in menu:
-    price = menu[order]
-    print(price)
+
 
 
 #while True:
