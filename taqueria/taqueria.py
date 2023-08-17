@@ -14,14 +14,15 @@ menu = {
 total = 0
 
 while True:
-    order = input("Item: ")
-    order = order.title()
+    try:
+        order = input("Item: ")
+        order = order.title()
 
-    if order in menu:
-        total = float(total) + float(menu[order])
-        total = "{:.2f}".format(total)
-        print(f"${total}")
-
+        if order in menu:
+            total = float(total) + float(menu[order])
+            total = "{:.2f}".format(total)
+            print(f"${total}")
+    except:
 
 
 
