@@ -16,7 +16,7 @@ order = order.title()
 if order in menu:
     price = menu[order]
     price = "{:.2f}".format(price)
-    print(price)
+    print(f"${price}")
 
 total = 0
 
