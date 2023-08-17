@@ -14,6 +14,5 @@ menu = {
 while True:
     order = input("Item: ")
     order = order.title()
-    if order == "control-d":
-        print("exit")
+    if order == "Exit":
         break
