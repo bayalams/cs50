@@ -17,7 +17,8 @@ order = order.title()
 total = 0
 
 if order in menu:
-    print(menu[price])
+    
+    print(menu[order])
 
 
 #while True:
