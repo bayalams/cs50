@@ -10,8 +10,9 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
-while True:
-    order = input("Item: ")
-    order = order.title()
-    if order == "control-d":
-        break
+
+order = input("Item: ")
+order = order.title()
+
+if order == "control-d":
+    exit(0)
