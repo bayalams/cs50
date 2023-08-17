@@ -1,5 +1,3 @@
-#falta ZeroDivisionError
-
 def fraction():
 
     fuel = input("Fraction: ")
