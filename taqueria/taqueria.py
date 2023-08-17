@@ -19,12 +19,13 @@ if order in menu:
     print(f"${price}")
 
 total = 0
-
+price = float(price)
 print(price)
+print(type(price))
 
-#for price in menu:
-#    total = total + float(price)
-#    print(price)
+for price in menu:
+    total = total + float(price)
+    print(price)
 
 
 #while True:
