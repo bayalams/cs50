@@ -11,14 +11,15 @@ while True:
         item = input()
         item = item.upper()
         list_item.append(item)
+        sorted_list_item = sorted(list_item)
+        print(sorted_list_item)
+        count = sorted_list_item.count(item)
+        print(count)
 
     except EOFError:
         break
 
-sorted_list_item = sorted(list_item)
-print(sorted_list_item)
-count = sorted_list_item.count(item)
-print(count)
+
 
 
 
