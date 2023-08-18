@@ -7,11 +7,13 @@ count_number = []
 dict_item_count = {}
 
 while True:
+    try:
+        item = input()
+        item = item.upper()
+        list_item.append(item)
 
-    item = input()
-    item = item.upper()
-    list_item.append(item)
-
+    except EOFError:
+        break
 
     count = list_item.count(item)
     count_number.append(count)
