@@ -12,7 +12,6 @@ while True:
         item = item.upper()
         list_item.append(item)
         sorted_list_item = sorted(list_item)
-        print(sorted_list_item)
 
     except KeyError:
         pass
@@ -25,17 +24,13 @@ for item in sorted_list_item:
     else:
         dict_item_count[item] = 1
 
-print(dict_item_count)
-
 result_grocery_list = []
 
 for item, count in dict_item_count.items():
     result_grocery_list.append((count, item))
 
-print(result_grocery_list)
-
-for count, name in result_grocery_list:
-    print(count, name)
+for count, item in result_grocery_list:
+    print(count, item)
 
 
 
