@@ -15,9 +15,12 @@ while True:
     except EOFError:
         break
 
-    count = list_item.count(item)
-    count_number.append(count)
-    print(count_number)
+sorted_list_item = sorted(list_item)
+print(sorted_list_item)
+
+    # count = list_item.count(item)
+    # count_number.append(count)
+    # print(count_number)
 
 
 
