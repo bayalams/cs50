@@ -6,24 +6,21 @@ def fraction():
     X = int(fuel[0])
     Y = int(fuel[1])
 
-    if X > Y:
-        pass
-
     return int((X / Y) * 100)
 
 while True:
     try:
         percentage = fraction()
-        print(percentage)
 
-        if percentage >= 99:
+        if percentage in [99, 100]:
             print("F")
+            break
         elif percentage <= 1:
             print("E")
-        else:
+            break
+        elif percentage > 1 and percentage < 99:
             print(f"{percentage}%")
-
-        exit(0)
+            break
 
     except ZeroDivisionError:
         pass
