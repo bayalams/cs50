@@ -9,12 +9,11 @@ while True:
         item = input()
         item = item.upper()
         list_item.append(item)
+        count = list_item.count(item)
+        print(count)
     except EOFError:
         break
     except TypeError:
         pass
 
-    print(list_item)
 
-    for item in list_item:
-        
