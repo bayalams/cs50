@@ -25,6 +25,7 @@ for item in sorted_list_item:
     else:
         dict_item_count[item] = 1
 
+print(dict_item_count)
 
 for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
