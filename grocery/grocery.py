@@ -34,8 +34,8 @@ for item, count in dict_item_count.items():
 
 print(result_grocery_list)
 
-for k, v in dict_grocery_list.items():
-    print(k, v)
+for count, name in result_grocery_list:
+    print(count, name)
 
 
 
