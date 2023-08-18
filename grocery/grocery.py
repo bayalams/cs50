@@ -16,10 +16,13 @@ while True:
     except EOFError:
         break
 
-for item, count in dict_item_count.items():
-    if item in dict:
-        count = count + 1
+for item in sorted_list_item:
+    if item in dict_item_count.keys():
+        dict_item_count[item] = dict_item_count[item] + 1
+    else:
+        dict_item_count[item] = 1
 
+print(dict_item_count)
 
     # except EOFError:
     #     break
