@@ -4,6 +4,7 @@
 
 dict_item_count = {}
 dict_grocery_list = {}
+sorted_item_list = []
 
 while True:
     try:
@@ -18,6 +19,8 @@ while True:
         pass
     except EOFError:
         break
+
+sorted_item_list = sorted(dict_item_count.keys())
 
 for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
