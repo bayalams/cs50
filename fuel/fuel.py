@@ -1,3 +1,5 @@
+import math
+
 def fraction():
 
     fuel = input("Fraction: ")
@@ -6,7 +8,7 @@ def fraction():
     X = int(fuel[0])
     Y = int(fuel[1])
 
-    return int((X / Y) * 100)
+    return math.ceil((X / Y) * 100)
 
 while True:
     try:
@@ -27,8 +29,3 @@ while True:
     except ValueError:
         pass
 
-    #problemas:
-#:( input of 10/3 results in reprompt
-    #expected program to reject input, but it did not
-#:( input of 2/3 yields output of 67%
-    #expected "67%", not "66%\n"
