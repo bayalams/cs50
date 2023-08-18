@@ -3,6 +3,7 @@
 # prefixing each line with the number of times the user inputted that item.
 
 list_item = []
+count_number = []
 dict_item_count = {}
 
 while True:
@@ -10,8 +11,11 @@ while True:
     item = input()
     item = item.upper()
     list_item.append(item)
+
+
     count = list_item.count(item)
-    print(count)
+    count_number.append(count)
+    print(count_number)
 
 
 
