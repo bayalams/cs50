@@ -10,7 +10,7 @@ while True:
         item = item.upper()
         list_item.append(item)
         count = list_item.count(item)
-        print(list_item, count)
+        
     except EOFError:
         break
     except TypeError:
