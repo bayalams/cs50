@@ -1,3 +1,7 @@
+# grocery list in all uppercase
+# sorted alphabetically by item
+# prefixing each line with the number of times the user inputted that item.
+
 list_item = []
 dict_item_count = {}
 dict_grocery_list = {}
@@ -24,7 +28,8 @@ for item in sorted_list_item:
 for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
 
-print(dict_grocery_list)
+for k, v in dict_grocery_list.items():
+    print(k, v)
 
 
 
