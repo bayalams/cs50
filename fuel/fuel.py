@@ -1,5 +1,3 @@
-import math
-
 def fraction():
 
     fuel = input("Fraction: ")
@@ -8,7 +6,7 @@ def fraction():
     X = int(fuel[0])
     Y = int(fuel[1])
 
-    return math.ceil((X / Y) * 100)
+    return round((X / Y) * 100)
 
 while True:
     try:
