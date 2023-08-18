@@ -27,6 +27,7 @@ for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
 
 print(dict_grocery_list)
+print(f"{dict_grocery_list[0]}, /n {dict_grocery_list[1]}")
 
     # except EOFError:
     #     break
