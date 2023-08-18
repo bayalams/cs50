@@ -14,6 +14,7 @@ def fraction():
 while True:
     try:
         percentage = fraction()
+        print(percentage)
 
         if percentage >= 99:
             print("F")
