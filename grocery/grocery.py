@@ -16,7 +16,7 @@ while True:
     except KeyError:
         pass
     except EOFError:
-        break
+        exit(1)
 
 for item in sorted_list_item:
     if item in dict_item_count.keys():
