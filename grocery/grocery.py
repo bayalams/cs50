@@ -13,6 +13,8 @@ while True:
         list_item.append(item)
         sorted_list_item = sorted(list_item)
 
+    except KeyError:
+        pass
     except EOFError:
         break
 
@@ -26,7 +28,8 @@ for item in sorted_list_item:
 for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
 
-print(dict_grocery_list)
+for k, v in dict_grocery_list.items():
+    print(k, v)
 
 
 
