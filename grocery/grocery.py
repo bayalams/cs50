@@ -17,10 +17,8 @@ while True:
 
 sorted_list_item = sorted(list_item)
 print(sorted_list_item)
-
-for i in sorted_list_item:
-    count = sorted_list_item.count(item)
-    count_number.append(count)
+count = sorted_list_item.count(item)
+count_number.append(count)
 print(count_number)
 
 
