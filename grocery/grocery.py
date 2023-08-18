@@ -4,6 +4,7 @@
 
 list_item = []
 dict_item_count = {}
+dict_grocery_list = {}
 
 while True:
     try:
@@ -21,7 +22,6 @@ for item in sorted_list_item:
     else:
         dict_item_count[item] = 1
 
-dict_grocery_list = {}
 
 for item, count in dict_item_count.items():
     dict_grocery_list[count] = item
