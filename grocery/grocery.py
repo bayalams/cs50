@@ -27,8 +27,12 @@ for item in sorted_list_item:
 
 print(dict_item_count)
 
+result_grocery_list = []
+
 for item, count in dict_item_count.items():
-    dict_grocery_list[count] = item
+    result_grocery_list.append((count, item))
+
+print(result_grocery_list)
 
 for k, v in dict_grocery_list.items():
     print(k, v)
