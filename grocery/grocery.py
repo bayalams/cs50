@@ -12,6 +12,7 @@ while True:
         item = item.upper()
         list_item.append(item)
         sorted_list_item = sorted(list_item)
+        print(sorted_list_item)
 
     except KeyError:
         pass
