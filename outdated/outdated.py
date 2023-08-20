@@ -23,11 +23,11 @@ def parse_date_format_1(s):
     print(day, month, year)
 
     for pila, m in enumerate(months):
-
         if m.lower() == month.lower():
             month = pila + 1
+            break
 
-    print(f"{day}-{month}-{year}")
+    return f"{day}-{month}-{year}"
 
 
 
@@ -40,7 +40,8 @@ print(date)
 
 if "," in date:
     print("type 1")
-    parse_date_format_1(date)
+    new_date = parse_date_format_1(date)
+    print(new_date)
 else:
     print("type 2")
 
