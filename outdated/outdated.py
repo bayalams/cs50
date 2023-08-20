@@ -1,6 +1,6 @@
 date = input("Date: ")
-date = date.replace
-date_list = date.split(",")
+date = date.title()
+date_list = date.replace(",", " ").split()
 print(date_list)
 
 
@@ -19,3 +19,5 @@ months = [
     "December"
 ]
 
+if date_list[0] in months:
+    print(date_list[0])
