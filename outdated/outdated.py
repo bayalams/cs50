@@ -15,7 +15,8 @@ def month_from_string_to_int(month):
     ]
 
     month = month.title()
-    return months.index(month) + 1
+    return str(months.index(month) + 1).zfill(2)
+
 
 
 def parse_date_format_1(s):
@@ -25,7 +26,7 @@ def parse_date_format_1(s):
     month = list_of_elements[0]
     year = list_of_elements[2]
 
-    return f"{yeay}-{month_from_string_to_int(month)}-{day}"
+    return f"{year}-{month_from_string_to_int(month)}-{year}"
 
 
 
