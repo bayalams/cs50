@@ -20,5 +20,5 @@ months = {
 }
 
 for k, v in months.items():
-    if date_list[0] in months.keys():
-        
+    if date_list[0] in months.items():
+        print(months.keys)
