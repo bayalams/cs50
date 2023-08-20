@@ -1,4 +1,5 @@
 date = input("Date: ")
+date = date.replace
 date_list = date.split(",")
 print(date_list)
 
