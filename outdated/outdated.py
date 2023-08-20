@@ -26,13 +26,10 @@ def parse_date_format_1(s):
     month = list_of_elements[0]
     year = list_of_elements[2]
 
-    return f"{year}-{month_from_string_to_int(month)}-{year}"
-
+    return f"{year}-{month_from_string_to_int(month)}-{day}"
 
 
 def parse_date_format_2(s):
-
-
     pass
 
 
