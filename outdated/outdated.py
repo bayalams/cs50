@@ -14,9 +14,9 @@ def month_from_string_to_int(month):
         "December"
     ]
 
-    for idx, m in enumerate(months):
-        if m.lower() == month.lower():
-            return idx + 1
+    month = month.title()
+    return months.index(month) + 1
+
 
 
 def parse_date_format_1(s):
@@ -26,11 +26,13 @@ def parse_date_format_1(s):
     month = list_of_elements[0]
     year = list_of_elements[2]
 
-    return f"{day}-{month_from_string_to_int(month)}-{year}"
+    return f"{yeay}-{month_from_string_to_int(month)}-{day}"
 
 
 
 def parse_date_format_2(s):
+
+
     pass
 
 
