@@ -18,7 +18,6 @@ def month_from_string_to_int(month):
     return months.index(month) + 1
 
 
-
 def parse_date_format_1(s):
     list_of_elements = s.replace(",", "").split(" ")
 
