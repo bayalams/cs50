@@ -22,11 +22,10 @@ def parse_date_format_1(s):
 
     print(day, month, year)
 
-    for idx, m in months:
-        print('m original', m)
-        print('m', m[0], m[1])
+    for pila, m in enumerate(months):
+
         if m.lower() == month.lower():
-            month = m + 1
+            month = pila + 1
 
     print(f"{day}-{month}-{year}")
 
