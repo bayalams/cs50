@@ -1,17 +1,23 @@
-months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
+def month_from_string_to_int(month):
+    months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ]
+
+    for idx, m in enumerate(months):
+        if m.lower() == month.lower():
+            return idx + 1
+
 
 def parse_date_format_1(s):
     list_of_elements = s.replace(",", "").split(" ")
@@ -20,14 +26,7 @@ def parse_date_format_1(s):
     month = list_of_elements[0]
     year = list_of_elements[2]
 
-    print(day, month, year)
-
-    for pila, m in enumerate(months):
-        if m.lower() == month.lower():
-            month = pila + 1
-            break
-
-    return f"{day}-{month}-{year}"
+    return f"{day}-{month_from_string_to_int(month)}-{year}"
 
 
 
