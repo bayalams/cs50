@@ -1,9 +1,17 @@
 def parse_date_format_1(s):
     print(s)
     print(s.replace(",", ""))
-    day = s.replace(",", "").split(" ")
-    month = ""
-    year = ""
+    print(s.replace(",", "").split(' '))
+
+    list_of_elements = s.replace(",", "").split(" ")
+
+    day = list_of_elements[1]
+    month = list_of_elements[0]
+    year = list_of_elements[2]
+
+    print(day, month, year)
+
+    print(f"{day}-{month}-{year}")
 
 
 
