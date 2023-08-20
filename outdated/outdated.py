@@ -19,3 +19,6 @@ months = {
     "December": 12
 }
 
+for k, v in months.items():
+    if date_list[0] in months.keys():
+        
