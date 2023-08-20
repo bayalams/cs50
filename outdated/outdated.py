@@ -1,7 +1,6 @@
 date = input("Date: ")
 date = date.title()
-date_list = date.replace(",", " ").split()
-print(date_list)
+
 
 def parse_date_format_1(s):
     pass
