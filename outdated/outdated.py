@@ -1,6 +1,7 @@
 date = input("Date: ")
-date_list = date.split(" ", ",")
+date_list = date.split(",")
 print(date_list)
+
 
 months = [
     "January",
