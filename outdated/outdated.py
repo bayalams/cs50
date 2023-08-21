@@ -2,6 +2,9 @@
 #reprompt se o dia for mais do que 31
 #reprompt se o mês for mais do que 12
 
+class FormatError(Exception):
+    pass
+
 def main():
     while True:
         try:
