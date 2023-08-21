@@ -29,7 +29,6 @@ def parse_date_format_1(s):
     return f"{year}-{month_from_string_to_int(month)}-{day}"
 
 def parse_date_format_2(s):
-
     list_of_elements = s.split("/")
     print(list_of_elements)
 
