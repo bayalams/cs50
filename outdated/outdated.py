@@ -47,6 +47,8 @@ def parse_date_format_1(s):
     day = int(list_of_elements[1])
     month = list_of_elements[0]
     year = int(list_of_elements[2])
+    aux_month = month_from_string_to_int(month)
+    print(aux_month)
 
     date_format(day, month)
 
@@ -67,14 +69,14 @@ def parse_date_format_2(s):
 
     return f"{year}-{(month):02d}-{day:02d}"
 
-def date_format(day, month):
-    print(f"day ={day}")
-    print(f"month ={month}")
-
-    if day > 31:
-        raise FormatError
-    elif month > 12:
-        raise FormatError
+#def date_format(day, month):
+#    print(f"day ={day}")
+#    print(f"month ={month}")
+#
+#    if day > 31:
+#        raise FormatError
+#    elif month > 12:
+#       raise FormatError
 
     return
 
