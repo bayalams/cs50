@@ -43,7 +43,7 @@ def parse_date_format_2(s):
 def main():
 
     date = input("Date: ")
-    print(date)
+    #print(date)
 
     if "," in date:
         #print("type 1")
