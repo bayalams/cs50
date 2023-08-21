@@ -59,6 +59,7 @@ def main():
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
         except Exception as e:
-            print(e)
+            print(f"Exception Name: {type(e)._name_}")
+            print(f"Exception Desc: {e}")
 
 main()
