@@ -31,6 +31,7 @@ def parse_date_format_1(s):
 def parse_date_format_2(s):
 
     list_of_elements = s.split("/")
+    print(list_of_elements)
 
     day = list_of_elements[1]
     print(f"day: {day}")
