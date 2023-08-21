@@ -40,7 +40,11 @@ def month_from_string_to_int(month):
         "December"
     ]
 
+    print("43", month)
     month = month.title()
+    print("45:", month)
+
+    print("47:", months.index(month))
     print(str(months.index(month) + 1).zfill(2))
     return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
 
