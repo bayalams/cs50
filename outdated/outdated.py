@@ -38,7 +38,7 @@ def parse_date_format_2(s):
     year = list_of_elements[2]
     #print(f"year: {year}")
 
-    return f"{year}-{(month)}-{day}"
+    return f"{year}-{(month)}-{day}".zfill(2)
 
 def main():
 
