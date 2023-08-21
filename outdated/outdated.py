@@ -2,6 +2,22 @@
 #reprompt se o dia for mais do que 31
 #reprompt se o mês for mais do que 12
 
+def main():
+    while True:
+        try:
+            date = input("Date: ")
+            #print(date)
+            if "," in date:
+                #print("type 1")
+                new_date = parse_date_format_1(date)
+                print(new_date)
+            else:
+                print("type 2")
+                new_date_2 = str(parse_date_format_2(date))
+                print(new_date_2)
+        except FormatError:
+            pass
+
 
 def month_from_string_to_int(month):
 
@@ -45,18 +61,12 @@ def parse_date_format_2(s):
 
     return f"{year}-{(month)}-{day}"
 
-def main():
-    while True:
-        try:
-            date = input("Date: ")
-            #print(date)
-            if "," in date:
-                #print("type 1")
-                new_date = parse_date_format_1(date)
-                print(new_date)
-            else:
-                print("type 2")
-                new_date_2 = str(parse_date_format_2(date))
-                print(new_date_2)
+def date_format(day, month):
+
+    if day < 31
+    or month > 12:
+        raise FormatError
+
+
 
 main()
