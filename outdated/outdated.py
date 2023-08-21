@@ -1,4 +1,5 @@
 def month_from_string_to_int(month):
+
     months = [
         "January",
         "February",
@@ -27,9 +28,18 @@ def parse_date_format_1(s):
 
     return f"{year}-{month_from_string_to_int(month)}-{day}"
 
-
 def parse_date_format_2(s):
-    pass
+
+    list_of_elements = s.split("/")
+
+    day = list_of_elements[1]
+    print(f"day: {day}")
+    month = list_of_elements[0]
+    print(f"month: {month}")
+    year = list_of_elements[2]
+    print(f"year: {year}")
+
+    return f"{year}-{(month)}-{day}"
 
 
 date = input("Date: ")
