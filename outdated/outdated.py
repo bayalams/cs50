@@ -45,7 +45,7 @@ def parse_date_format_1(s):
 
     list_of_elements = s.replace(",", "").split(" ")
     day = int(list_of_elements[1])
-    month = int(list_of_elements[0])
+    month = list_of_elements[0]
     year = int(list_of_elements[2])
 
     date_format(day, month)
