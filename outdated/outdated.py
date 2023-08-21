@@ -40,7 +40,7 @@ def month_from_string_to_int(month):
     ]
 
     month = month.title()
-    return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
+    return months.index(month) + 1
 
 def parse_date_format_1(s):
 
