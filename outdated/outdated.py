@@ -15,8 +15,7 @@ def month_from_string_to_int(month):
     ]
 
     month = month.title()
-    return str(months.index(month) + 1).zfill(2)
-
+    return str(months.index(month) + 1).zfill(2) #para imprimir duas casas decimais
 
 
 def parse_date_format_1(s):
