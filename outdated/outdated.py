@@ -44,9 +44,9 @@ def month_from_string_to_int(month):
 def parse_date_format_1(s):
 
     list_of_elements = s.replace(",", "").split(" ")
-    day = list_of_elements[1]
-    month = list_of_elements[0]
-    year = list_of_elements[2]
+    day = int(list_of_elements[1])
+    month = int(list_of_elements[0])
+    year = int(list_of_elements[2])
 
     date_format(day, month)
 
