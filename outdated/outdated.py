@@ -43,7 +43,7 @@ def parse_date_format_2(s):
     year = str(list_of_elements[2]).zfill(2)
     #print(f"year: {year}")
 
-    return f"{year}-{(month)}-{day}" #falta imprimir com o zero antes
+    return f"{year}-{(month)}-{day}"
 
 def main():
     while True:
@@ -58,7 +58,7 @@ def main():
                 #print("type 2")
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
-        except FormatError as e:
+        except if 
             pass
-        
+
 main()
