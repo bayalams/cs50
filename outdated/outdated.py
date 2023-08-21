@@ -36,11 +36,11 @@ def parse_date_format_2(s):
     list_of_elements = s.split("/")
     #print(list_of_elements)
 
-    day = list_of_elements[1]
+    day = str(list_of_elements[1]).zfill(2)
     #print(f"day: {day}")
-    month = list_of_elements[0]
+    month = str(list_of_elements[0]).zfill(2)
     #print(f"month: {month}")
-    year = list_of_elements[2]
+    year = str(list_of_elements[2]).zfill(2)
     #print(f"year: {year}")
 
     return f"{year}-{(month)}-{day}" #falta imprimir com o zero antes
