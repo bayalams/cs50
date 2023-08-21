@@ -1,32 +1,32 @@
-# # # def month_from_string_to_int(month):
+def month_from_string_to_int(month):
 
-# # #     months = [
-# # #         "January",
-# # #         "February",
-# # #         "March",
-# # #         "April",
-# # #         "May",
-# # #         "June",
-# # #         "July",
-# # #         "August",
-# # #         "September",
-# # #         "October",
-# # #         "November",
-# # #         "December"
-# # #     ]
+    months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ]
 
-# # #     # month = month.title()
-# # #     # return str(months.index(month) + 1).zfill(2) #para imprimir duas casas decimais
+    month = month.title()
+    return str(months.index(month) + 1).zfill(2) #para imprimir duas casas decimais
 
 
-# # # def parse_date_format_1(s):
-# # #     list_of_elements = s.replace(",", "").split(" ")
+def parse_date_format_1(s):
+    list_of_elements = s.replace(",", "").split(" ")
 
-# # #     day = list_of_elements[1]
-# # #     month = list_of_elements[0]
-# # #     year = list_of_elements[2]
+    day = list_of_elements[1]
+    month = list_of_elements[0]
+    year = list_of_elements[2]
 
-# # #     return f"{year}-{month_from_string_to_int(month)}-{day}"
+    return f"{year}-{month_from_string_to_int(month)}-{day}"
 
 def parse_date_format_2(s):
     list_of_elements = s.split("/")
