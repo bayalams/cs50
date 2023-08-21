@@ -21,7 +21,8 @@ def main():
         except FormatError:
             pass
         except Exception as e:
-            print(e)
+            print(e, type(e))
+
 
 def month_from_string_to_int(month):
 
