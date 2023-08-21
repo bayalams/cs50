@@ -13,10 +13,12 @@ def main():
             if "," in date:
                 new_date = parse_date_format_1(date)
                 print(new_date)
+                exit(1)
             else:
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
-                
+                exit(1)
+
         except FormatError:
             pass
         # except Exception as e:
