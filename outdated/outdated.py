@@ -63,10 +63,9 @@ def parse_date_format_2(s):
 
 def date_format(day, month):
 
-    if day < 31
-    or month > 12:
+    if day > 31:
         raise FormatError
-
-
+    elif month > 12:
+        raise FormatError
 
 main()
