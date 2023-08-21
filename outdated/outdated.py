@@ -58,8 +58,6 @@ def main():
                 print("type 2")
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
-        except ValueError:
-                pass
-
+       
 
 main()
