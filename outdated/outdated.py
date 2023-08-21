@@ -41,6 +41,7 @@ def month_from_string_to_int(month):
     ]
 
     month = month.title()
+    print(str(months.index(month) + 1).zfill(2))
     return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
 
 def parse_date_format_1(s):
@@ -52,7 +53,7 @@ def parse_date_format_1(s):
     aux_month = month_from_string_to_int(month)
     print(aux_month)
 
-    date_format(day, month)
+    date_format(day, aux_month)
 
     return f"{year}-{month_from_string_to_int(month):02d}-{day:02d}"
 
