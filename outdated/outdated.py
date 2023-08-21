@@ -64,7 +64,7 @@ def parse_date_format_2(s):
 
     date_format(day, month)
 
-    return f"{year}-{(month):02d}-{day:02d}"
+    return f"{year}-{month:02d}-{day:02d}"
 
 def date_format(day, month):
 
