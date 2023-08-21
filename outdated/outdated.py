@@ -50,7 +50,7 @@ def parse_date_format_1(s):
     year = int(list_of_elements[2])
     aux_month = month_from_string_to_int(month)
 
-
+    print("aux month", aux_month)
     date_format(day, aux_month)
 
     return f"{year}-{month_from_string_to_int(month):02d}-{day:02d}"
