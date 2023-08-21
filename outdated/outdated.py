@@ -68,8 +68,8 @@ def parse_date_format_2(s):
     return f"{year}-{(month):02d}-{day:02d}"
 
 def date_format(day, month):
-    #print(f"day ={day}")
-    #print(f"month ={month}")
+    print(f"day ={day}")
+    print(f"month ={month}")
 
     if day > 31:
         raise FormatError
