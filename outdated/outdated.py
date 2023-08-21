@@ -24,11 +24,14 @@ def month_from_string_to_int(month):
     return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
 
 def parse_date_format_1(s):
-    list_of_elements = s.replace(",", "").split(" ")
+    while True:
+        try:
+            list_of_elements = s.replace(",", "").split(" ")
+            day = list_of_elements[1]
+            month = list_of_elements[0]
+            year = list_of_elements[2]
+        except:
 
-    day = list_of_elements[1]
-    month = list_of_elements[0]
-    year = list_of_elements[2]
 
     return f"{year}-{month_from_string_to_int(month)}-{day}"
 
