@@ -21,7 +21,6 @@ def main():
         except FormatError:
             pass
 
-
 def month_from_string_to_int(month):
 
     months = [
@@ -70,5 +69,7 @@ def date_format(day, month):
         raise FormatError
     elif month > 12:
         raise FormatError
+
+    return
 
 main()
