@@ -48,22 +48,28 @@ def parse_date_format_1(s):
     month = list_of_elements[0]
     year = list_of_elements[2]
 
-    return f"{year}-{month_from_string_to_int(month)}-{day}"
+    date_format(day, month)
+
+    return f"{year}-{month_from_string_to_int(month):02d}-{day:02d}"
 
 def parse_date_format_2(s):
     list_of_elements = s.split("/")
     #print(list_of_elements)
 
-    day = str(list_of_elements[1]).zfill(2)
+    day = int(list_of_elements[1])
     #print(f"day: {day}")
-    month = str(list_of_elements[0]).zfill(2)
+    month = int(list_of_elements[0])
     #print(f"month: {month}")
-    year = str(list_of_elements[2]).zfill(2)
+    year = int(list_of_elements[2])
     #print(f"year: {year}")
 
-    return f"{year}-{(month)}-{day}"
+    date_format(day, month)
+
+    return f"{year}-{(month):02d}-{day:02d}"
 
 def date_format(day, month):
+    print(f"day ={day}")
+    print(f"month ={month}")
 
     if day > 31:
         raise FormatError
