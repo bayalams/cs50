@@ -16,7 +16,7 @@ def month_from_string_to_int(month):
     ]
 
     month = month.title()
-    return str(months.index(month) + 1).zfill(2) #para imprimir duas casas decimais
+    return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
 
 def parse_date_format_1(s):
     list_of_elements = s.replace(",", "").split(" ")
@@ -38,7 +38,7 @@ def parse_date_format_2(s):
     year = list_of_elements[2]
     #print(f"year: {year}")
 
-    return f"{year}-{(month)}-{day}"
+    return f"{year}-{(month)}-{day}" #falta imprimir com o zero antes
 
 def main():
 
@@ -51,7 +51,7 @@ def main():
         print(new_date)
     else:
         #print("type 2")
-        new_date_2 = str(parse_date_format_2(date)).zfill(2)
+        new_date_2 = str(parse_date_format_2(date))
         print(new_date_2)
 
 main()
