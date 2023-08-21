@@ -16,6 +16,7 @@ def main():
             else:
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
+                
         except FormatError:
             pass
         # except Exception as e:
