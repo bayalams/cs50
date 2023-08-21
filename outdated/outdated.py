@@ -55,7 +55,7 @@ def main():
                 new_date = parse_date_format_1(date)
                 print(new_date)
             else:
-                #print("type 2")
+                print("type 2")
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
         except Exception as e:
