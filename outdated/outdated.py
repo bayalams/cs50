@@ -24,14 +24,11 @@ def month_from_string_to_int(month):
     return str(months.index(month) + 1).zfill(2) #para imprimir com o zero antes
 
 def parse_date_format_1(s):
-    while True:
-        try:
-            list_of_elements = s.replace(",", "").split(" ")
-            day = list_of_elements[1]
-            month = list_of_elements[0]
-            year = list_of_elements[2]
-        except:
 
+    list_of_elements = s.replace(",", "").split(" ")
+    day = list_of_elements[1]
+    month = list_of_elements[0]
+    year = list_of_elements[2]
 
     return f"{year}-{month_from_string_to_int(month)}-{day}"
 
@@ -49,17 +46,19 @@ def parse_date_format_2(s):
     return f"{year}-{(month)}-{day}" #falta imprimir com o zero antes
 
 def main():
-
-    date = input("Date: ")
-    #print(date)
-
-    if "," in date:
-        #print("type 1")
-        new_date = parse_date_format_1(date)
-        print(new_date)
-    else:
-        #print("type 2")
-        new_date_2 = str(parse_date_format_2(date))
-        print(new_date_2)
-
+    while True:
+        try:
+            date = input("Date: ")
+            #print(date)
+            if "," in date:
+                #print("type 1")
+                new_date = parse_date_format_1(date)
+                print(new_date)
+            else:
+                #print("type 2")
+                new_date_2 = str(parse_date_format_2(date))
+                print(new_date_2)
+        except
+            FormatError as e:
+            pass
 main()
