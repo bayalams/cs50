@@ -38,7 +38,7 @@ def parse_date_format_2(s):
     year = list_of_elements[2]
     #print(f"year: {year}")
 
-    return f"{year}-{(month)}-{day}".zfill(2)
+    return f"{year}-{(month)}-{day}"
 
 def main():
 
@@ -51,7 +51,7 @@ def main():
         print(new_date)
     else:
         #print("type 2")
-        new_date_2 = parse_date_format_2(date)
+        new_date_2 = str(parse_date_format_2(date)).zfill(2)
         print(new_date_2)
 
 main()
