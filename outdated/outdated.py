@@ -24,10 +24,10 @@ def main():
             print("ValueError")
             pass
         except IndexError as e:
-            print("IndexError", e)
+            print("IndexError")
             pass
-        # except Exception as e:
-        #     print(e, type(e))
+        except Exception as e:
+            print(e, type(e))
 
 
 def month_from_string_to_int(month):
