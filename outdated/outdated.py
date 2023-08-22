@@ -23,7 +23,9 @@ def main():
         except ValueError:
             print("ValueError")
             pass
-        except IndexError
+        except IndexError as e:
+            print("IndexError", e)
+            pass
         # except Exception as e:
         #     print(e, type(e))
 
