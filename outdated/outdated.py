@@ -7,6 +7,7 @@ def main():
         try:
             date = input("Date: ")
 
+
             if "," in date:
                 new_date = parse_date_format_1(date)
                 print(new_date)
@@ -74,20 +75,11 @@ def date_format(day, month):
 
     return
 
-def verify_format_1(list_of_elements):
+def verify_format_1(date):
 
-    day = int(list_of_elements[1])
-    month = list_of_elements[0]
+    parse_date_format_1(date)
 
-    if day.isnumeric():
-        print(day)
-    else:
-        print("day wrong format")
-
-    if month.isalpha():
-        print(month)
-    else:
-        print("month wrong format")
+    print(date)
 
 
 
