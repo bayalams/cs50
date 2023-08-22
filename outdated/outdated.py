@@ -11,12 +11,12 @@ def main():
                 new_date = parse_date_format_1(date)
                 print(new_date)
                 exit(1)
-            elif "/" in date: #in some cases, when input doesn't enter either statement, it goes back to 
+            elif "/" in date: #in some cases, when input doesn't enter either statement, it goes back to the loop, without raising an exception. Explain!!!!
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
                 exit(1)
 
-        except FormatError:
+        except FormatError: #suspicion that this isn't necessary, it will never be a format error, only value and index, because of situation mentioned above
             print("FormatError")
             pass
         except ValueError:
