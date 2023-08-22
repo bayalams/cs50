@@ -19,6 +19,8 @@ def main():
 
         except FormatError:
             pass
+        except ValueError:
+            pass
         # except Exception as e:
         #     print(e, type(e))
 
