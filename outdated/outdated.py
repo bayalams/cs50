@@ -20,6 +20,7 @@ def main():
         except FormatError:
             pass
         except ValueError:
+            print("valueError")
             pass
         # except Exception as e:
         #     print(e, type(e))
