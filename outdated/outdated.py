@@ -23,8 +23,9 @@ def main():
         except ValueError:
             print("ValueError")
             pass
-        except Exception as e:
-            print(e, type(e))
+        except IndexError
+        # except Exception as e:
+        #     print(e, type(e))
 
 
 def month_from_string_to_int(month):
@@ -79,9 +80,9 @@ def date_format(day, month):
 
     return
 
-def verify_format_1():
-
+def verify_format_1(parse_date_format_1):
     print(parse_date_format_1)
+
 
 
 main()
