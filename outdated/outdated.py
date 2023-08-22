@@ -74,4 +74,21 @@ def date_format(day, month):
 
     return
 
+def verify_format_1(list_of_elements):
+
+    day = int(list_of_elements[1])
+    month = list_of_elements[0]
+
+    if day.isnumeric():
+        print(day)
+    else:
+        print("day wrong format")
+
+    if month.isalpha():
+        print(month)
+    else:
+        print("month wrong format")
+
+
+
 main()
