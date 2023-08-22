@@ -16,15 +16,15 @@ def main():
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
                 exit(1)
-            else:
-                print("else")
-                break
-        except FormatError:
-            print("FormatError")
-            pass
-        except ValueError:
-            print("ValueError")
-            pass
+        #     else: ALL WRONG
+        #         print("else")
+        #         break
+        # except FormatError:
+        #     print("FormatError")
+        #     pass
+        # except ValueError:
+        #     print("ValueError")
+        #     pass
         # except Exception as e:
         #     print(e, type(e))
 
