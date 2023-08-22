@@ -20,7 +20,7 @@ def main():
         except FormatError:
             pass
         except ValueError:
-            print("ValueError")
+            #print("ValueError")
             pass
         # except Exception as e:
         #     print(e, type(e))
@@ -78,11 +78,10 @@ def date_format(day, month):
 
     return
 
-def verify_format_1(date):
+# def verify_format_1(date):
 
-    parse_date_format_1(date)
-
-    print(date)
+#     parse_date_format_1(date)
+#     print(date)
 
 
 
