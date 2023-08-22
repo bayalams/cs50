@@ -12,21 +12,19 @@ def main():
                 new_date = parse_date_format_1(date)
                 print(new_date)
                 exit(1)
-            elif "/" in date:
+            else:
                 new_date_2 = str(parse_date_format_2(date))
                 print(new_date_2)
                 exit(1)
-        #     else: ALL WRONG
-        #         print("else")
-        #         break
-        # except FormatError:
-        #     print("FormatError")
-        #     pass
-        # except ValueError:
-        #     print("ValueError")
-        #     pass
-        # except Exception as e:
-        #     print(e, type(e))
+
+        except FormatError:
+            print("FormatError")
+            pass
+        except ValueError:
+            print("ValueError")
+            pass
+        except Exception as e:
+            print(e, type(e))
 
 
 def month_from_string_to_int(month):
@@ -49,9 +47,9 @@ def month_from_string_to_int(month):
     month = month.title()
     return months.index(month) + 1
 
-def parse_date_format_1(s):
+def parse_date_format_1(date):
 
-    list_of_elements = s.replace(",", "").split(" ")
+    list_of_elements = date.replace(",", "").split(" ")
     day = int(list_of_elements[1])
     month = list_of_elements[0]
     year = int(list_of_elements[2])
@@ -61,8 +59,8 @@ def parse_date_format_1(s):
 
     return f"{year}-{month_from_string_to_int(month):02d}-{day:02d}"
 
-def parse_date_format_2(s):
-    list_of_elements = s.split("/")
+def parse_date_format_2(date):
+    list_of_elements = date.split("/")
 
     day = int(list_of_elements[1])
     month = int(list_of_elements[0])
