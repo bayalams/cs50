@@ -81,7 +81,7 @@ def date_format(day, month):
 
 def verify_format_1():
 
-    parse_date_format_1
+    print(parse_date_format_1)
 
 
 main()
