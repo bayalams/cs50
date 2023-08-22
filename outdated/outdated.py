@@ -79,5 +79,9 @@ def date_format(day, month):
 
     return
 
+def verify_format_1():
+
+    parse_date_format_1
+
 
 main()
