@@ -3,7 +3,6 @@ import sys
 
 figlet = Figlet()
 print(len(sys.argv))
-f = sys.argv
 
 if len(sys.argv) == 1:
     print (figlet.renderText('text to render'))
