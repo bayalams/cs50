@@ -1,6 +1,7 @@
 from pyfiglet import Figlet
 
-#figlet.setFont(font=f)
+figlet = Figlet()
 
-#f = Figlet(font='slant')
-print (f.renderText('text to render'))
+figlet.setFont(font=f)
+
+print (figlet.renderText('text to render'))
