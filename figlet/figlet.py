@@ -1,8 +1,11 @@
 from pyfiglet import Figlet
 import sys
-print("fonts: "{figlet.getFonts()}"
 
 figlet = Figlet()
+fonts = figlet.getFonts()
+
+if sys.arg
+
 print(len(sys.argv))
 
 if len(sys.argv) == 1:
