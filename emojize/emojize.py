@@ -1,4 +1,4 @@
 import emoji
+import sys
 
-s = input()
 print(emoji.emojize('Python is: ' + input))
