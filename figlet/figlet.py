@@ -4,10 +4,6 @@ import sys
 figlet = Figlet()
 fonts = figlet.getFonts()
 
-if sys.argv[2] not in fonts:
-    print("Invalid Usage")
-    sys.exit()
-
 print(len(sys.argv))
 
 if len(sys.argv) == 1:
@@ -15,12 +11,15 @@ if len(sys.argv) == 1:
     sys.exit()
 elif len(sys.argv) == 3:
     if sys.argv[1] != "-f":
-        print("Invalid usage")
+        print("2.Invalid usage")
+        sys.exit()
+    elif sys.argv[2] not in fonts:
+        print("1.Invalid Usage")
         sys.exit()
     else:
         figlet.setFont(font=sys.argv[2])
         print (figlet.renderText('text to render'))
         sys.exit()
 else:
-    print("Invalid usage")
+    print("3.Invalid usage")
     sys.exit()
