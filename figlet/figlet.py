@@ -10,7 +10,7 @@ if len(sys.argv) == 1:
     sys.exit()
 elif len(sys.argv) == 3:
     if sys.argv[1] != "-f":
-        print("Invalid user")
+        print("Invalid usage")
         sys.exit()
     else:
         figlet.setFont(font=sys.argv[2])
