@@ -1,4 +1,5 @@
 import emoji
 import sys
 
-print(emoji.emojize('Python is: ' + input))
+print("hello, my name is", sys.argv[1])
+
