@@ -3,6 +3,13 @@ import sys
 
 figlet = Figlet()
 
-figlet.setFont(font=sys.argv[2])
-
-print (figlet.renderText('text to render'))
+if len(sys.argv) == 0:
+    print (figlet.renderText('text to render'))
+    sys.exit()
+elif len(sys.argv) == 2:
+    figlet.setFont(font=sys.argv[2])
+    print (figlet.renderText('text to render'))
+    sys.exit()
+else:
+    print("Invalid usage")
+    sys.exit()
