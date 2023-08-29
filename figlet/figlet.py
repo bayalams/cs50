@@ -4,7 +4,9 @@ import sys
 figlet = Figlet()
 fonts = figlet.getFonts()
 
-if sys.arg
+if sys.argv[2] not in fonts:
+    print("Invalid Usage")
+    sys.exit()
 
 print(len(sys.argv))
 
