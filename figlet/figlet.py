@@ -1,5 +1,6 @@
 from pyfiglet import Figlet
 import sys
+print("fonts: "{figlet.getFonts()}"
 
 figlet = Figlet()
 print(len(sys.argv))
