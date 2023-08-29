@@ -20,4 +20,4 @@ elif len(sys.argv) == 3:
         sys.exit()
 else:
     print("Invalid usage")
-    sys.exit()
+    sys.exit(-1)
