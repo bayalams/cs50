@@ -1,4 +1,4 @@
 import inflect
 
-
-input = 
+name = input("Name: ")
+print(f"Adieu, adieu, to {name}")
