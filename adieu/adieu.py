@@ -9,3 +9,4 @@ while True:
         print(name_list)
     except EOFError:
         break
+
