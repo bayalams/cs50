@@ -6,7 +6,8 @@ name_list = []
 while True:
     try:
         name = input("Name: ")
-        name_list = p.join([name])
+        print(f"1.{name}")
+        name_list = p.join([f"2.{name}"])
         print(name_list)
     except EOFError:
         break
