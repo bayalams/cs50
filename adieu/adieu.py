@@ -7,9 +7,9 @@ adieu_list = []
 while True:
     try:
         name = input("Name: ")
-        print(f"1.{name}")
+        #print(f"1.{name}")
         name_list.append(name)
-        print(name_list)
+        #print(name_list)
         adieu_list = p.join(name_list)
         print(f"Adieu, adieu, to {adieu_list}")
     except EOFError:
