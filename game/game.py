@@ -22,5 +22,7 @@ def guess(random_number):
     else:
         print("Just right!")
 
-random_number: guess_range()
-guess(random_number)
+
+if __name__ == "__main__":
+    random_number: guess_range()
+    guess(random_number)
