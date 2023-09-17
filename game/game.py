@@ -12,12 +12,12 @@ def guess_range():
         except ValueError:
             pass
 
-#def guess(guess_range):
+def guess(guess_range):
 
-#    guess = int(input("Guess: "))
-#    if guess < random_number:
-#        print("Too small!")
-#    elif guess > random_number:
-#        print("Too large!")
-#    else:
-#        print("Just right!")
+    guess = int(input("Guess: "))
+    if guess < random_number:
+        print("Too small!")
+    elif guess > random_number:
+        print("Too large!")
+    else:
+        print("Just right!")
