@@ -22,4 +22,5 @@ def guess(random_number):
     else:
         print("Just right!")
 
-guess(guess_range)
+random_number: guess_range()
+guess(random_number)
