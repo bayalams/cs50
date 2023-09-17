@@ -5,8 +5,8 @@ while True:
         level = int(input("Level: "))
         random_number = random.randint(1, level)
     except ValueError:
-        level = int(input("Level: "))
-
+        pass
+    
     else:
         print(f"Random number: {random_number}")
         guess = int(input("Guess: "))
