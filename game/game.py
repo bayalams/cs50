@@ -23,10 +23,12 @@ def guess_number(random_number):
             elif guess > random_number:
                 print("Too large!")
                 guess = int(input("Guess: "))
+            else:
+                print("Just right!")
+                break
         except ValueError:
             pass
-        else:
-            print("Just right!")
+
 
 
 if __name__ == "__main__":
