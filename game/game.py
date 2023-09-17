@@ -19,10 +19,11 @@ def guess_number(random_number):
         try:
             if guess < random_number:
                 if guess < 1:
+                    guess = int(input("Guess-1: "))
+                else:
+                    print("paragem 1")
+                    print("Too small!")
                     guess = int(input("Guess1: "))
-                print("paragem 1")
-                print("Too small!")
-                guess = int(input("Guess1: "))
             elif guess > random_number:
                 print("paragem 2")
                 print("Too large!")
