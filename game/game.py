@@ -14,22 +14,18 @@ def guess_range():
 
 def guess_number(random_number):
 
-    guess = int(input("Guess: "))
-    if guess != int:
-        pass
-
-    while guess != random_number:
+    while True:
+        guess = int(input("Guess: "))
         if guess < random_number:
             print("Too small!")
             guess = int(input("Guess: "))
-            if guess != int:
-        pass
-
         elif guess > random_number:
             print("Too large!")
             guess = int(input("Guess: "))
-
-    print("Just right!")
+        except ValueError:
+            pass
+        else:
+            print("Just right!")
 
 
 if __name__ == "__main__":
