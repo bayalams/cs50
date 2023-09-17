@@ -22,6 +22,9 @@ def guess_number(random_number):
         if guess < random_number:
             print("Too small!")
             guess = int(input("Guess: "))
+            if guess != int:
+        pass
+
         elif guess > random_number:
             print("Too large!")
             guess = int(input("Guess: "))
