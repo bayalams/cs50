@@ -12,7 +12,9 @@ def guess_range():
         except ValueError:
             pass
 
-def guess(random_number):
+def guess_number(random_number):
+
+    guess = int(input("Guess: "))
 
     while guess != random_number:
         guess = int(input("Guess: "))
@@ -26,4 +28,4 @@ def guess(random_number):
 
 if __name__ == "__main__":
     random_number = guess_range()
-    guess(random_number)
+    guess_number(random_number)
