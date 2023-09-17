@@ -14,9 +14,10 @@ def guess_range():
 
 def guess_number(random_number):
     guess = int(input("Guess: "))
-    
+
     while True:
         try:
+            
             if guess < random_number:
                 print("paragem 1")
                 print("Too small!")
