@@ -5,14 +5,14 @@ def guess_range():
     while True:
         try:
             level = int(input("Level: "))
-            random_number = random.randint(1, level)
+            random_number = int(random.randint(1, level))
             print(f"Random number: {random_number}")
             return random_number
 
         except ValueError:
             pass
 
-def guess(guess_range):
+def guess(random_number):
 
     guess = int(input("Guess: "))
     if guess < random_number:
