@@ -16,21 +16,21 @@ def guess_number(random_number):
     guess = int(input("Guess: "))
 
     while True:
-        try:
-            
-            if guess < random_number:
-                print("paragem 1")
-                print("Too small!")
-                guess = int(input("Guess1: "))
-            elif guess > random_number:
-                print("paragem 2")
-                print("Too large!")
-                guess = int(input("Guess2: "))
-            else:
-                print("Just right!")
-                break
-        except ValueError:
-            pass
+        if guess > 0:
+            try:
+                if guess < random_number:
+                    print("paragem 1")
+                    print("Too small!")
+                    guess = int(input("Guess1: "))
+                elif guess > random_number:
+                    print("paragem 2")
+                    print("Too large!")
+                    guess = int(input("Guess2: "))
+                else:
+                    print("Just right!")
+                    break
+            except ValueError:
+                pass
 
 
 
