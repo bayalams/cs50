@@ -1,4 +1,5 @@
 import random
 
-number = random.randint(1, 10)
-print(number)
+level = input("Level: ")
+random_number = random.randint(1, level)
+print(random_number)
