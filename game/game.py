@@ -21,3 +21,5 @@ def guess(guess_range):
         print("Too large!")
     else:
         print("Just right!")
+
+guess(guess_range)
