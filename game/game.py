@@ -55,6 +55,6 @@ def define_guess_number(guess):
 
 
 
-# if __name__ == "__main__":
-#     random_number = guess_range()
-#     guess_number(random_number)
+if __name__ == "__main__":
+    random_number = guess_range()
+    define_guess_number(random_number)
