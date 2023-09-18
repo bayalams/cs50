@@ -16,10 +16,13 @@ def guess_range():
 def guess_number(random_number):
 
     guess = input("Guess-2: ")
-    if guess > 0 or guess != int:
+    if guess != int or guess > 0:
         pass
 
     while guess != random_number:
+         guess = input("Guess-2: ")
+    if guess != int or guess > 0:
+        pass
         try:
             if guess < random_number:
                 if guess < 1:
