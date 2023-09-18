@@ -14,14 +14,15 @@ def guess_range():
 
 
 def define_guess_number(guess):
-
-    guess = int(input("Guess: "))
     while True:
-        for i in guess:
-            if i in guess == int:
-                return guess
-            else:
+        try:
+            guess = int(input("Guess: "))
+            if guess < 0:
                 pass
+        except ValueError:
+            pass
+        else:
+            print(f"define guess: {guess}")
 
 # def main():
 
