@@ -19,9 +19,9 @@ def define_guess_number(guess):
             guess = int(input("Guess: "))
             if guess < 0:
                 print("bellow zero")
-                continue
+                continue #explain?????
         except ValueError:
-            pass
+            pass #why not continue????
         else:
             print(f"define guess: {guess}")
 
