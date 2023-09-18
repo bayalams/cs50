@@ -1,7 +1,7 @@
 import random
 
 
-def main():
+def main(guess, random_number):
 
     if guess > random_number:
        print("Too large")
