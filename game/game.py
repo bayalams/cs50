@@ -13,7 +13,17 @@ def guess_range():
             pass
 
 
-def guess_number(random_number):
+def define_guess_number(guess):
+
+    guess = int(input("Guess: "))
+    while True:
+        for i in guess:
+            if i in guess == int:
+                return guess
+            else:
+                pass
+
+def main():
 
     while guess != random_number:
         guess = input("Guess-2: ")
