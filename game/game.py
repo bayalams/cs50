@@ -42,6 +42,4 @@ def define_guess_number(guess):
 if __name__ == "__main__":
     guess = define_guess_number() #got it, estamos a atribuir à variável o resultado da função para podermos usar noutra função
     random_number = guess_range()
-    define_guess_number(random_number)
-
-    main()
+    main(guess, random_number)
