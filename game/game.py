@@ -18,9 +18,8 @@ def define_guess_number(guess):
         try:
             guess = int(input("Guess: "))
             if guess < 0:
-                pass
-            else:
-                break
+                print("bellow zero")
+                continue
         except ValueError:
             pass
         else:
