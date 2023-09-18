@@ -19,6 +19,8 @@ def define_guess_number(guess):
             guess = int(input("Guess: "))
             if guess < 0:
                 pass
+            else:
+                break
         except ValueError:
             pass
         else:
