@@ -22,12 +22,14 @@ def get_level(): #number of digits of random ints
             continue
 
 def generate_digits(level):
-random_integer = generate_random_integer(num_digits)
 
-    random_int_1 = random.randint(1, 10)
+    min_value = 10**(level - 1)
+    max_value = 10**level - 1
+
+    random_int_1 = random.randint(min_value, max_value)
     print(f"Random intenger 1 is {random_int_1}")
 
-    random_int_2 = random.randint(1, 10)
+    random_int_2 = random.randint(min_value, max_value)
     print(f"Random intenger 2 is {random_int_2}")
 
     return random_int_1
