@@ -1,3 +1,5 @@
+#dá erro nos testes mas funciona; https://submit.cs50.io/check50/0465a5d16f4dae6fd2dc2dd219f1f9f6165d903c
+
 import inflect
 p = inflect.engine()
 

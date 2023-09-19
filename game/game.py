@@ -1,13 +1,18 @@
+#dá erro nos testes
+
 import random
 
-def main(guess, random_number): #this also needs to be a while loop!!!!!! otherwise it gives the answer and it exits the program; como está, dá loop infinito
-    while True:
+def main(guess, random_number):
+
+    while guess != random_number:
         if guess > random_number:
-            print("Too large")
+            print("Too large!")
+            guess = define_guess_number()
         elif guess < random_number:
-            print("Too small")
+            print("Too small!")
+            guess = define_guess_number()
         else:
-            print("Just right")
+            print("Just right!")
             break
 
 
@@ -17,7 +22,7 @@ def guess_range():
         try:
             level = int(input("Level: "))
             random_number = int(random.randint(1, level))
-            print(f"Random number: {random_number}")
+            #print(f"Random number: {random_number}")
             return random_number
 
         except ValueError:
@@ -29,12 +34,12 @@ def define_guess_number(): #não tem argumento porque o argumento é wildcard, o
         try:
             guess = int(input("Guess: "))
             if guess < 0:
-                print("bellow zero")
+                #print("bellow zero")
                 continue #explain?????
         except ValueError:
             pass #why not continue????
         else:
-            print(f"define guess: {guess}")
+            #print(f"define guess: {guess}")
             return guess
 
 
