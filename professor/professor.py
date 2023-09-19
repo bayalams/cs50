@@ -23,8 +23,8 @@ def get_level(): #number of digits of random ints
 
 def generate_digits(level):
 
-    min_value = 10**(level - 1)
-    max_value = 10**level - 1
+    min_value = 10**(level - 1) #define o número mínimo de dígitos; 10 elevado a nível(e.g. 3) - 1 = 10 elevado a 3-1 = 10 elevado a 2 = 100
+    max_value = 10**level - 1 #define o número máximo de dígitos; 10 elevado a nível menos 1. E.g 10 elevado a 3-1 = (10 elevado a 3) - 1 = 1000 - 1 = 999
 
     random_int_1 = random.randint(min_value, max_value)
     print(f"Random intenger 1 is {random_int_1}")
@@ -37,7 +37,7 @@ def generate_digits(level):
 
 if __name__ == "__main__":
     level = get_level()
-    random_int_1 = generate_digits()
-    random_int_2 = generate_digits()
+    random_int_1 = generate_digits(level) #falta resolver este problema antes de passar para a função main()
+    random_int_2 = generate_digits(level)
 
     main()
