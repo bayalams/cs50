@@ -7,8 +7,10 @@ def get_level():
             level = int(input("Level2: "))
         else:
             print(f"The level is {level}")
-            return level
         raise ValueError
+
+    return level
+
 
 
 get_level()
