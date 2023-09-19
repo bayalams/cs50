@@ -5,6 +5,8 @@ def main():
     print(f"ri1 = {random_int_1}")
     print(f"ri12= {random_int_2}")
 
+    print(random_int_1 + random_int_2)
+
 def get_level():
 
     while True:
@@ -32,7 +34,7 @@ def generate_digits():
 
 if __name__ == "__main__":
     level = get_level()
-    random_int_1 = generate_digits()
-    random_int_2 = generate_digits()
+    random_int_1 = generate_digits()#
+    random_int_2 = generate_digits()# está a correr quatro vezes, mas na função main só usa os 1ºs resultados de cada
 
     main()
