@@ -2,6 +2,8 @@ import random
 
 def main():
 
+    print(f"ri1 = {random_int_1}")
+    print(f"ri12= {random_int_2}")
 
 def get_level():
 
@@ -17,8 +19,6 @@ def get_level():
         except ValueError:
             continue
 
-get_level()
-
 def generate_digits():
 
     random_int_1 = random.randint(1, 10)
@@ -27,11 +27,12 @@ def generate_digits():
     random_int_2 = random.randint(1, 10)
     print(f"Random intenger 2 is {random_int_2}")
 
-generate_digits()
+    return random_int_1
+    return random_int_2
 
 if __name__ == "__main__":
     level = get_level()
-    random_it_1 = generate_digits()
+    random_int_1 = generate_digits()
     random_int_2 = generate_digits()
 
     main()
