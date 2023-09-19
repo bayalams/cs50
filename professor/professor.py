@@ -2,10 +2,10 @@ import random
 
 def main():
 
-    print(f"ri1 = {random_int}")
-    print(f"ri12= {random_int}")
+    print(f"ri1 = {random_int_1}")
+    print(f"ri12= {random_int_2}")
 
-    print(random_int + random_int)
+    print(random_int_1 + random_int_2)
 
 def get_level():
 
@@ -34,6 +34,7 @@ def generate_digits():
 
 if __name__ == "__main__":
     level = get_level()
-    random_int = generate_digits()#
+    random_int_1 = generate_digits(random_int_1)
+    random_int_2 = generate_digits(random_int_2)
 
     main()
