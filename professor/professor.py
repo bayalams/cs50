@@ -7,7 +7,7 @@ def main():
 
     print(random_int_1 + random_int_2)
 
-def get_level():
+def get_level(): #number of digits of random ints
 
     while True:
         try:
