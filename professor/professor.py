@@ -1,7 +1,5 @@
 def get_level():
 
-    level  = int(input("Level1: "))
-
     while True:
         try:
             if level not in (1, 2, 3):
@@ -14,3 +12,6 @@ def get_level():
 
 get_level()
 
+
+def main():
+    level  = int(input("Level1: "))
