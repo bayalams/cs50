@@ -21,7 +21,7 @@ def get_level():
         except ValueError:
             continue
 
-def generate_digits():
+def generate_digits(level):
 
     random_int_1 = random.randint(1, 10)
     print(f"Random intenger 1 is {random_int_1}")
@@ -34,7 +34,7 @@ def generate_digits():
 
 if __name__ == "__main__":
     level = get_level()
-    random_int_1 = generate_digits(random_int_1)
-    random_int_2 = generate_digits(random_int_2)
+    random_int_1 = generate_digits()
+    random_int_2 = generate_digits()
 
     main()
