@@ -1,3 +1,5 @@
+import random
+
 def get_level():
 
     while True:
@@ -13,5 +15,8 @@ def get_level():
             continue
 
 get_level()
+
+def generate_digits():
+
 
 
