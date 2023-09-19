@@ -18,5 +18,11 @@ get_level()
 
 def generate_digits():
 
+    random_int_1 = random.randint(1, 10)
+    print(f"Random intenger 1 is {random_int_1}")
 
+    random_int_2 = random.randint(1, 10)
+    print(f"Random intenger 2 is {random_int_2}")
+
+generate_digits()
 
