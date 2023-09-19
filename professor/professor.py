@@ -31,5 +31,7 @@ generate_digits()
 
 if __name__ == "__main__":
     level = get_level()
-    
+    random_it_1 = generate_digits()
+    random_int_2 = generate_digits()
+
     main()
