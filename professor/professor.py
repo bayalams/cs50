@@ -1,5 +1,8 @@
 import random
 
+def main():
+
+
 def get_level():
 
     while True:
@@ -26,3 +29,7 @@ def generate_digits():
 
 generate_digits()
 
+if __name__ == "__main__":
+    level = get_level()
+    
+    main()
