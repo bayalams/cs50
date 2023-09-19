@@ -22,6 +22,7 @@ def get_level(): #number of digits of random ints
             continue
 
 def generate_digits(level):
+random_integer = generate_random_integer(num_digits)
 
     random_int_1 = random.randint(1, 10)
     print(f"Random intenger 1 is {random_int_1}")
