@@ -4,10 +4,9 @@ def main(random_int_1, random_int_2):
 
     result_list = []
 
-    print(f"ri1 = {random_int_1}")
-    print(f"ri12= {random_int_2}")
-
+   ﬂ
     while len(result_list) != 10:
+        random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
         result = random_int_1 + random_int_2
         result_list.append(result)
         print(f"{random_int_1} + {random_int_2} = {result}")
