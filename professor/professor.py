@@ -9,17 +9,20 @@ def main(random_int_1, random_int_2):
     # print(f"ri12= {random_int_2}")
 
     while len(result_list) != 10:
-        random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
-        result = random_int_1 + random_int_2
-        print(f"result = {result}")
-        result_list.append(result)
+        try:
+            random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
+            result = random_int_1 + random_int_2
+            print(f"result = {result}")
+            result_list.append(result)
 
-        print(f"{random_int_1} + {random_int_2} = ")
-        user_result = int(input("result: "))
-        user_result_list.append(user_result)
+            print(f"{random_int_1} + {random_int_2} = ")
+            user_result = int(input("result: "))
+            user_result_list.append(user_result)
 
-        if user_result != result:
-            print("EEE")
+            if user_result != result:
+                print("EEE")
+        except ValueError:
+            continue
 
         print(result_list)
 
