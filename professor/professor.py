@@ -1,11 +1,11 @@
 import random
 
-def main():
+def main(random_int_1, random_int_2):
 
     print(f"ri1 = {random_int_1}")
     print(f"ri12= {random_int_2}")
 
-    print(random_int_1 + random_int_2)
+    print(f"{random_int_1} + {random_int_2} = {random_int_1 + random_int_2}")
 
 def get_level(): #number of digits of random ints
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     level = get_level()
     random_int_1, random_int_2 = generate_digits(level)
 
-    main(random_int_1, random_int_1)
+    main(random_int_1, random_int_2)
