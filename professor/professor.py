@@ -37,7 +37,5 @@ def generate_digits(level):
 
 if __name__ == "__main__":
     level = get_level()
-    random_int_1 = generate_digits(level) #falta resolver este problema antes de passar para a função main()
-    random_int_2 = generate_digits(level)
-
+    
     main()
