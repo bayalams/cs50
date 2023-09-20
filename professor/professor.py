@@ -2,10 +2,15 @@ import random
 
 def main(random_int_1, random_int_2):
 
+    num_sums = 10
+
     print(f"ri1 = {random_int_1}")
     print(f"ri12= {random_int_2}")
 
-    print(f"{random_int_1} + {random_int_2} = {random_int_1 + random_int_2}")
+    for _ in range(num_sums):
+        result = random_int_1 + random_int_2
+
+    print(f"{random_int_1} + {random_int_2} = {result}")
 
 def get_level(): #number of digits of random ints
 
