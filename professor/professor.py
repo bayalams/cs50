@@ -25,6 +25,7 @@ def main(random_int_1, random_int_2):
             continue
 
         print(result_list)
+        print(f"user results: {user_result_list}")
 
 
 def get_level(): #number of digits of random ints
