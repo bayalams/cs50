@@ -11,7 +11,8 @@ def main(random_int_1, random_int_2):
         random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
         result = random_int_1 + random_int_2
         result_list.append(result)
-        print(f"{random_int_1} + {random_int_2} = input{result}")
+        
+        print(f"{random_int_1} + {random_int_2} = "input())
 
 def get_level(): #number of digits of random ints
 
