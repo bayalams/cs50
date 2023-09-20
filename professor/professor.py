@@ -3,6 +3,7 @@ import random
 def main(random_int_1, random_int_2):
 
     result_list = []
+    user_result_list = []
 
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
@@ -14,6 +15,8 @@ def main(random_int_1, random_int_2):
         result_list.append(result)
         print(f"{random_int_1} + {random_int_2} = ")
         user_result = input("result: ")
+        user_result_list.append(user_result)
+        print()
         if user_result != result:
             print("EEE")
 
