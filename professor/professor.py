@@ -4,12 +4,14 @@ def main(random_int_1, random_int_2):
 
     result_list = []
 
-   ﬂ
+    # print(f"ri1 = {random_int_1}")
+    # print(f"ri12= {random_int_2}")
+
     while len(result_list) != 10:
         random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
         result = random_int_1 + random_int_2
         result_list.append(result)
-        print(f"{random_int_1} + {random_int_2} = {result}")
+        print(f"{random_int_1} + {random_int_2} = input{result}")
 
 def get_level(): #number of digits of random ints
 
@@ -31,10 +33,10 @@ def generate_digits(level):
     max_value = 10**level - 1 #define o número máximo de dígitos; 10 elevado a nível menos 1. E.g 10 elevado a 3-1 = (10 elevado a 3) - 1 = 1000 - 1 = 999
 
     random_int_1 = random.randint(min_value, max_value)
-    print(f"Random intenger 1 is {random_int_1}")
+    #print(f"Random intenger 1 is {random_int_1}")
 
     random_int_2 = random.randint(min_value, max_value)
-    print(f"Random intenger 2 is {random_int_2}")
+    #print(f"Random intenger 2 is {random_int_2}")
 
     return (random_int_1, random_int_2)
 
