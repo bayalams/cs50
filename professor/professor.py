@@ -12,8 +12,9 @@ def main(random_int_1, random_int_2):
         result = random_int_1 + random_int_2
         result_list.append(result)
         print(f"{random_int_1} + {random_int_2} = ")
-        input("result: ")
-
+        user_result = input("result: ")
+        if user_result != result:
+            print("EEE")
 
 
 def get_level(): #number of digits of random ints
