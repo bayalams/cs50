@@ -13,10 +13,11 @@ def main(random_int_1, random_int_2):
         result = random_int_1 + random_int_2
         print(f"result = {result}")
         result_list.append(result)
+
         print(f"{random_int_1} + {random_int_2} = ")
-        user_result = input("result: ")
+        user_result = int(input("result: "))
         user_result_list.append(user_result)
-        print()
+
         if user_result != result:
             print("EEE")
 
