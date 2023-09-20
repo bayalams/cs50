@@ -32,10 +32,10 @@ def generate_digits(level):
     random_int_2 = random.randint(min_value, max_value)
     print(f"Random intenger 2 is {random_int_2}")
 
-    return random_int_1
-    return random_int_2
+    return (random_int_1, random_int_2)
+    
 
 if __name__ == "__main__":
     level = get_level()
-    
+
     main()
