@@ -6,9 +6,9 @@ def main(random_int_1, random_int_2):
 
     print(f"ri1 = {random_int_1}")
     print(f"ri12= {random_int_2}")
-    result = random_int_1 + random_int_2
-    
+
     while len(result_list) != 10:
+        result = random_int_1 + random_int_2
         result_list.append(result)
         print(f"{random_int_1} + {random_int_2} = {result}")
 
