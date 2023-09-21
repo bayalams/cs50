@@ -8,7 +8,7 @@ def main(random_int_1, random_int_2):
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
 
-    while len(result_list) != 10:
+    while len(user_result_list) != 10:
         try:
             random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
             result = random_int_1 + random_int_2
