@@ -22,7 +22,7 @@ def main(random_int_1, random_int_2):
             if user_result != result:
                 eee = ("EEE")
                 print("EEE")
-                user_result_list.append(eee)
+                user_result_list.append(user_result, eee)
         except ValueError:
             continue
 
