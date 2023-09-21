@@ -22,9 +22,8 @@ def main(random_int_1, random_int_2):
             if user_result == result:
                 user_result_list.append(user_result)
             elif user_result != result:
-                user_result = "EEE"
                 print("EEE")
-                user_result_list.append(user_result)
+                
         except ValueError:
             continue
 
