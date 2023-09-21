@@ -16,8 +16,7 @@ def main(random_int_1, random_int_2):
             print(f"result = {result}")
             result_list.append(result)
 
-            print(f"{random_int_1} + {random_int_2} = ")
-            user_result = int(input("result: "))
+            print(f"{random_int_1} + {random_int_2} = ") + 
 
             if user_result == result:
                 user_result_list.append(user_result)
@@ -60,6 +59,7 @@ def get_level(): #number of digits of random ints
             continue
 
 def generate_digits(level):
+#confirmar se está a correr 2x, uma antes de main ser chamada, em que os resultados não são utilizados, e uma depois, em que os resultados já são utilizados na função; só correr 1x
 
     min_value = 10**(level - 1) #define o número mínimo de dígitos; 10 elevado a nível(e.g. 3) - 1 = 10 elevado a 3-1 = 10 elevado a 2 = 100
     max_value = 10**level - 1 #define o número máximo de dígitos; 10 elevado a nível menos 1. E.g 10 elevado a 3-1 = (10 elevado a 3) - 1 = 1000 - 1 = 999
