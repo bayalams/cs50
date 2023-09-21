@@ -9,7 +9,7 @@ def main(random_int_1, random_int_2):
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
 
-    while len(user_result_list) != 5:
+    while len(user_result_list) != 2:
         try:
             random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
             result = random_int_1 + random_int_2
@@ -33,15 +33,14 @@ def main(random_int_1, random_int_2):
         print(f"user results: {user_result_list}")
 
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
-        for result in result_list:
-            for user_result in user_result_list:
-                if user_result == result:
-                    score_list.append(user_result)
+        for result, user_result in zip(result_list, user_result_list):
+            zip_list = zip(result_list, user_result_list)
+            print(zip_list)
 
 
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
-        print(f"Score: {len(score_list)} / 5")
+        print(f"Score: {len(score_list)} / 2")
 
 def get_level(): #number of digits of random ints
 
