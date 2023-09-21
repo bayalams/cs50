@@ -34,6 +34,8 @@ def main(random_int_1, random_int_2):
         for i in user_result_list:
             if i in result_list:
                 score_list.append(i)
+            else:
+                continue
 
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
