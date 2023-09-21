@@ -16,7 +16,9 @@ def main(random_int_1, random_int_2):
             print(f"result = {result}")
             result_list.append(result)
 
-            print(f"{random_int_1} + {random_int_2} = ") + 
+            print(f"{random_int_1} + {random_int_2} = ")
+            #a resposta deve ser dada logo a seguir à pergunta, sem new line
+            user_result = int(input("result: "))
 
             if user_result == result:
                 user_result_list.append(user_result)
