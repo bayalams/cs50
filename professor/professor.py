@@ -31,8 +31,8 @@ def main(random_int_1, random_int_2):
         print(f"user results: {user_result_list}")
 
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
-        for user_result in user_result_list:
-            for result in result_list:
+        for result in result_list:
+            for user_result in user_result_list:
                 if user_result == result:
                     score_list.append(user_result)
 

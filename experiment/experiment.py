@@ -1,16 +1,12 @@
-import random
+result_list = [1, 2, 3, 4, 5]
+user_input = input("result: ")
+user_input_list = []
+user_input_list.append(user_input)
+score_list = []
 
-def generate_random_integer(num_digits):
-    # Calculate the minimum and maximum values for the specified number of digits
-    min_value = 10**(num_digits - 1)
-    max_value = 10**num_digits - 1
 
-    # Generate a random integer within the specified range
-    random_number = random.randint(min_value, max_value)
-
-    return random_number
-
-# Example: Generate a random 3-digit integer
-num_digits = 3
-random_integer = generate_random_integer(num_digits)
-print(f"Random {num_digits}-digit integer: {random_integer}")
+while len(user_input_list) != 5:
+    for user_input in user_input_list:
+            for result in result_list:
+                if user_input == result:
+                    score_list.append(user_input)
