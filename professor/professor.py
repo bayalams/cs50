@@ -37,7 +37,7 @@ def main(random_int_1, random_int_2):
 
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
-        print(f"Score: {len(score_list)} / 10")
+        print(f"Score: {len(score_list)} / 5")
 
 def get_level(): #number of digits of random ints
 
