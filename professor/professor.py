@@ -35,11 +35,10 @@ def main(random_int_1, random_int_2):
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
         for result, user_result in zip(result_list, user_result_list):
             zip_list = list(zip(result_list, user_result_list))
-            print(zip_list)
             if user_result == result:
                 score_list.append(user_result)
-
-
+                
+        print(zip_list)
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
         print(f"Score: {len(score_list)} / 5")
