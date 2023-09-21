@@ -31,11 +31,8 @@ def main(random_int_1, random_int_2):
         print(f"result list: {result_list}")
         print(f"user results: {user_result_list}")
 
-        for i in user_result_list:
-            if i in result_list:
-                score_list.append(i)
-            else:
-                continue
+        for user_result_list, result_list in zip(ser_result_list, result_list):
+            
 
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
