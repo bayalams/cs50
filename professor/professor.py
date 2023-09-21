@@ -17,12 +17,14 @@ def main(random_int_1, random_int_2):
 
             print(f"{random_int_1} + {random_int_2} = ")
             user_result = int(input("result: "))
+
+            
             user_result_list.append(user_result)
 
             if user_result != result:
-                eee = ("EEE")
+                user_result = "EEE"
                 print("EEE")
-                user_result_list.append(user_result + eee)
+                user_result_list.append(user_result)
         except ValueError:
             continue
 
