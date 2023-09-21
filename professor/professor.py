@@ -18,10 +18,9 @@ def main(random_int_1, random_int_2):
             print(f"{random_int_1} + {random_int_2} = ")
             user_result = int(input("result: "))
 
-            
-            user_result_list.append(user_result)
-
-            if user_result != result:
+            if user_result == result:
+                user_result_list.append(user_result)
+            elif user_result != result:
                 user_result = "EEE"
                 print("EEE")
                 user_result_list.append(user_result)
