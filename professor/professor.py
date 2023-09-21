@@ -37,7 +37,9 @@ def main(random_int_1, random_int_2):
             zip_list = list(zip(result_list, user_result_list))
             if user_result == result:
                 score_list.append(user_result)
-                
+        #score_list vai buscar números duplicados, whyyy????
+        #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
+
         print(zip_list)
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
