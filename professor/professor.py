@@ -34,7 +34,7 @@ def main(random_int_1, random_int_2):
         for user_result, result in zip(user_result_list, result_list):
             if user_result == result:
                 print(user_result, result)
-                score_list.append(user_result)
+                score_list.append(result)
 
 
         print(f"length of score list: {len(score_list)}")
