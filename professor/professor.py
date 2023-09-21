@@ -4,6 +4,7 @@ def main(random_int_1, random_int_2):
 
     result_list = []
     user_result_list = []
+    score_list = []
 
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
@@ -30,6 +31,12 @@ def main(random_int_1, random_int_2):
         print(f"result list: {result_list}")
         print(f"user results: {user_result_list}")
 
+        for i in user_result_list:
+            if i in result_list:
+                score_list.append(i)
+                print(f"score list: {score_list}")
+
+        print(f"Score: {len(score_list)} / 10")
 
 def get_level(): #number of digits of random ints
 
