@@ -24,7 +24,7 @@ def main(random_int_1, random_int_2):
         except ValueError:
             continue
 
-        print(result_list)
+        print(f"result list: {result_list}")
         print(f"user results: {user_result_list}")
 
 
