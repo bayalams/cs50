@@ -11,7 +11,8 @@ while True:
     except requests.RequestException:
         continue
 
-r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json", "bpi" {"USD" {"rate"}})
+print(r)
 
 
 
