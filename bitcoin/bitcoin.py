@@ -1,4 +1,5 @@
 import requests
+import sys
 
 while True:
     try:
@@ -6,4 +7,6 @@ while True:
     except ValueError:
         continue
     except TypeError:
+        continue
+    except requests.RequestException:
         continue
