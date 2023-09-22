@@ -19,10 +19,13 @@ r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 # Response in "dict" format.
 response = r.json()
 print(print_json(response), type(response))
-
 print()
+
+# Get "bpi" -> "USD" -> "rate_float" from response
 bpi = response["bpi"]["USD"]
 print(print_json(bpi))
-print(bpi["rate_float"])
+
+rate = bpi["rate_float"]
+print(rate)
 
 
