@@ -4,15 +4,16 @@ import json
 def print_json(d):
     return json.dumps(d, indent=2)
 
-# while True:
-#     try:
-#         bitcoin_amount = float(input("Amount of Bitcoin: "))
-#     except ValueError:
-#         continue
-#     except TypeError:
-#         continue
-#     except requests.RequestException:
-#         continue
+while True:
+    try:
+        bitcoin_amount = float(input("Amount of Bitcoin: "))
+    except ValueError:
+        continue
+    except TypeError:
+        continue
+    except requests.RequestException:
+        continue
+    break
 
 # HTTP GET request to URL "api.coindesk.com" for asset/path "v1/bpi/currentprice.json"
 r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
@@ -26,6 +27,6 @@ bpi = response["bpi"]["USD"]
 print(print_json(bpi))
 
 rate = bpi["rate_float"]
-print(rate)
+print(f"${bitcoin_amount:,.4f}")rate)
 
 
