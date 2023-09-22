@@ -15,5 +15,7 @@ r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 response = r.json()
 print(response, type(response))
 print()
+bpi = response["bpi"]["USD"]
+print(bpi["rate_float"])
 
 
