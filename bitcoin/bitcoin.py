@@ -12,7 +12,7 @@ import sys
 #         continue
 
 r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-print(r)
+print(r.json())
 
 
 
