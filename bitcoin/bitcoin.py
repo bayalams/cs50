@@ -12,7 +12,8 @@ import sys
 #         continue
 
 r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-print(r.json()) 
-
+response = r.json()
+print(response, type(response))
+print()
 
 
