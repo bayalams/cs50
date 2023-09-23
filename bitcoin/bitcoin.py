@@ -13,7 +13,10 @@ def main(rate):
                 bitcoin_price = float(bitcoin_amount) * float(rate)
                 print(f"${bitcoin_price:,.4f}")
         except TypeError:
-             pass
+             sys.exit(1)
+        except requests.RequestException:
+              sys.exit(1)
+
 
 
     # while True: #while what is True? argv[]!!!!!
