@@ -37,13 +37,12 @@ def main():
 
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
         for result, user_result in zip(result_list, user_result_list):
-            zip_list = list(zip(result_list, user_result_list))
             if user_result == result:
                 score_list.append(user_result)
         #score_list vai buscar números duplicados, whyyy????
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
 
-        print(zip_list)
+        print()
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
         print(f"Score: {len(score_list)} / 5")
