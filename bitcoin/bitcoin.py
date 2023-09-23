@@ -15,18 +15,22 @@ while True:
         continue
     break
 
+
+
 # HTTP GET request to URL "api.coindesk.com" for asset/path "v1/bpi/currentprice.json"
 r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 # Response in "dict" format.
 response = r.json()
-print(print_json(response), type(response))
-print()
+# print(print_json(response), type(response))
+# print()
 
 # Get "bpi" -> "USD" -> "rate_float" from response
 bpi = response["bpi"]["USD"]
-print(print_json(bpi))
+# print(print_json(bpi))
 
 rate = bpi["rate_float"]
-print(f"${bitcoin_amount:,.4f}")rate)
+print(f"${rate:,.4f}")
+
+
 
 
