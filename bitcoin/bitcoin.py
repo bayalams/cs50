@@ -2,12 +2,13 @@ import requests
 import json
 import sys
 
-def main(rate):
+def main():
 
     if len(sys.argv) != 2:
         print("Missing command-line")
         sys.exit(1)
 
+    rate = return_rate()
     bitcoin_amount = sys.argv[1] #tem de vir depois da verificação
 
 
@@ -45,5 +46,4 @@ def return_rate():
 
 
 if __name__ == "__main__":
-    rate = return_rate()
-    main(rate)
+    main()
