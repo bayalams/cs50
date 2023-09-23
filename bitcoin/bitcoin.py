@@ -4,7 +4,7 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = sys.argv[1] 
+        bitcoin_amount = sys.argv[1]
 
         try:
             bitcoin_price = float(bitcoin_amount) * float(rate)
@@ -14,6 +14,7 @@ def main(rate):
              sys.exit(1)
         except requests.RequestException:
               sys.exit(1)
+        except e as Exception:
 
 
 def print_json(d):
