@@ -33,10 +33,10 @@ def main():
                 # already_failed = False
 
             elif user_result != desired_result:
-                if not already_failed:
+                #if not already_failed:
                     user_answers.append("EEE")
-                already_failed = True
-                print("EEE")
+                #already_failed = True
+                #print("EEE")
 
         except ValueError:
             continue
