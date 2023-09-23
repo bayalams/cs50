@@ -18,7 +18,7 @@ def main():
     score = 0
 
     # 3. while user_answers are not the same as the number of questions, keep going...
-    while len(user_answers) != NUMBER_OF_QUESTIONS:
+    while current_question < NUMBER_OF_QUESTIONS:
         try:
             desired_result = ground_truth[current_question]
             a, b = questions[current_question]
@@ -40,7 +40,7 @@ def main():
         except ValueError:
             continue
 
-    print(f"Score: {score)")
+    print(f"Score: {score}")
 
 def get_level(): #number of digits of random ints
 
