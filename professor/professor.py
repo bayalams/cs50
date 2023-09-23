@@ -56,7 +56,7 @@ def get_level(): #number of digits of random ints
             if level not in (1, 2, 3):
                 level = int(input("Level2: "))
             else:
-                print(f"The level is {level}")
+                # print(f"The level is {level}")
                 return level
         except ValueError:
             continue
