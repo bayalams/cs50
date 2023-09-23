@@ -14,7 +14,9 @@ def main(rate):
              sys.exit(1)
         except requests.RequestException:
               sys.exit(1)
-        except e as Exception:
+        except IndexError:
+             print("Missing command-line argument")
+             sys.exit(1)
 
 
 def print_json(d):
