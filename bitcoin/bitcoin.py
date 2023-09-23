@@ -4,7 +4,10 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = float(sys.argv[1])
+        bitcoin_amount = sys.argv[1]
+        bitcoin_amount = float(bitcoin_amount)
+        print(bitcoin_amount)
+        print(type(bitcoin_amount))
 
         if bitcoin_amount != float:
             print("Not an float!")
@@ -42,10 +45,10 @@ def return_rate():
 
     # Get "bpi" -> "USD" -> "rate_float" from response
     bpi = response["bpi"]["USD"]
-    # print(print_json(bpi))
+    print(print_json(bpi))
 
     rate = bpi["rate_float"]
-    #print(f"rate type: {type(rate)}")
+    print(f"rate type: {type(rate)}")
     return rate
 
 
