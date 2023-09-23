@@ -6,6 +6,9 @@ def main(rate):
 
         bitcoin_amount = sys.argv[1]
 
+        if len(sys.argv) != 2:
+             print("Missing command-line")
+
         try:
             bitcoin_price = float(bitcoin_amount) * float(rate)
             print(f"${bitcoin_price:,.4f}")
@@ -14,9 +17,6 @@ def main(rate):
              sys.exit(1)
         except requests.RequestException:
               sys.exit(1)
-        except IndexError:
-             print("Missing command-line argument")
-             sys.exit(1)
 
 
 
