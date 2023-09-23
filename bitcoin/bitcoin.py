@@ -4,20 +4,21 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = sys.argv[1]
+    if len(sys.argv) != 2:
+        print("Missing command-line")
+        sys.exit(1)
 
-        if len(sys.argv) != 2:
-             print("Missing command-line")
+    bitcoin_amount = sys.argv[1] #tem de vir depois da verificação
 
-        try:
-            bitcoin_price = float(bitcoin_amount) * float(rate)
-            print(f"${bitcoin_price:,.4f}")
-        except ValueError:
-             print("Command-line is not a number")
-             sys.exit(1)
-        except requests.RequestException:
-              sys.exit(1)
 
+    try:
+        bitcoin_price = float(bitcoin_amount) * float(rate)
+        print(f"${bitcoin_price:,.4f}")
+    except ValueError:
+            print("Command-line is not a number")
+            sys.exit(1)
+    except requests.RequestException:
+            sys.exit(1)
 
 
 def print_json(d):
@@ -43,5 +44,6 @@ def return_rate():
 
 
 
-rate = return_rate()
-main(rate)
+if __name__ == "__main__":
+    rate = return_rate()
+    main(rate)
