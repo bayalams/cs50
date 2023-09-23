@@ -6,12 +6,6 @@ def main(rate):
 
     bitcoin_amount = sys.argv[1]
 
-    if len(sys.argv) < 2:
-        sys.exit("Too few arguments")
-    elif len(sys.argv) > 2:
-        sys.exit("Too many arguments")
-
-
     # while True: #while what is True? argv[]!!!!!
     #     try:
     #     except ValueError:
@@ -22,7 +16,6 @@ def main(rate):
     #         continue
     #     else:
     #         break
-
 
     print(type(bitcoin_amount))
     bitcoin_price = float(bitcoin_amount) * float(rate)
