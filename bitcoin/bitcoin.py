@@ -4,7 +4,7 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = sys.argv[1]
+        bitcoin_amount = 2
         print(bitcoin_amount)
         print(type(bitcoin_amount))
 
@@ -17,7 +17,7 @@ def main(rate):
         except requests.RequestException:
               sys.exit(1)
 
-    
+
 
 
     # while True: #while what is True? argv[]!!!!!
