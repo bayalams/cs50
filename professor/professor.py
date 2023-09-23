@@ -1,25 +1,27 @@
 import random
 
 def main():
+    NUMBER_OF_QUESTIONS = 10
+    # 0. ask user for a correct level.
     level = get_level()
-    random_int_1, random_int_2 = generate_digits(level)
+    # 1. generate all exercises
+    questions = []
+    ground_truth = []
+    for i in range(NUMBER_OF_QUESTIONS):
+        random_a, random_b = generate_digits(level)
+        questions.append((random_a, random_b))
+        ground_truth.append(random_a + random_b)
 
-    result_list = []
-    user_result_list = []
+    # 2. initialise supporting list variables
+    user_answers = []
+    current_question = 0
 
-    # print(f"ri1 = {random_int_1}")
-    # print(f"ri12= {random_int_2}")
-    number_of_test = 10
-    while len(user_result_list) != number_of_test:
+    # 3. while user_answers are not the same as the number of questions, keep going...
+    while len(user_answers) != NUMBER_OF_QUESTIONS:
         try:
-            random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
-            result = random_int_1 + random_int_2
-            # print(f"result = {result}")
-            result_list.append(result)
-
-            # print(f"{random_int_1} + {random_int_2} = ")
-            #a resposta deve ser dada logo a seguir à pergunta, sem new line
-            user_result = int(input(f"{random_int_1} + {random_int_2} = "))
+            desired_result = ground_truth[current_question]
+            a, b = questions[current_question]
+            user_result = int(input(f"{a} + {b} = "))
 
             if user_result == result:
                 user_result_list.append(user_result)
