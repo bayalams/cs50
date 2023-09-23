@@ -5,16 +5,15 @@ import sys
 def main(rate):
 
         bitcoin_amount = sys.argv[1]
-        bitcoin_amount = float(bitcoin_amount)
         print(bitcoin_amount)
         print(type(bitcoin_amount))
 
-        if bitcoin_amount != float:
-            print("Not an float!")
-            raise TypeError
-        else:
-            bitcoin_price = float(bitcoin_amount) * float(rate)
-            print(f"${bitcoin_price:,.4f}")
+        try:
+            if type(bitcoin_amount) == float:
+                bitcoin_price = float(bitcoin_amount) * float(rate)
+                print(f"${bitcoin_price:,.4f}")
+        except TypeError:
+             pass
 
 
     # while True: #while what is True? argv[]!!!!!
@@ -45,7 +44,7 @@ def return_rate():
 
     # Get "bpi" -> "USD" -> "rate_float" from response
     bpi = response["bpi"]["USD"]
-    print(print_json(bpi))
+    #print(print_json(bpi))
 
     rate = bpi["rate_float"]
     print(f"rate type: {type(rate)}")
