@@ -7,7 +7,7 @@ def main(rate):
 
     while True: #while what is True? argv[]!!!!!
         try:
-            bitcoin_amount = sys.argv[1]
+            bitcoin_amount = sys.argv[0]
         except ValueError:
             continue
         except TypeError:
