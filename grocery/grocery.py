@@ -18,6 +18,8 @@ while True:
     except EOFError:
         exit(1)
 
+#qual é o problema???
+
 for item in sorted_list_item:
     if item in dict_item_count.keys():
         dict_item_count[item] = dict_item_count[item] + 1
