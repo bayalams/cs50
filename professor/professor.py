@@ -13,7 +13,6 @@ def main():
         ground_truth.append(random_a + random_b)
 
     # 2. initialise supporting list variables
-    user_answers = []
     current_question = 0
     already_failed = False
     score = 0
