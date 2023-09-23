@@ -22,7 +22,7 @@ def main():
         try:
             desired_result = ground_truth[current_question]
             a, b = questions[current_question]
-            print(f'nº: {current_question}, already failed? {already_failed}', f'{a} + {b} = {desired_result}', user_answers)
+            # print(f'nº: {current_question}, already failed? {already_failed}', f'{a} + {b} = {desired_result}', user_answers)
 
             user_result = int(input(f"{a} + {b} = "))
 
@@ -30,13 +30,13 @@ def main():
                 if not already_failed:
                     user_answers.append(user_result)
                 current_question = current_question + 1
-                # already_failed = False
+                already_failed = False
 
             elif user_result != desired_result:
                 if not already_failed:
                     user_answers.append("EEE")
                 already_failed = True
-                #print("EEE")
+                print("EEE")
 
         except ValueError:
             continue
