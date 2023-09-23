@@ -17,9 +17,9 @@ def main():
             # print(f"result = {result}")
             result_list.append(result)
 
-            print(f"{random_int_1} + {random_int_2} = ")
+            # print(f"{random_int_1} + {random_int_2} = ")
             #a resposta deve ser dada logo a seguir à pergunta, sem new line
-            user_result = int(input("result: "))
+            user_result = int(input(f"{random_int_1} + {random_int_2} = "))
 
             if user_result == result:
                 user_result_list.append(user_result)
@@ -51,10 +51,10 @@ def get_level(): #number of digits of random ints
 
     while True:
         try:
-            level  = int(input("Level1: "))
+            level  = int(input("Level: "))
 
             if level not in (1, 2, 3):
-                level = int(input("Level2: "))
+                level = int(input("Level: "))
             else:
                 # print(f"The level is {level}")
                 return level
