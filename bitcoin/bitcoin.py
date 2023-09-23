@@ -4,7 +4,7 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = sys.argv[1]
+        bitcoin_amount = sys.argv[1] #não pode ser float aqui senão não entra no loop
         print(bitcoin_amount)
         print(type(bitcoin_amount))
 
