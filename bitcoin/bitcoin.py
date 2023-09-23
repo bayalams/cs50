@@ -4,18 +4,18 @@ import sys
 
 def main(rate):
 
+    
 
-    while True: #while what is True? argv[]!!!!!
-        try:
-            bitcoin_amount = sys.argv[0]
-        except ValueError:
-            continue
-        except TypeError:
-            continue
-        except requests.RequestException:
-            continue
-        else:
-            break
+    # while True: #while what is True? argv[]!!!!!
+    #     try:
+    #     except ValueError:
+    #         continue
+    #     except TypeError:
+    #         continue
+    #     except requests.RequestException:
+    #         continue
+    #     else:
+    #         break
 
 
     print(type(bitcoin_amount))
