@@ -6,6 +6,9 @@ def main(rate):
 
     bitcoin_amount = sys.argv[1]
 
+    if bitcoin_amount != float:
+        raise 
+
     # while True: #while what is True? argv[]!!!!!
     #     try:
     #     except ValueError:
