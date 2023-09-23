@@ -6,7 +6,6 @@ def main():
 
     result_list = []
     user_result_list = []
-    score_list = []
 
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
@@ -35,6 +34,7 @@ def main():
         print(f"result list: {result_list}")
         print(f"user results: {user_result_list}")
 
+        score_list = []
         #------->>>>>>> ERRADO, VOLTAR AQUI!!! <<<<------
         for result, user_result in zip(result_list, user_result_list):
             if user_result == result:
@@ -46,7 +46,6 @@ def main():
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
         print(f"Score: {len(score_list)} / {number_of_test}")
-        score_list = []
 
 def get_level(): #number of digits of random ints
 
