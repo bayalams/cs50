@@ -46,6 +46,7 @@ def main():
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
         print(f"Score: {len(score_list)} / {number_of_test}")
+        score_list = []
 
 def get_level(): #number of digits of random ints
 
