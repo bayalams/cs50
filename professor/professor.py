@@ -31,6 +31,8 @@ def main():
                 user_answers.append(user_result)
                 print("EEE")
 
+            print('user_answers', user_answers)
+
         except ValueError:
             continue
 
