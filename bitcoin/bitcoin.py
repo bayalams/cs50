@@ -15,7 +15,7 @@ def main(rate):
         break #isto está errado
 
     print(type(bitcoin_amount))
-    bitcoin_price = bitcoin_amount * rate
+    bitcoin_price = float(bitcoin_amount) * float(rate)
     print(bitcoin_price)
 
 def print_json(d):
