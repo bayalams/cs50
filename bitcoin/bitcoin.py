@@ -19,6 +19,7 @@ def main(rate):
              sys.exit(1)
 
 
+
 def print_json(d):
     return json.dumps(d, indent=2)
 
