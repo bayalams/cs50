@@ -17,7 +17,7 @@ def main(rate):
     #     else:
     #         break
 
-    print(type(bitcoin_amount))
+    #print(type(bitcoin_amount))
     bitcoin_price = float(bitcoin_amount) * float(rate)
     print(f"${bitcoin_price:,.4f}")
 
@@ -39,7 +39,7 @@ def return_rate():
     # print(print_json(bpi))
 
     rate = bpi["rate_float"]
-    print(f"rate type: {type(rate)}")
+    #print(f"rate type: {type(rate)}")
     return rate
 
 
