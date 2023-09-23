@@ -4,6 +4,7 @@ import sys
 
 def main(rate):
 
+    try: 
     bitcoin_amount = sys.argv[1]
 
     if bitcoin_amount != float:
