@@ -15,6 +15,7 @@ def main():
     # 2. initialise supporting list variables
     user_answers = []
     current_question = 0
+    already_failed = False
 
     # 3. while user_answers are not the same as the number of questions, keep going...
     while len(user_answers) != NUMBER_OF_QUESTIONS:
@@ -26,9 +27,12 @@ def main():
             if user_result == desired_result:
                 user_answers.append(user_result)
                 current_question = current_question + 1
+                already_failed = False
+
             elif user_result != desired_result:
-                user_result = "EEE"
-                user_answers.append(user_result)
+                if not already_failed:
+                    user_answers.append("EEE")
+                already_failed = True
                 print("EEE")
 
             print('user_answers', user_answers)
