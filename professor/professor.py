@@ -10,8 +10,8 @@ def main():
 
     # print(f"ri1 = {random_int_1}")
     # print(f"ri12= {random_int_2}")
-
-    while len(user_result_list) != 5:
+    number_of_test = 5
+    while len(user_result_list) != number_of_test:
         try:
             random_int_1, random_int_2 = generate_digits(level) #needs to be inside the loop so that it keeps generating new random ints
             result = random_int_1 + random_int_2
@@ -45,7 +45,7 @@ def main():
         print()
         print(f"length of score list: {len(score_list)}")
         print(f"score list: {score_list}")
-        print(f"Score: {len(score_list)} / 5")
+        print(f"Score: {len(score_list)} / {number_of_test}")
 
 def get_level(): #number of digits of random ints
 
