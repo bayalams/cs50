@@ -17,7 +17,7 @@ def main(rate):
         except requests.RequestException:
               sys.exit(1)
 
-        print(bitcoin_price)
+    
 
 
     # while True: #while what is True? argv[]!!!!!
