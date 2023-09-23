@@ -4,35 +4,17 @@ import sys
 
 def main(rate):
 
-        bitcoin_amount = sys.argv[1] #não pode ser float aqui senão não entra no loop
-        print(bitcoin_amount)
-        print(type(bitcoin_amount))
+        bitcoin_amount = sys.argv[1] 
 
         try:
-            if type(bitcoin_amount) == float:
-                bitcoin_price = float(bitcoin_amount) * float(rate)
-                print(f"${bitcoin_price:,.4f}")
-        except TypeError:
+            bitcoin_price = float(bitcoin_amount) * float(rate)
+            print(f"${bitcoin_price:,.4f}")
+        except ValueError:
+             print("Command-line is not a number")
              sys.exit(1)
         except requests.RequestException:
               sys.exit(1)
-        else:
-             pass
 
-
-
-    # while True: #while what is True? argv[]!!!!!
-    #     try:
-    #     except ValueError:
-    #         continue
-    #     except TypeError:
-    #         continue
-    #     except requests.RequestException:
-    #         continue
-    #     else:
-    #         break
-
-    #print(type(bitcoin_amount))
 
 def print_json(d):
     return json.dumps(d, indent=2)
