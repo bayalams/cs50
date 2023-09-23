@@ -17,6 +17,7 @@ def main(rate):
         except requests.RequestException:
               sys.exit(1)
 
+        print(bitcoin_price)
 
 
     # while True: #while what is True? argv[]!!!!!
@@ -50,7 +51,7 @@ def return_rate():
     #print(print_json(bpi))
 
     rate = bpi["rate_float"]
-    print(f"rate type: {type(rate)}")
+    #print(f"rate type: {type(rate)}")
     return rate
 
 
