@@ -7,9 +7,7 @@ def main(rate):
     try:
         bitcoin_amount = sys.argv[1]
 
-        if bitcoin_amount == float:
-            
-    elif:
+        if bitcoin_amount != float:
             print("Not an float!")
             raise TypeError
 
@@ -25,7 +23,8 @@ def main(rate):
     #         break
 
     #print(type(bitcoin_amount))
-
+    bitcoin_price = float(bitcoin_amount) * float(rate)
+    print(f"${bitcoin_price:,.4f}")
 
 def print_json(d):
     return json.dumps(d, indent=2)
