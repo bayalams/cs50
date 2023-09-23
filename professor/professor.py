@@ -23,10 +23,10 @@ def main():
             a, b = questions[current_question]
             user_result = int(input(f"{a} + {b} = "))
 
-            if user_result == result:
+            if user_result == desired_result:
                 user_answers.append(user_result)
                 current_question = current_question + 1
-            elif user_result != result:
+            elif user_result != desired_result:
                 user_result = "EEE"
                 user_answers.append(user_result)
                 print("EEE")
