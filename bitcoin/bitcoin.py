@@ -1,17 +1,20 @@
 import requests
 import json
+import sys
 
 def main(rate):
 
-    while True: #while what is True? Missing argv, correct input format
+    while True: #while what is True? argv[]!!!!!
         try:
-            bitcoin_amount = float(input("Amount of Bitcoin: "))
+            bitcoin_amount = ("This is the name of the script: ", sys.argv[1])
         except ValueError:
             continue
         except TypeError:
             continue
         except requests.RequestException:
             continue
+        else:
+            break
 
 
     print(type(bitcoin_amount))
