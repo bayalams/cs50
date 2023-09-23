@@ -1,6 +1,8 @@
 import random
 
-def main(random_int_1, random_int_2):
+def main():
+    level = get_level()
+    random_int_1, random_int_2 = generate_digits(level)
 
     result_list = []
     user_result_list = []
@@ -76,7 +78,4 @@ def generate_digits(level):
 
 
 if __name__ == "__main__":
-    level = get_level()
-    random_int_1, random_int_2 = generate_digits(level)
-
-    main(random_int_1, random_int_2)
+    main()
