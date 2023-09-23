@@ -14,8 +14,9 @@ def main(rate):
             continue
         break #isto está errado
 
-    bitcoin_price = bitcoin_amount * rate
-    print(bitcoin_amount)
+    print(type(bitcoin_amount))
+    #bitcoin_price = bitcoin_amount * rate
+    #print(bitcoin_amount)
 
 def print_json(d):
     return json.dumps(d, indent=2)
@@ -35,6 +36,7 @@ def return_rate():
     # print(print_json(bpi))
 
     rate = bpi["rate_float"]
+    print(type(rate))
     print(f"${rate:,.4f}")
     return f"${rate:,.4f}"
 
