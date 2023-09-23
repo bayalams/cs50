@@ -24,10 +24,11 @@ def main():
             user_result = int(input(f"{a} + {b} = "))
 
             if user_result == result:
-                user_result_list.append(user_result)
+                user_answers.append(user_result)
+                current_question = current_question + 1
             elif user_result != result:
                 user_result = "EEE"
-                user_result_list.append(user_result)
+                user_answers.append(user_result)
                 print("EEE")
 
         except ValueError:
