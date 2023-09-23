@@ -25,9 +25,10 @@ def main():
             user_result = int(input(f"{a} + {b} = "))
 
             if user_result == desired_result:
-                user_answers.append(user_result)
+                if not already_failed:
+                    user_answers.append(user_result)
                 current_question = current_question + 1
-                already_failed = False
+                # already_failed = False
 
             elif user_result != desired_result:
                 if not already_failed:
