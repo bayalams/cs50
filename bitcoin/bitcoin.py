@@ -16,7 +16,8 @@ def main(rate):
              sys.exit(1)
         except requests.RequestException:
               sys.exit(1)
-
+        else:
+             pass
 
 
 
