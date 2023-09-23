@@ -36,9 +36,11 @@ def return_rate():
     # print(print_json(bpi))
 
     rate = bpi["rate_float"]
-    print(type(rate))
-    print(f"${rate:,.4f}")
-    return f"${rate:,.4f}"
+    print(f"rate type: {type(rate)}")
+    return rate
+
+    # print(f"${rate:,.4f}")
+    # return f"${rate:,.4f}"
 
 
 rate = return_rate()
