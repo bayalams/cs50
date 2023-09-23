@@ -4,9 +4,10 @@ import sys
 
 def main(rate):
 
+
     while True: #while what is True? argv[]!!!!!
         try:
-            bitcoin_amount = ("This is the name of the script: ", sys.argv[1])
+            bitcoin_amount = sys.argv[1]
         except ValueError:
             continue
         except TypeError:
