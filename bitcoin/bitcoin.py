@@ -3,7 +3,7 @@ import json
 
 def main(rate):
 
-    while True:
+    while True: #while what is True? Missing argv, correct input format
         try:
             bitcoin_amount = float(input("Amount of Bitcoin: "))
         except ValueError:
