@@ -27,12 +27,13 @@ def main():
             user_result = int(input(f"{a} + {b} = "))
 
             if user_result == desired_result:
+                # correct answer
                 if not already_failed:
                     score = score + 1
                 current_question = current_question + 1
                 already_failed = False
-
-            elif user_result != desired_result:
+            else:
+                # wrong answer
                 already_failed = True
                 print("EEE")
 
