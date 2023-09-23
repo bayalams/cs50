@@ -12,11 +12,11 @@ def main(rate):
             continue
         except requests.RequestException:
             continue
-        break #isto está errado
+
 
     print(type(bitcoin_amount))
     bitcoin_price = float(bitcoin_amount) * float(rate)
-    print(bitcoin_price)
+    print(f"${bitcoin_price:,.4f}")
 
 def print_json(d):
     return json.dumps(d, indent=2)
@@ -39,8 +39,6 @@ def return_rate():
     print(f"rate type: {type(rate)}")
     return rate
 
-    # print(f"${rate:,.4f}")
-    # return f"${rate:,.4f}"
 
 
 rate = return_rate()
