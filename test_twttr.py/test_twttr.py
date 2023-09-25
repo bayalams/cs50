@@ -4,5 +4,6 @@ def test_shorten():
 
     if shorten("macaco") != "mcc":
         print("not mcc")
-    else:
-        print("test passed")
+
+if __name__ == "_main__" :
+    test_shorten()
