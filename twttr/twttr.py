@@ -1,7 +1,7 @@
 def main():
 
     s = input("Insert string: ")
-    shorten(s)
+    return shorten(s)
 
 
 def shorten(s):
