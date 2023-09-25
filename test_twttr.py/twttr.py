@@ -7,7 +7,7 @@ def main():
 
 def shorten(s):
 
-    vowels = ["A", "E", "I", "O", "U"]
+    vowels = "aeiouAEIOU"
     consonants = []
 
     for i in s:
