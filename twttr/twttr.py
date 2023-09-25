@@ -1,12 +1,19 @@
-insert_string = input("Insert string: ")
+def main():
 
-print(insert_string)
-vowels = "aeiouAEIOU"
-consonants = []
+    s = input("Insert string: ")
 
-for i in insert_string:
-    if i not in vowels:
-        consonants.append(i)
 
-str_consonants = ''.join(consonants)
-print(str_consonants)
+def shorten(s):
+
+    print(s)
+    vowels = "aeiouAEIOU"
+    consonants = []
+
+    for i in s:
+        if i not in vowels:
+            consonants.append(i)
+
+    str_consonants = ''.join(consonants)
+    print(str_consonants)
+    return str_consonants
+
