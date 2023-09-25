@@ -7,6 +7,9 @@ def main():
 def value(greeting):
 
     greeting = greeting.lower().strip()
+    if not greeting.isalpha():
+        exit(1)
+
 
     if greeting[0:5] == "hello":
         return "$0"
