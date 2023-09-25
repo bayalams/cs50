@@ -2,4 +2,7 @@ import bank
 
 def test_value():
 
-    if greeting =! is
+    if not greeting.isalpha():
+        print("Wrong")
+
+test_value()
