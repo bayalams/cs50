@@ -2,7 +2,7 @@ from twttr import shorten
 
 def test_shorten():
 
-    shorten("macaco")
+    assert shorten("macaco") == "mcc"
 
-if __name__ == "_main__" :
+if __name__ == "__main__":
     test_shorten()
