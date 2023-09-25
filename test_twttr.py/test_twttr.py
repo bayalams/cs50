@@ -2,5 +2,5 @@ from twttr import shorten
 
 def test_shorten():
 
-    if shorten("macaco") not "mcc":
+    if shorten("macaco") != "mcc":
         print("not mcc")
