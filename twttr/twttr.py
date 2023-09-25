@@ -1,11 +1,11 @@
 def main():
 
     s = input("Insert string: ")
+    shorten(s)
 
 
 def shorten(s):
 
-    print(s)
     vowels = "aeiouAEIOU"
     consonants = []
 
@@ -16,4 +16,7 @@ def shorten(s):
     str_consonants = ''.join(consonants)
     print(str_consonants)
     return str_consonants
+
+if __name__ == "__main__":
+    main()
 

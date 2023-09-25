@@ -1,5 +1,3 @@
-#dá erro nos testes mas funciona; https://submit.cs50.io/check50/0465a5d16f4dae6fd2dc2dd219f1f9f6165d903c
-
 import inflect
 p = inflect.engine()
 
@@ -15,7 +13,7 @@ while True:
     except EOFError:
         break
 
-
+#print only the final list, outside of the loop
 adieu_list = p.join(name_list)
 print(f"Adieu, adieu, to {adieu_list}")
 
