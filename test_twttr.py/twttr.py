@@ -1,8 +1,8 @@
-def main():
+# def main():
 
-    s = input("Insert string: ")
-    print(shorten(s))
-    return shorten(s)
+#     s = input("Insert string: ")
+#     print(shorten(s))
+#     return shorten(s)
 
 
 def shorten(s):
@@ -17,6 +17,7 @@ def shorten(s):
     str_consonants = ''.join(consonants)
     return str_consonants
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
+shorten()
