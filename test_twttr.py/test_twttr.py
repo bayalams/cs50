@@ -2,4 +2,5 @@ from twttr import shorten
 
 def test_shorten():
 
-    assert = 
+    shorten("macaco") == "mcc"
+    shorten("OrangoTango") == "rgTng"
