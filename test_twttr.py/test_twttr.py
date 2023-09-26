@@ -1,4 +1,5 @@
 from twttr import shorten
+import pytest
 
 def main():
 
@@ -17,7 +18,8 @@ def test_shorten_upper():
 
 def test_shorten_num():
 
-    assert shorten("3") == exit(1)
+    with pytest.raises(SystemExit):
+        shorten("3")
 
 
 if __name__ == "__main__":
