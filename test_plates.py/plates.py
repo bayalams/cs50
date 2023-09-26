@@ -14,13 +14,12 @@ def is_valid(plate):
     # if length(plate) and char_type(plate) and initial_char_type(plate) and nested_number(plate):
     #     return True
 
+    #all wrong
     for i in plate:
-        if 2 < len(plate) < 6:
-            return True
-        elif i.isalpha() or i.isnumeric():
-            return True
-        for j in plate[:2]:
-            if j.isalpha() == True:
+        if 2 < len(plate) < 6 or (i.isalpha() or i.isnumeric()):
+            for j in plate[:2]:
+                if j.isalpha() == True:
+                    return True
                 return True
         else:
             return False
