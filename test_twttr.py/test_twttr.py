@@ -1,5 +1,11 @@
 from twttr import shorten
 
+def main():
+
+    test_shorten_lower()
+    test_shorten_upper()
+    test_shorten_num()
+
 def test_shorten_lower():
 
     assert shorten("macaco") == "mcc"
@@ -15,6 +21,4 @@ def test_shorten_num():
 
 
 if __name__ == "__main__":
-    test_shorten_lower()
-    test_shorten_upper()
-    test_shorten_num()
+    main()
