@@ -4,7 +4,8 @@ from bank import value
 
 def main():
     test_value_num()
-    test_value_num(
+    test_value_hello()
+    test_value_else()
 
 def test_value_num():
 
