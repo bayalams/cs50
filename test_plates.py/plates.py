@@ -17,16 +17,10 @@ def is_valid(plate):
     # plate must be longer than two and shorter than 6
     if 2 < len(plate) < 6:
         return True
-
-    #no spaces or punctuation marks allowed
-    for i in plate:
-        if i.isalpha() or i.isnumeric():
-            pass
-        else:
-            return False
-
-    #
-    for j in plate[:2]:
+    elif for i in plate:
+            if i.isalpha() or i.isnumeric():
+                return True
+    elif for j in plate[:2]:
         if j.isalpha() != True:
             return False
         else:
