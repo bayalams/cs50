@@ -3,7 +3,7 @@ from bank import value
 
 def test_value():
 
-    if "3333" == "$100":
+    if "3" == "$100":
         print("Wrong")
 
 if __name__ == "__main__":
