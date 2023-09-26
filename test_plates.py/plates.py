@@ -14,28 +14,23 @@ def is_valid(plate):
     # if length(plate) and char_type(plate) and initial_char_type(plate) and nested_number(plate):
     #     return True
 
+    # plate must be longer than two and shorter than 6
+    if 2 < len(plate) < 6:
+        return True
 
-    if len(plate) < 2 or len(plate) > 6:
-        return False
-    else:
-        pass
-
+    #no spaces or punctuation marks allowed
     for i in plate:
         if i.isalpha() or i.isnumeric():
             pass
         else:
             return False
-    return True
 
-
-
+    #
     for j in plate[:2]:
         if j.isalpha() != True:
             return False
         else:
             return True
-
-
 
 
     a = -1
