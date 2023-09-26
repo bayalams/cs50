@@ -16,7 +16,7 @@ def value(greeting):
     elif greeting[0] == "h":
         return "$20"
     else:
-        return "$100"
+        return "$0"
 
 
 if __name__ == "__main__":
