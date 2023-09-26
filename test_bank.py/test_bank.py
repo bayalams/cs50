@@ -13,7 +13,7 @@ def test_value_num():
 
 def test_value_hello():
 
-    assert value("hello")
+    assert value("hello") == "$
 
 if __name__ == "__main__":
     main()
