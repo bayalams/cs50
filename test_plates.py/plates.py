@@ -22,6 +22,8 @@ def is_valid(plate):
     for j in plate[:2]:
         if j.isalpha() == True:
             return True
+    else:
+        return False
 
 
 
