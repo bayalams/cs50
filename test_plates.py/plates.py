@@ -1,3 +1,4 @@
+
 def main():
     plate = input("Plate: ")
     if is_valid(plate):
@@ -14,14 +15,10 @@ def is_valid(plate):
         return True
 
 
-def length(plate):
-
     if len(plate) < 2 or len(plate) > 6:
         return False
     else:
         return True
-
-def char_type(plate):
 
     for i in plate:
         if i.isalpha() or i.isnumeric():
@@ -30,7 +27,7 @@ def char_type(plate):
             return False
     return True
 
-def initial_char_type(plate):
+
 
     for j in plate[:2]:
         if j.isalpha() != True:
@@ -39,7 +36,7 @@ def initial_char_type(plate):
             return True
 
 
-def nested_number(plate):
+
 
     a = -1
 
