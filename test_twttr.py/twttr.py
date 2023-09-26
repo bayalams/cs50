@@ -12,6 +12,7 @@ def shorten(s):
 
     for i in s:
         if i.isalpha() == False:
+            print("not a word")
             exit(1)
         elif i not in vowels:
             consonants.append(i)
