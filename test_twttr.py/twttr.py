@@ -1,3 +1,4 @@
+
 def main():
 
     s = input("Insert string: ")
