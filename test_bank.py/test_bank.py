@@ -8,7 +8,7 @@ def main():
 def test_value_num():
 
     with pytest.raises(SystemExit):
-        test_value("3")
+        value("3")
 
 if __name__ == "__main__":
     main()
