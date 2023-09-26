@@ -10,7 +10,6 @@ def value(greeting):
     greeting = greeting.lower().strip()
 
     if not greeting.isalpha():
-        print("Not a word.")
         exit(1)
     elif greeting[0:5] == "hello":
         return "$0"
