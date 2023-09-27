@@ -1,13 +1,16 @@
 def main():
     fuel = input("Fraction: ")
-    
+    print()
 
+
+def convert()
+
+def gauge()
 
 
 
 def fraction():
 
-    fuel = input("Fraction: ")
     fuel = fuel.split("/")
 
     X = int(fuel[0])
