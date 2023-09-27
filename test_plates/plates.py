@@ -10,7 +10,7 @@ def main():
 
 def is_valid(plate):
 
-    print(length(plate),
+    print('is_valid', length(plate),
         char_type(plate),
         initial_char_type(plate),
         first_number_is_zero(plate),
@@ -38,10 +38,15 @@ def length(plate):
 def char_type(plate):
 
     for i in plate:
+        print(not i.isalpha(), i.isnumeric())
         if (not i.isalpha() or i.isnumeric()):
+            print('entrou1')
             pass
         else:
+            print('entrou2')
             return False
+
+    print('entrou3')
     return True
 
 def initial_char_type(plate):
@@ -55,7 +60,6 @@ def initial_char_type(plate):
 def first_number_is_zero(plate):
 
     for ele in plate:
-        print(ele, ele.isnumeric(), ele=='0')
         if ele.isnumeric():
             if ele == '0':
                 return False
