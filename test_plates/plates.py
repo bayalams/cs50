@@ -18,6 +18,8 @@ def is_valid(plate):
         numbers_in_middle(plate)
     ):
         return True
+    else:
+        return False
 
 
 def length(plate):
