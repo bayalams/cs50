@@ -53,7 +53,8 @@ def numbers_in_middle(plate):
 
     for i in plate:
         if i.isnumeric():
-            plate[i:] == i.isnumeric()
+            if plate[i:].isnumeric():
+                return True
         else:
             return False
 
