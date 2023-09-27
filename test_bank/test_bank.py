@@ -8,13 +8,13 @@ def main():
     test_value_else()
 
 def test_value_num():
-    assert value("3") == "$100"
+    return assert value("3") == "$10"
 
 def test_value_hello():
-    assert value("hello") == "$0"
+    return assert value("hello") == "$0"
 
 def test_value_else():
-    assert value("What's up?") == "$100"
+    return assert value("What's up?") == "$100"
 
 if __name__ == "__main__":
     main()
