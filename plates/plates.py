@@ -53,7 +53,7 @@ def nested_number(plate):
             for j in plate[a:]:
                 if j.isalpha():
                     print(f"check 2: {i, j}")
-                    print()
+                    print("cannot end in a letter if numbers in the middle")
                     return False
                 else:
                     pass
