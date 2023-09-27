@@ -1,12 +1,10 @@
 
 def main():
-
     greeting = input("Greeting: ")
     print(value(greeting))
 
 
 def value(greeting):
-
     greeting = greeting.lower().strip()
 
     if greeting[0:5] == "hello":
