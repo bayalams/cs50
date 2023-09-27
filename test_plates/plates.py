@@ -8,8 +8,8 @@ def main():
         return
 
 
-def is_valid(plate):
 
+def is_valid(plate):
     print('is_valid', length(plate),
         char_type(plate),
         initial_char_type(plate),
@@ -37,8 +37,12 @@ def length(plate):
 
 def char_type(plate):
 
+    # 3244!
+    # 2ddds
     for i in plate:
-        if (not i.isalpha() or i.isnumeric()):
+        if i.isalpha() or is.isnumeric():
+            return True
+        else:
             return False
 
     return True
