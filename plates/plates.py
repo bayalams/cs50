@@ -10,7 +10,7 @@ def main():
 
 def is_valid(plate):
 
-    if length(plate) and char_type(plate) and initial_char_type(plate) and nested_number(plate):
+    if length(plate) and char_type(plate) and initial_char_type(plate) and first_number_is_zero(plate) and numbers_in_middle(plate):
         return True
 
 
@@ -42,38 +42,45 @@ def initial_char_type(plate):
             return True
 
 def first_number_is_zero(plate):
+
     for ele in plate:
         if ele.numeric() and ele == 0:
             return False
         else:
             return True
 
-def numbers
-
-
-def nested_number(plate):
-
-    a = -1
+def numbers_in_middle(plate):
 
     for i in plate:
-        a = a + 1
         if i.isnumeric():
-            if i == "0":
-                print(f"check 1: {i}")
-                print("the first number cannot be a 0")
-                return False
-            for j in plate[a:]:
-                if j.isalpha():
-                    print(f"check 2: {i, j}")
-                    print("Numbers cannot be used in the middle of a plate; they must come at the end.")
-                    return False
-                else:
-                    pass
-            return True
+            plate[i:] == i.isnumeric()
         else:
-            pass
+            return False
 
-    return True
+
+# def nested_number(plate):
+
+#     a = -1
+
+#     for i in plate:
+#         a = a + 1
+#         if i.isnumeric():
+#             if i == "0":
+#                 print(f"check 1: {i}")
+#                 print("the first number cannot be a 0")
+#                 return False
+#             for j in plate[a:]:
+#                 if j.isalpha():
+#                     print(f"check 2: {i, j}")
+#                     print("Numbers cannot be used in the middle of a plate; they must come at the end.")
+#                     return False
+#                 else:
+#                     pass
+#             return True
+#         else:
+#             pass
+
+#     return True
 
 main()
 
