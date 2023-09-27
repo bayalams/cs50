@@ -34,7 +34,6 @@ def char_type(plate):
         if (not i.isalpha() or i.isnumeric()):
             pass
         else:
-            print("No periods, spaces, or punctuation marks are allowed.")
             return False
     return True
 
@@ -42,7 +41,6 @@ def initial_char_type(plate):
 
     for j in plate[:2]:
         if j.isalpha() != True:
-            print("The first 2 digits must be letters.")
             return False
 
     return True
@@ -71,31 +69,8 @@ def numbers_in_middle(plate):
                 return False
 
 
-# def nested_number(plate):
-
-#     a = -1
-
-#     for i in plate:
-#         a = a + 1
-#         if i.isnumeric():
-#             if i == "0":
-#                 print(f"check 1: {i}")
-#                 print("the first number cannot be a 0")
-#                 return False
-#             for j in plate[a:]:
-#                 if j.isalpha():
-#                     print(f"check 2: {i, j}")
-#                     print("Numbers cannot be used in the middle of a plate; they must come at the end.")
-#                     return False
-#                 else:
-#                     pass
-#             return True
-#         else:
-#             pass
-
-#     return True
-
-main()
+if __name__ == "__main__":
+    main()
 
 
 
