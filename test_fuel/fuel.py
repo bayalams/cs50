@@ -1,3 +1,10 @@
+def main():
+    fuel = input("Fraction: ")
+    
+
+
+
+
 def fraction():
 
     fuel = input("Fraction: ")
