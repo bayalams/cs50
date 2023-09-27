@@ -24,4 +24,3 @@ def shorten(s):
 if __name__ == "__main__":
     main()
 
-#https://submit.cs50.io/check50/a40cd9908e66e228cfe8ecd09bb93f28121fadd0
