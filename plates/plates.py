@@ -47,14 +47,19 @@ def initial_char_type(plate):
         else:
             return True
 
+    return True
+
 def first_number_is_zero(plate):
 
     for ele in plate:
         print(ele, ele.isnumeric(), ele=='0')
-        if ele.isnumeric() and ele == '0':
-            return False
-        else:
-            return True
+        if ele.isnumeric():
+            if ele == '0':
+                return False
+            else:
+                return True
+
+    return True
 
 def numbers_in_middle(plate):
 
