@@ -51,12 +51,11 @@ def first_number_is_zero(plate):
 
 def numbers_in_middle(plate):
 
+    # cs34c
     for i in plate:
         if i.isnumeric():
-            if plate[i:].isnumeric():
+            if plate['c':].isnumeric():
                 return True
-        else:
-            return False
 
 
 # def nested_number(plate):
