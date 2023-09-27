@@ -17,6 +17,7 @@ def is_valid(plate):
 def length(plate):
 
     if len(plate) < 2 or len(plate) > 6:
+        print("must be between 2 and 6 digits long.")
         return False
     else:
         return True
@@ -27,6 +28,7 @@ def char_type(plate):
         if i.isalpha() or i.isnumeric():
             pass
         else:
+            print("No periods, spaces, or punctuation marks are allowed.")
             return False
     return True
 
@@ -34,6 +36,7 @@ def initial_char_type(plate):
 
     for j in plate[:2]:
         if j.isalpha() != True:
+            print("The first 2 digits must be letters.")
             return False
         else:
             return True
@@ -53,7 +56,7 @@ def nested_number(plate):
             for j in plate[a:]:
                 if j.isalpha():
                     print(f"check 2: {i, j}")
-                    print("cannot end in a letter if numbers in the middle")
+                    print("“Numbers cannot be used in the middle of a plate; they must come at the end.")
                     return False
                 else:
                     pass
