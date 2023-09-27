@@ -48,12 +48,12 @@ def nested_number(plate):
         if i.isnumeric():
             if i == "0":
                 print(f"check 1: {i}")
-                #the first number cannot be a 0
+                print("the first number cannot be a 0")
                 return False
             for j in plate[a:]:
                 if j.isalpha():
-                    print(i)
                     print(f"check 2: {i, j}")
+                    print()
                     return False
                 else:
                     pass
