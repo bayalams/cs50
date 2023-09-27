@@ -17,6 +17,7 @@ def test_value_num():
 
 def test_value_hello():
     assert value("hello") == 0
+    assert value("HELLO") == 0
     assert value("hellomotto") == 0
 
 def test_value_else():
