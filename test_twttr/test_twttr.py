@@ -22,6 +22,7 @@ def test_ommit_numbers():
 
 def test_ommit_punctuation():
     assert shorten("What's up?") == "Wht's p?"
+    assert shorten("Hello, David, I'm Bea!") == "Hll, Dvd, 'm B!"
 
 if __name__ == "__main__":
     main()
