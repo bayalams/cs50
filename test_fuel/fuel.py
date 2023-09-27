@@ -1,25 +1,25 @@
 def main():
-
-    print()
-
-
-def convert()
-    fuel = input("Fraction: ")
-    fuel = fuel.split("/")
-
-    X = int(fuel[0])
-    Y = int(fuel[1])
-
-    return round((X / Y) * 100)
+    fraction = input(int("Fraction: "))
 
 
-    except ZeroDivisionError:
-        pass
-    except ValueError:
-        pass
 
+def convert(fraction)
 
-def gauge()
+    while True:
+        try:
+            fraction = fraction.split("/")
+            X = int(fuel[0])
+            Y = int(fuel[1])
+            percentage = round((X / Y) * 100)
+
+        except ZeroDivisionError:
+            pass
+        except ValueError:
+            pass
+
+    return percentage
+
+def gauge(percentage)
 
 
 
