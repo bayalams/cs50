@@ -48,6 +48,7 @@ def nested_number(plate):
         if i.isnumeric():
             if i == "0":
                 print(i)
+                #the first number cannot be a 0
                 return False
             for j in plate[a:]:
                 if j.isalpha():
