@@ -47,12 +47,13 @@ def nested_number(plate):
         a = a + 1
         if i.isnumeric():
             if i == "0":
-                print(i)
+                print(f"check 1: {i}")
                 #the first number cannot be a 0
                 return False
             for j in plate[a:]:
                 if j.isalpha():
                     print(i)
+                    print(f"check 2: {i, j}")
                     return False
                 else:
                     pass
