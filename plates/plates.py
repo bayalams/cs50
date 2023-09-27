@@ -56,7 +56,7 @@ def nested_number(plate):
             for j in plate[a:]:
                 if j.isalpha():
                     print(f"check 2: {i, j}")
-                    print("“Numbers cannot be used in the middle of a plate; they must come at the end.")
+                    print("Numbers cannot be used in the middle of a plate; they must come at the end.")
                     return False
                 else:
                     pass
