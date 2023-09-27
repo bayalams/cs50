@@ -10,10 +10,13 @@ def main():
 
 def test_shorten_lower():
     assert shorten("macaco") == "mcc"
+    assert shorten("beatriz") == "btrz"
 
 
 def test_shorten_upper():
     assert shorten("MACACO") == "MCC"
+    assert shorten("BEATRIZ") == "BTRZ"
+
 
 def test_shorten_num():
     with pytest.raises(SystemExit):
