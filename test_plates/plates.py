@@ -38,15 +38,9 @@ def length(plate):
 def char_type(plate):
 
     for i in plate:
-        print(not i.isalpha(), i.isnumeric())
         if (not i.isalpha() or i.isnumeric()):
-            print('entrou1')
-            pass
-        else:
-            print('entrou2')
             return False
 
-    print('entrou3')
     return True
 
 def initial_char_type(plate):
