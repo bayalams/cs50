@@ -15,7 +15,7 @@ def test_length():
 
 def test_char_type():
     assert is_valid("cs50") == True
-    assert is_valid("!!!!") == False
+    assert is_valid("cs!!") == False
 
 def test_initial_char_type():
     assert is_valid("cs50") == True
