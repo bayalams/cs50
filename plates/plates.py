@@ -41,6 +41,15 @@ def initial_char_type(plate):
         else:
             return True
 
+def first_number_is_zero(plate):
+    for ele in plate:
+        if ele.numeric() and ele == 0:
+            return False
+        else:
+            return True
+
+def numbers
+
 
 def nested_number(plate):
 
