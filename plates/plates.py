@@ -44,8 +44,6 @@ def initial_char_type(plate):
         if j.isalpha() != True:
             print("The first 2 digits must be letters.")
             return False
-        else:
-            return True
 
     return True
 
