@@ -73,6 +73,7 @@ def numbers_in_middle(plate):
             else:
                 return False
 
+    return True
 
 if __name__ == "__main__":
     main()
