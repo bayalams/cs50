@@ -8,12 +8,10 @@ def main():
     test_value_else()
 
 def test_value_num():
-    try:
-        assert value("3") == 100
-        assert value("10") == 100
-        assert value("30") == 100
-    except AssertionError:
-        return 0
+    assert value("3") == 100
+    assert value("10") == 100
+    assert value("30") == 100
+
 
 def test_value_hello():
     assert value("hello") == 0
