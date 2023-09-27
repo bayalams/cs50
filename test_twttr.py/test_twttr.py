@@ -22,6 +22,9 @@ def test_shorten_num():
     with pytest.raises(SystemExit):
         shorten("3")
 
+    with pytest.raises(SystemExit):
+        shorten("3")
+
 
 if __name__ == "__main__":
     main()
