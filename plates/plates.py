@@ -31,7 +31,7 @@ def length(plate):
 def char_type(plate):
 
     for i in plate:
-        if i.isalpha() or i.isnumeric():
+        if (not i.isalpha() or i.isnumeric()):
             pass
         else:
             print("No periods, spaces, or punctuation marks are allowed.")
