@@ -44,7 +44,7 @@ def initial_char_type(plate):
 def first_number_is_zero(plate):
 
     for ele in plate:
-        if ele.numeric() and ele == 0:
+        if ele.isnumeric() and ele == 0:
             return False
         else:
             return True
