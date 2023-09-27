@@ -12,11 +12,11 @@ def value(greeting):
     if not greeting.isalpha():
         exit(1)
     elif greeting[0:5] == "hello":
-        return "$20"
+        return "$0"
     elif greeting[0] == "h":
         return "$20"
     else:
-        return "$0"
+        return "$100"
 
 
 if __name__ == "__main__":
