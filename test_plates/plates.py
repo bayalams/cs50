@@ -10,6 +10,11 @@ def main():
 
 def is_valid(plate):
 
+    print(length(plate),
+        char_type(plate),
+        initial_char_type(plate),
+        first_number_is_zero(plate),
+        numbers_in_middle(plate))
     if (
         length(plate) and
         char_type(plate) and
