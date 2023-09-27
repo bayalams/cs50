@@ -37,12 +37,8 @@ def length(plate):
 
 def char_type(plate):
 
-    # 3244!
-    # 2ddds
-    for i in plate:
-        if i.isalpha() or is.isnumeric():
-            return True
-        else:
+    for ele in plate:
+        if not (ele.isalpha() or ele.isnumeric()):
             return False
 
     return True
