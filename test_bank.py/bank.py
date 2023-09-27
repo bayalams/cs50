@@ -9,9 +9,7 @@ def value(greeting):
 
     greeting = greeting.lower().strip()
 
-    if not greeting.isalpha():
-        exit(1)
-    elif greeting[0:5] == "hello":
+    if greeting[0:5] == "hello":
         return "$0"
     elif greeting[0] == "h":
         return "$20"
