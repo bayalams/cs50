@@ -10,7 +10,13 @@ def main():
 
 def is_valid(plate):
 
-    if length(plate) and char_type(plate) and initial_char_type(plate) and first_number_is_zero(plate) and numbers_in_middle(plate):
+    if (
+        length(plate) and
+        char_type(plate) and
+        initial_char_type(plate) and
+        first_number_is_zero(plate) and
+        numbers_in_middle(plate)
+    ):
         return True
 
 
@@ -44,7 +50,8 @@ def initial_char_type(plate):
 def first_number_is_zero(plate):
 
     for ele in plate:
-        if ele.isnumeric() and ele == 0:
+        print(ele, ele.isnumeric(), ele=='0')
+        if ele.isnumeric() and ele == '0':
             return False
         else:
             return True
