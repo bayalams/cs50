@@ -26,6 +26,9 @@ def convert():
             pass
 
 
+#gauge expects an int and returns a str that is:
+
+
 def gauge(percentage):
     if percentage in [99, 100]:
         return "F"
