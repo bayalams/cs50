@@ -6,9 +6,9 @@ Y = int(fuel[1])
 
 return round((X / Y) * 100)
 
-while True:
+
     try:
-        percentage = fraction()
+        
 
         if percentage in [99, 100]:
             print("F")
