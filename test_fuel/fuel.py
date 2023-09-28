@@ -2,7 +2,7 @@ def main():
     fraction()
     gauge(percentage)
 
-def fraction():
+def fraction(fraction):
     while True:
         try:
             fuel = input("Fraction: ")
