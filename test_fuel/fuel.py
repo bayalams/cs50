@@ -9,7 +9,6 @@ def fraction():
             fraction = fraction.split("/")
             X = int(fraction[0])
             Y = int(fraction[1])
-            print(X, Y)
 
             percentage = round((X / Y) * 100)
             return percentage
