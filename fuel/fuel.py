@@ -1,12 +1,10 @@
-def fraction():
+fuel = input("Fraction: ")
+fuel = fuel.split("/")
 
-    fuel = input("Fraction: ")
-    fuel = fuel.split("/")
+X = int(fuel[0])
+Y = int(fuel[1])
 
-    X = int(fuel[0])
-    Y = int(fuel[1])
-
-    return round((X / Y) * 100)
+return round((X / Y) * 100)
 
 while True:
     try:
