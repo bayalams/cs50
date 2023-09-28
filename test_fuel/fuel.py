@@ -1,6 +1,6 @@
 def main():
     fraction()
-    gauge(percentage)
+    print(gauge(percentage))
 
 def fraction():
     while True:
@@ -23,11 +23,11 @@ def fraction():
 
 def gauge(percentage):
     if percentage in [99, 100]:
-        print("F")
+        return "F"
     elif percentage <= 1:
-        print("E")
+        return "E"
     elif percentage > 1 and percentage < 99:
-        print(f"{percentage}%")
+        f"{percentage}%"
 
 
 if __name__ == "__main__":
