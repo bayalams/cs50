@@ -1,13 +1,10 @@
-def main():
-    fraction = input("Fraction: ")
-    print(gauge(percentage))
-    return
 
 
 def convert(fraction):
 
     while True:
         try:
+            fraction = in
             fraction = fraction.split("/")
             X = int(fraction[0])
             Y = int(fraction[1])
@@ -28,5 +25,3 @@ def gauge(percentage):
         return f"{percentage}%"
 
 
-if __name__ == "__main__":
-    main()
