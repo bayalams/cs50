@@ -23,12 +23,12 @@ def fraction():
 
 
 def gauge(percentage):
-        if percentage in [99, 100]:
-            print("F")
-        elif percentage <= 1:
-            print("E")
-        elif percentage > 1 and percentage < 99:
-            print(f"{percentage}%")
+    if percentage in [99, 100]:
+        print("F")
+    elif percentage <= 1:
+        print("E")
+    elif percentage > 1 and percentage < 99:
+        print(f"{percentage}%")
 
 
 if __name__ == "__main__":
