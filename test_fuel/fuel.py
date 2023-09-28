@@ -14,12 +14,13 @@ def convert(fraction):
             Y = int(fraction[1])
             percentage = round((X / Y) * 100)
             print(percentage)
-            return percentage
 
         except ZeroDivisionError:
             pass
         except ValueError:
             pass
+
+    return percentage
 
 def gauge(percentage):
 
@@ -36,3 +37,4 @@ def gauge(percentage):
 
 if __name__ == "__main__":
     main()
+    
