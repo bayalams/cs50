@@ -27,7 +27,7 @@ def gauge(percentage):
     elif percentage <= 1:
         return "E"
     elif percentage > 1 and percentage < 99:
-        f"{percentage}%"
+        return f"{percentage}%"
 
 
 if __name__ == "__main__":
