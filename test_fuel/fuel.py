@@ -27,7 +27,10 @@ def convert():
 
 
 #gauge expects an int and returns a str that is:
-
+# gauge expects an int and returns a str that is:
+# "E" if that int is less than or equal to 1,
+# "F" if that int is greater than or equal to 99,
+# and "Z%" otherwise, wherein Z is that same int.
 
 def gauge(percentage):
     if percentage in [99, 100]:
