@@ -10,6 +10,7 @@ def convert(fraction):
         try:
             fraction = fraction.split("/")
             print(fraction)
+            print(type(fraction))
             X = int(fraction[0])
             Y = int(fraction[1])
             percentage = round((X / Y) * 100)
@@ -37,4 +38,4 @@ def gauge(percentage):
 
 if __name__ == "__main__":
     main()
-    
+
