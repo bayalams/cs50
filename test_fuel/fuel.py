@@ -5,18 +5,20 @@ def fraction():
             fuel = input("Fraction: ")
             fuel = fuel.split("/")
 
-            X = int(fuel[0])
-            Y = int(fuel[1])
-            print(X, Y)
-
-            percentage = round((X / Y) * 100)
-
     except ZeroDivisionError:
         pass
     except ValueError:
         pass
     except IndexError:
         pass
+
+        X = int(fuel[0])
+        Y = int(fuel[1])
+        print(X, Y)
+
+        percentage = round((X / Y) * 100)
+        return percentage
+
 
 
 while True:
