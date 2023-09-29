@@ -7,7 +7,7 @@ def main():
 # If X and/or Y is not an integer, or if X is greater than Y, then convert should raise a ValueError.
 # If Y is 0, then convert should raise a ZeroDivisionError.
 
-def convert():
+def convert(fraction):
     while True:
         try:
             fraction = input("Fraction: ")
