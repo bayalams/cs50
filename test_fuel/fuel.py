@@ -2,18 +2,14 @@ def main():
     percentage = convert()
     print(gauge(percentage))
 
-#convert expects a str in X/Y format as input, wherein each of X and Y is an integer,
-# and returns that fraction as a percentage rounded to the nearest int between 0 and 100, inclusive.
-# If X and/or Y is not an integer, or if X is greater than Y, then convert should raise a ValueError.
-# If Y is 0, then convert should raise a ZeroDivisionError.
 
-def convert(fraction):
+def convert():
     while True:
         try:
-            fraction = input("Fraction: ")
-            fraction = fraction.split("/")
-            X = int(fraction[0])
-            Y = int(fraction[1])
+            fuel = input("Fraction: ")
+            fuel = fuel.split("/")
+            X = int(fuel[0])
+            Y = int(fuel[1])
 
             percentage = round((X / Y) * 100)
             return percentage
@@ -25,12 +21,6 @@ def convert(fraction):
         except IndexError:
             pass
 
-
-#gauge expects an int and returns a str that is:
-# gauge expects an int and returns a str that is:
-# "E" if that int is less than or equal to 1,
-# "F" if that int is greater than or equal to 99,
-# and "Z%" otherwise, wherein Z is that same int.
 
 def gauge(percentage):
     if percentage in [99, 100]:
