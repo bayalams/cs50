@@ -1,5 +1,4 @@
 def main():
-    convert()
     percentage = convert()
     print(gauge(percentage))
 

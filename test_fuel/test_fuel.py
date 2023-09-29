@@ -12,4 +12,5 @@ def test_fraction():
     with pytest.raises(ZeroDivisionError):
         fraction("0")
 
-main()
+if __name__ == "__main__":
+    main()
