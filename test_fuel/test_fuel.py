@@ -1,7 +1,4 @@
-#não funciona se só importar o módulo, porquê??
-
-from fuel import convert
-from fuel import gauge
+import fuel
 import pytest
 
 def main():
