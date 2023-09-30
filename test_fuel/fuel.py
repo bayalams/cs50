@@ -3,13 +3,13 @@ def main():
     print(gauge(percentage))
 
 
-def convert():
+def convert(fraction):
     while True:
         try:
-            fuel = input("Fraction: ")
-            fuel = fuel.split("/")
-            X = int(fuel[0])
-            Y = int(fuel[1])
+            fraction = input("Fraction: ")
+            fraction = fraction.split("/")
+            X = int(fraction[0])
+            Y = int(fraction[1])
 
             percentage = round((X / Y) * 100)
             return percentage
