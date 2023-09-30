@@ -1,12 +1,12 @@
 def main():
-    percentage = convert()
+    fraction = input("Fraction: ")
+    percentage = convert(fraction)
     print(gauge(percentage))
 
 
 def convert(fraction):
     while True:
         try:
-            fraction = input("Fraction: ")
             fraction = fraction.split("/")
             X = int(fraction[0])
             Y = int(fraction[1])
