@@ -18,8 +18,10 @@ def convert(fraction):
         except ZeroDivisionError:
             raise ZeroDivisionError
         except ValueError:
+            print("ValueError")
             raise ValueError
         except IndexError:
+            print("IndexError")
             raise IndexError
 
 
