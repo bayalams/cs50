@@ -16,11 +16,11 @@ def convert(fraction):
             return percentage
 
         except ZeroDivisionError:
-            raise ZeroDivisionError
+            pass
         except ValueError:
-            raise ValueError
+            pass
         except IndexError:
-            raise IndexError
+            pass
 
 
 def gauge(percentage):
