@@ -9,8 +9,8 @@ def test_convert():
     assert convert("1/3") == 33
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
-    with pytest.raises(ZeroDivisionError):
-        convert("1/0")
+    with pytest.raises(IndexError):
+        convert("1")
 
 
 
