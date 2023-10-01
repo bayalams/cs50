@@ -12,7 +12,6 @@ def convert(fraction):
             Y = int(fraction[1])
 
             percentage = round((X / Y) * 100)
-            #print(type(percentage))
             return percentage
 
         except ZeroDivisionError:

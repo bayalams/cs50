@@ -11,6 +11,10 @@ def test_convert():
     with pytest.raises(ValueError):
         convert("10/r")
 
+def test_gauge():
+    assert gauge(99) == "F"
+    assert gauge(1) == "E"
+    assert gauge(25) == "25%"
 
 if __name__ == "__main__":
     main()
