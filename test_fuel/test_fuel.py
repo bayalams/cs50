@@ -11,7 +11,8 @@ def test_convert():
         convert("1/0")
     with pytest.raises(IndexError):
         convert("1")
-
+    with pytest.raises(IndexError):
+        convert("1")
 
 
 if __name__ == "__main__":
