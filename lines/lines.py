@@ -14,10 +14,10 @@ except FileNotFoundError:
 
 print(len(lines))
 
+#falta tirar as linhas em branco
 for line in lines:
     line = line.lstrip()
-    if line.startswith("#"):
-        print(f"1.{line}")
-        print(len(lines))
+    if not line.startswith("#"):
+        filtered_doc.append(line)
 
-print(len())
+print(len(filtered_doc))
