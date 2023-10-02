@@ -3,6 +3,10 @@ import sys
 
 #path = sys.argv[1]
 
-with open("interpreter.py", "r") as file:
-    lines = file.readlines()
+while True:
+    try:
+        with open("interpreter.py", "r") as file:
+            lines = file.readlines()
+    except FileNotFound:
+        sys.exit(1)
 
