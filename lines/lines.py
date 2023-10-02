@@ -2,6 +2,7 @@ import os
 import sys
 
 path = sys.argv[1]
+filtered_doc = []
 
 try:
     with open(path, "r") as file:
@@ -10,9 +11,10 @@ except FileNotFoundError:
     print("File not found.")
     sys.exit(1)
 
+
 print(len(lines))
 for line in lines:
     if not line.startswith("#"):
-        line not in lines
+        filtered_doc.append(line)
 
-print(len(lines))
+print(len(filtered_doc))
