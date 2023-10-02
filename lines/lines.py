@@ -13,4 +13,6 @@ except FileNotFoundError:
 print(len(lines))
 for line in lines:
     if not line.startswith("#"):
-        
+        line not in lines
+
+print(len(lines))
