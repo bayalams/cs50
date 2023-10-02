@@ -1,6 +1,6 @@
 import sys
 
-#name = sys.argv[1]
+file = sys.argv[1]
 
-with open("plates.py") as file:
+with open("file") as file:
     file.readlines()
