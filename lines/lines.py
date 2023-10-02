@@ -1,1 +1,1 @@
-with open
+f = open("professor.py", "r")
