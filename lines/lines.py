@@ -1,6 +1,7 @@
 import os
+import sys
 
-path = "/workspaces/110493296/interpreter/interpreter.py"
+path = sys.argv[1]
 
 with open(path, "r") as file:
     lines = file.readlines()
