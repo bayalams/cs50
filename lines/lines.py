@@ -16,8 +16,7 @@ print(len(lines))
 
 for line in lines:
     line = line.lstrip()
-    print(line)
     if line.startswith("#"):
-        print(line)
+        print(f"1.{line}")
 
 print(len(filtered_doc))
