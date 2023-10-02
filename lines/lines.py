@@ -15,7 +15,7 @@ except FileNotFoundError:
 print(len(lines))
 for line in lines:
     if not line.startswith("#"):
-        print(line)
+        filtered_lines == line
         filtered_doc.append(line)
 
 print(len(filtered_doc))
