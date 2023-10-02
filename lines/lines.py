@@ -15,7 +15,8 @@ except FileNotFoundError:
 print(len(lines))
 
 for line in lines:
-    line.lstrip()
+    line = line.lstrip()
+    print(line)
     if line.startswith("#"):
         print(line)
 
