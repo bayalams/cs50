@@ -6,5 +6,6 @@ import os
 file = sys.argv[1]
 print(file)
 
-with open(os.listdir"file") as file:
-    file.readlines()
+for filename in os.listdir(file):
+    with open() as file:
+        file.readlines()
