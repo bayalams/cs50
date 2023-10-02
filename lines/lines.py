@@ -1,4 +1,6 @@
-import os
+import sys
 
-with open("text.txt", "a") as file:
-    file.write(f"{name}\n")
+#name = sys.argv[1]
+
+with open("plates.py") as file:
+    file.readlines()
