@@ -11,4 +11,6 @@ except FileNotFoundError:
     sys.exit(1)
 
 print(len(lines))
-if 
+for line in lines:
+    if not line.startswith("#"):
+        
