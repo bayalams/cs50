@@ -1,11 +1,11 @@
 import os
 import sys
 
-path = sys.argv[1]
+#path = sys.argv[1]
 filtered_doc = []
 
 try:
-    with open(path, "r") as file:
+    with open("/workspaces/110493296/game/game.py", "r") as file:
         lines = file.readlines()
 except FileNotFoundError:
     print("File not found.")
