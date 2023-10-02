@@ -1,4 +1,4 @@
 import os
 
-with open("meal.py", "r") as file:
-    file.readfile()
+with open("text.txt", "r") as file:
+    print(file)
