@@ -1,10 +1,9 @@
 import sys
 import os
 
-file = os.system("python meal.py")
 
-# file = sys.argv[1]
-# print(file)
+file = sys.argv[1]
+print(file)
 
-with open("file") as file:
+with open(os.isdir"file") as file:
     file.readlines()
