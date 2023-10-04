@@ -16,11 +16,11 @@ except FileNotFoundError:
 
 for line in lines:
     line = line.lstrip()
-    if line != "" or not line.startswith("#"):
+    if line != "":
         print(f"1.{line}")
-        # if not line.startswith("#"):
-        #     print(f"2.{line}")
-        filtered_doc.append(line)
+        if not line.startswith("#"):
+            print(f"2.{line}")
+            filtered_doc.append(line)
 
 print(f"len = {len(filtered_doc)}")
 
