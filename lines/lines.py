@@ -17,7 +17,6 @@ except FileNotFoundError:
 for line in lines:
     line = line.lstrip()
     if line != "":
-        print(f"1.{line}")
         if not line.startswith("#"):
             print(f"2.{line}")
             filtered_doc.append(line)
