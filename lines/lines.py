@@ -14,11 +14,12 @@ except FileNotFoundError:
     sys.exit(1)
 
 for line in lines:
-    line.rstrip()
-    print(line)
-    print("check1")
-print(lines)
+    if line.isspace() or not line:
+        print("not line!")
+    else:
+        filtered_doc.append(line)
 
+print(filtered_doc)
 print(len(lines))
 
 
