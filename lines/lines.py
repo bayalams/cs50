@@ -21,7 +21,7 @@ for line in lines:
         filtered_doc.append(line)
 
 for line in lines:
-    line = line.replace("\n)
+    line = line.replace("\n\n", "\n")
     print(len(lines))
 
 print(len(filtered_doc))
