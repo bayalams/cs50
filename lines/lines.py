@@ -31,5 +31,5 @@ for line in lines:
     elif not line.startswith("#"):
         filtered_doc.append(line)
 
-print(len(filtered_doc))
+print(f"len = {len(filtered_doc)}")
 
