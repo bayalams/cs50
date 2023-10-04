@@ -13,23 +13,22 @@ except FileNotFoundError:
     print("File not found.")
     sys.exit(1)
 
-for line in lines:
-    if line.isspace() or not line:
-        print("not line!")
-    else:
-        filtered_doc.append(line)
+# for line in lines:
+#     if line.isspace() or not line:
+#         print("not line!")
+#     else:
+#         filtered_doc.append(line)
 
-print(filtered_doc)
-print(len(lines))
+# print(filtered_doc)
+# print(len(lines))
 
 
 #falta tirar as linhas em branco
-# for line in lines:
-#     line = line.lstrip()
-#     if not line.startswith("#"):
-#         filtered_doc.append(line)
+for line in lines:
+    line = line.lstrip()
+    if not line.startswith("#"):
+        filtered_doc.append(line)
 
-
-
+print(filtered_doc)
 
 print(len(lines))
