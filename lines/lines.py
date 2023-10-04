@@ -7,7 +7,6 @@ filtered_doc = []
 try:
     with open(path) as file:
         lines = file.readlines()
-    #print(lines)
 
 except FileNotFoundError:
     print("File not found.")
@@ -16,10 +15,10 @@ except FileNotFoundError:
 
 for line in lines:
     line = line.lstrip()
+    #1.check if line is empty. If the line is empty, nothing happens, it goes back to the beggining, otherwise it continues
     if line != "":
-        #if the line is empty, nothing happens, it goes back to the beggining
+        #if the line isn't empty, it checks if it starts with an #. If it doesn't, it appends to the new list
         if not line.startswith("#"):
-            #if the line isn't empty, it checks if it starts with an #. If it doesn't, it appends to the new list
             filtered_doc.append(line)
 
 print(f"len = {len(filtered_doc)}")
