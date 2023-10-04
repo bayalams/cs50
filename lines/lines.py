@@ -7,16 +7,17 @@ filtered_doc = []
 try:
     with open("/workspaces/110493296/game/game.py", "r") as file:
         lines = file.readlines()
-        for line in lines:
-            if line.strip():
-                filtered_doc.append(line)
-
-    print(lines)
+    #print(lines)
 
 except FileNotFoundError:
     print("File not found.")
     sys.exit(1)
 
+for line in lines:
+    line.rstrip()
+    print(line)
+    print("check1")
+print(lines)
 
 print(len(lines))
 
