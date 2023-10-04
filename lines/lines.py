@@ -1,11 +1,11 @@
 import os
 import sys
 
-#path = sys.argv[1]
+path = sys.argv[1]
 filtered_doc = []
 
 try:
-    with open("/workspaces/110493296/game/game.py", "r") as file:
+    with open(path) as file:
         lines = file.readlines()
     #print(lines)
 
@@ -18,7 +18,6 @@ for line in lines:
     line = line.lstrip()
     if line != "":
         if not line.startswith("#"):
-            print(f"2.{line}")
             filtered_doc.append(line)
 
 print(f"len = {len(filtered_doc)}")
