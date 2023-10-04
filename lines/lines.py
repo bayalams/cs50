@@ -20,4 +20,8 @@ for line in lines:
     if not line.startswith("#"):
         filtered_doc.append(line)
 
+for line in lines:
+    line = line.split("\n")
+    print(lines)
+
 print(len(filtered_doc))
