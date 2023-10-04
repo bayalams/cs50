@@ -16,11 +16,10 @@ except FileNotFoundError:
 
 for line in lines:
     line = line.lstrip()
-    if line != "" or not line.startswith("#"): #se a linha é igual a um espaço vazio, imprimir
+    if line == "":
         print(f"line = {line}")
+    elif not line.startswith("#"):
         filtered_doc.append(line)
-    # elif not line.startswith("#"): #se a linha não começar
-    #     filtered_doc.append(line)
 
 print(f"len = {len(filtered_doc)}")
 
