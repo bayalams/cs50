@@ -19,6 +19,6 @@ for line in lines:
     line = line.lstrip()
     if not line.startswith("#"):
         filtered_doc.append(line)
-    print(lines)
+print(lines)
 
 print(len(filtered_doc))
