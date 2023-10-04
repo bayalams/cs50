@@ -21,4 +21,8 @@ for line in lines:
         filtered_doc.append(line)
 print(lines)
 
+
+
+
+
 print(len(filtered_doc))
