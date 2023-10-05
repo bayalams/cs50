@@ -9,4 +9,3 @@ if len(sys.argv) > 2:
 elif not menu.endswith("cvs"):
     print("Not a CVS file")
     sys.exit(1)
-
