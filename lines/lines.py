@@ -1,10 +1,11 @@
 import os
 import sys
 
-path = "/workspaces/110493296/grocery/grocery.py"
+path = sys.argv[1]
 
-path.split(".")
-print(path)
+if not path.endswith(".py"):
+    print("Not a Python file")
+    sys.exit(1)
 
 filtered_doc = []
 
@@ -13,7 +14,7 @@ try:
         lines = file.readlines()
 
 except FileNotFoundError:
-    print("File not found.")
+    print("File does not exist.")
     sys.exit(1)
 
 
