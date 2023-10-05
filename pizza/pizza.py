@@ -15,6 +15,7 @@ elif not menu.endswith("csv"):
 with open(menu) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        prices.append({"Regular Pizza": row})
         print(row["Regular Pizza"], row["Small"], row["Large"])
 
 
