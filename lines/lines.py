@@ -7,7 +7,8 @@ if not path.endswith(".py"):
     print("Not a Python file")
     sys.exit(1)
 
-if 0 >= sys.argv < 1:
+if len(sys.argv) > 2:
+    print("Too many comnand lines")
     sys.exit(1)
 
 filtered_doc = []
