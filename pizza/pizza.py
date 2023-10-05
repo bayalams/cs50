@@ -1,4 +1,5 @@
 import sys
+from tabulate import tabulate
 
 menu = sys.argv[1]
 
