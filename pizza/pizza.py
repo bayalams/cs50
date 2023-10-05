@@ -18,7 +18,7 @@ if not menu.endswith("csv"):
     sys.exit(1)
 
 with open(menu) as csvfile:
-    reader = csv.DictReader(csvfile, fieldnames = "Pizza type", "Small", "Large")
+    reader = csv.DictReader(csvfile, fieldnames = ["Pizza type", "Small", "Large"])
     for row in reader:
         #must append to a list instead of just printing so that the date is stored before being formated
         prices.append({"Pizza type": row["Pizza Type"], "Small": row["Small"], "Large": row["Large"]})
