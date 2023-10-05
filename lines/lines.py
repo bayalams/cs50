@@ -3,10 +3,8 @@ import sys
 
 path = "/workspaces/110493296/grocery/grocery.py"
 
-for i in enumerate(path):
-    if path[2:] != ".py":
-        print("file not .py")
-        sys.exit(1)
+path.split(".")
+print(path)
 
 filtered_doc = []
 
