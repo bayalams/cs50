@@ -7,6 +7,9 @@ if not path.endswith(".py"):
     print("Not a Python file")
     sys.exit(1)
 
+if 0 >= sys.argv < 1:
+    sys.exit(1)
+
 filtered_doc = []
 
 try:
