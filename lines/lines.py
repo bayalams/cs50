@@ -3,10 +3,10 @@ import sys
 
 path = sys.argv[1]
 
-for i in path:
-    if path[2:] != ".py":
-        print("file not .py")
-        sys.exit(1)
+# for i in path:
+#     if path[2:] != ".py":
+#         print("file not .py")
+#         sys.exit(1)
 
 filtered_doc = []
 
