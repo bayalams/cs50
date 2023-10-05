@@ -17,7 +17,7 @@ with open(menu) as csvfile:
     for row in reader:
         prices.append({"Regular Pizza": row["Regular Pizza"], "Small": row["Small"], "Large": row["Large"]})
 
-print(prices)
+print(tabulate(prices))
 
 
 
