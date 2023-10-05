@@ -14,6 +14,7 @@ elif not menu.endswith("csv"):
 with open(menu) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        print(row["Small"], row["Large"])
+        print(row["Regular Pizza"], row["Small"], row["Large"])
 
-print(row)
+print(tabulate(menu))
+
