@@ -1,5 +1,3 @@
-#dá erro nos testes
-
 import random
 
 def main(guess, random_number):
