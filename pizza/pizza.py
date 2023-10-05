@@ -16,5 +16,5 @@ with open(menu) as csvfile:
     for row in reader:
         print(row["Regular Pizza"], row["Small"], row["Large"])
 
-print(tabulate(menu))
+print(tabulate(reader))
 
