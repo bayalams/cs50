@@ -2,8 +2,6 @@ import os
 import sys
 
 path = sys.argv[1]
-if sys.argv > 2:
-    sys.exit(1)
 filtered_doc = []
 
 try:
