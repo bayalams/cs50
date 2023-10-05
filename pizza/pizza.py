@@ -3,6 +3,7 @@ from tabulate import tabulate
 import csv
 
 menu = sys.argv[1]
+prices = []
 
 if len(sys.argv) > 2:
     print("Too many command-line arguments")
