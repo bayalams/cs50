@@ -11,7 +11,7 @@ elif not menu.endswith("cvs"):
     print("Not a CVS file")
     sys.exit(1)
 
-with open(menu) as csvfile:
-    reader = csv.Dictreader(csvfile)
+with open("regular.csv") as csvfile:
+    reader = csv.DictReader(csvfile)
     for row in csvfile:
         print(row["Small"], row["Large"])
