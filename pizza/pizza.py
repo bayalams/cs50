@@ -15,3 +15,5 @@ with open("regular.csv") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in csvfile:
         print(row["Small"], row["Large"])
+
+print(row)
