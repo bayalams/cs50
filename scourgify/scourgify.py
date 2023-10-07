@@ -10,10 +10,11 @@ names_list = []
 house_list=[]
 
 with open(names_before) as csvfile_1:
-    reader = csv.DictReader(csvfile_1)
-    for row in reader:
-        pprint(name)
-
+    for line in csvfile_1:
+        row = line.strip().split(",")
+        last = row[0]
+        first = row[1]
+        print(f"last name: {last} | first name: {first}")
 
 
 
