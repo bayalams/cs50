@@ -4,10 +4,15 @@ import csv
 names_before = sys.argv[1]
 names_after = sys.argv[2]
 
+before_list= []
+
 with open(names_before) as csvfile_1:
-    reader = csv.DictReader(csvfile_1)
+    reader = csv.reader(csvfile_1)
     for row in reader:
-        print(row)
+        before_list.append(row)
+
+print(before_list)
+
 
 
 with open(names_after, "w", ) as csvfile_2:
