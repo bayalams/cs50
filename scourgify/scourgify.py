@@ -10,11 +10,10 @@ names_list = []
 house_list=[]
 
 with open(names_before) as csvfile_1:
-    reader = csv.reader(csvfile_1)
+    reader = csv.DictReader(csvfile_1)
     for row in reader:
-        before_list.append(row)
+        pprint(row)
 
-pprint(list(enumerate(before_list)))
 
 
 
