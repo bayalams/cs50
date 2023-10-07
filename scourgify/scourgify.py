@@ -12,13 +12,12 @@ with open(names_before) as csvfile_1:
     for row in reader:
         before_list.append(row)
 
-pprint(before_list)
-
-before_list = before_list.split(",")
-pprint(before_list)
 
 
 
-with open(names_after, "w", ) as csvfile_2:
-    fieldnames = ["first", "last", "house"]
-    writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
+
+
+
+# with open(names_after, "w", ) as csvfile_2:
+#     fieldnames = ["first", "last", "house"]
+#     writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
