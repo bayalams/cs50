@@ -1,6 +1,6 @@
 import sys
 import csv
-from pprin
+from pprint import pprint
 
 names_before = sys.argv[1]
 names_after = sys.argv[2]
@@ -12,7 +12,10 @@ with open(names_before) as csvfile_1:
     for row in reader:
         before_list.append(row)
 
-print(before_list)
+pprint(before_list)
+
+before_list = before_list.split(",")
+pprint(before_list)
 
 
 
