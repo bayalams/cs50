@@ -24,7 +24,7 @@ with open(menu) as csvfile:
         prices.append(row)
 
 #must include headers, which are the keys of the dictionary, because they chance with each file
-print(tabulate(prices, headers = "keys"))
+print(tabulate(prices, headers = "keys", tablefmt="grid"))
 
 
 
