@@ -15,8 +15,8 @@ with open(names_before) as csvfile_1:
         print(row)
         last = row[0]
         first = row[1]
-        # house = row[2]
-        # print(f"last name: {last} | first name: {first} | house: {house}")
+        house = row[2]
+        print(f"last name: {last} | first name: {first} | house: {house}")
 
 
 with open(names_after, "w", ) as csvfile_2:
