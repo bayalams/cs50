@@ -12,7 +12,7 @@ house_list=[]
 with open(names_before) as csvfile_1:
     reader = csv.DictReader(csvfile_1)
     for row in reader:
-        pprint(row)
+        pprint(name)
 
 
 
