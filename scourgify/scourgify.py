@@ -9,7 +9,7 @@ before_list = []
 names_list = []
 house_list=[]
 
-with open(names_before) as csvfile_1:
+with open(names_before, "r") as csvfile_1:
     for line in csvfile_1:
         row = line.strip().split(",")
         print(row)
