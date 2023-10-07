@@ -14,9 +14,7 @@ with open(names_before) as csvfile_1:
     for row in reader:
         before_list.append(row)
 
-for ele in enumerate(before_list):
-    print(ele)
-
+pprint(list(enumerate(before_list)))
 
 
 
