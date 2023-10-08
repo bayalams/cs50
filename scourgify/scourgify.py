@@ -24,11 +24,12 @@ with open(names_before, "r") as csvfile_1:
         full_name = row["name"]
         house = row["house"]
         last, first = full_name.split(",")
+        print(last, first, house)
 
 
 with open(names_after, "w", ) as csvfile_2:
     fieldnames = ["first", "last", "house"]
     writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
-    
+
 
 
