@@ -14,7 +14,8 @@ names_before = sys.argv[1]
 names_after = sys.argv[2]
 
 before_list = []
-names_list = []
+first_list = []
+last_list = []
 house_list=[]
 
 #open the file and split the names into last and first
@@ -24,12 +25,18 @@ with open(names_before, "r") as csvfile_1:
         full_name = row["name"]
         house = row["house"]
         last, first = full_name.split(",")
-        print(last, first, house)
+        first_list.append(first)
+        last_list.append(last)
 
+pprint(f"last: {last_list}")
+pprint(f"first: {first_list}")
+print(type(last_list))
 
 with open(names_after, "w", ) as csvfile_2:
     fieldnames = ["first", "last", "house"]
     writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
+        writer.writerow({"name": name, "home": home})
+
 
 
 
