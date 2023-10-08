@@ -1,7 +1,14 @@
 import sys
 import csv
 from pprint import pprint
-from tabulate import tabulate
+
+if len(sys.argv) > 2:
+    print("Too many command-line arguments")
+    sys.exit(1)
+elif len(sys.argv) < 2:
+    print("Too few command-line arguments")
+    sys.exit(1)
+
 
 names_before = sys.argv[1]
 names_after = sys.argv[2]
