@@ -10,13 +10,14 @@ before_list = []
 names_list = []
 house_list=[]
 
+#open the file and split the names into last and first
 with open(names_before, "r") as csvfile_1:
     reader = csv.DictReader(csvfile_1)
     for row in reader:
         full_name = row["name"]
         house = row["house"]
-        first, last = full_name.split(",")
-        
+        last, first = full_name.split(",")
+
 
 
 with open(names_after, "w", ) as csvfile_2:
