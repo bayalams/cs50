@@ -26,7 +26,7 @@ with open(names_before, "r") as csvfile_1:
         last, first = full_name.split(",")
 
 
-
 with open(names_after, "w", ) as csvfile_2:
     fieldnames = ["first", "last", "house"]
     writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
+    
