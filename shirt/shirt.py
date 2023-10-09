@@ -5,7 +5,7 @@ import sys
 # puppet_with_shirt = sys.argv[2]
 
 
-shirt = Image.open("/workspaces/110493296/shirt/before1.jpg")
+shirt = Image.open("before1.jpg")
 shirt.show()
 
 
