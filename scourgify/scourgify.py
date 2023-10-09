@@ -1,3 +1,5 @@
+#FALTA PASSAR NOS TESTES TODOS
+
 import sys
 import csv
 from pprint import pprint
