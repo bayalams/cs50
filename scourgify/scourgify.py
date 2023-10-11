@@ -34,7 +34,7 @@ with open(names_before, "r") as csvfile_1, open(names_after, "w") as csvfile_2:
         last, first = full_name.split(",")
 
         #MODULE FOR WRITING THE ACTUAL INFORMATION UNDER THE HEADER; MUST BE INDENTED BECAUSE OTHERWISE THE FILE WILL BE CLOSED
-        writer.writerow({"first": first, "last": last, "house": house})
+    writer.writerow({"first": first, "last": last, "house": house})
 
 
 
