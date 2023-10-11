@@ -19,6 +19,7 @@ names_after = sys.argv[2]
 #open the file and split the names into last and first
 with open(names_before, "r") as csvfile_1:
     reader = csv.DictReader(csvfile_1)
+
      #LOOP FOR SPLITING FIRST AND LAST NAME
     for row in reader:
         full_name = row["name"]
