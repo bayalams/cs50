@@ -6,7 +6,6 @@ puppet = sys.argv[1]
 
 
 shirt = Image.open(puppet)
-shirt.show()
 print(shirt.format, shirt.size, shirt.mode)
 
 
