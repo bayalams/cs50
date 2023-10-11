@@ -20,7 +20,7 @@ with open(names_after, "w") as csvfile_2:
     #DEFINE HEADERS
     fieldnames = ["first", "last", "house"]
     #DEFINE WRITER USING SAID HEADERS
-    writer = csv.DictWriter(csvfile_2, fieldnames = fieldnames)
+    writer = csv.DictWriter(csvfile_2, fieldnames=fieldnames)
     #WRITE HEADERS ON FILE
     writer.writeheader()
 
@@ -34,7 +34,7 @@ with open(names_after, "w") as csvfile_2:
             last, first = full_name.split(",")
 
         #MODULE FOR WRITING THE ACTUAL INFORMATION UNDER THE HEADER; MUST BE INDENTED BECAUSE OTHERWISE THE FILE WILL BE CLOSED
-        writer.writerow({"first": first, "last": last, "house": house})
+        writer.writerow({"first": first.strip(), "last": last.strip(), "house": house.strip()})
 
 
 
