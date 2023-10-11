@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageOps, Resampling
 import sys, os
 
 puppet = sys.argv[1]
