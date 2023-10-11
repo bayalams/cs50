@@ -7,5 +7,6 @@ import sys
 
 shirt = Image.open("before1.jpg")
 shirt.show()
+print(shirt.format, shirt.size, shirt.mode)
 
 
