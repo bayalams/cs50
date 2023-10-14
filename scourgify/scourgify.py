@@ -24,6 +24,7 @@ with open(names_after, "w") as csvfile_2:
     #WRITE HEADERS ON FILE
     writer.writeheader()
 
+    #open the file for reading
     with open(names_before, "r") as csvfile_1:
         reader = csv.DictReader(csvfile_1)
 
