@@ -1,17 +1,16 @@
 import re
 
-ip_address = input("IPv4 Address: ")
-print(ip_address)
-
-matches = re.search(r"(.+)\.(.+)\.(.+)\.(.+)", ip_address)
-g1 = int(matches.group(1))
-g2 = int(matches.group(2))
-g3 = int(matches.group(3))
-g4 = int(matches.group(4))
-if matches:
-    if g1<= 255 | g2<= 255 | g3<= 255 | g4<= 255:
+def main():
+    ip_address = input("IPv4 Address: ")
+    if matches:
         print("True")
     else:
         print("False")
-else:
-    print("False")
+
+def validate(ip_address):
+    pattern = r"^(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)$"
+    matches = re.search(pattern, ip_address)
+
+if __name__ == "__main__":
+    matches = validate(ip_address)
+    main()
