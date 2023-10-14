@@ -8,8 +8,10 @@ g1 = int(matches.group(1))
 g2 = int(matches.group(2))
 g3 = int(matches.group(3))
 g4 = int(matches.group(4))
-
-if g1<= 255 | g2<= 255 | g3<= 255 | g4<= 255:
-    print("valid")
+if matches:
+    if g1<= 255 | g2<= 255 | g3<= 255 | g4<= 255:
+        print("valid")
+    else:
+        print("Invalid")
 else:
     print("Invalid")
