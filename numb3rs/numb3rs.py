@@ -3,11 +3,11 @@ import re
 ip_address = input("IPv4 Address: ")
 print(ip_address)
 
-if re.search(r"(.+)\.(.+)\.(.+)\.(.+)", ip_address):
-    print(re.group(1))
-    print(re.group(2))
-    print(re.group(3))
-    print(re.group(4))
+matches = re.search(r"(.+)\.(.+)\.(.+)\.(.+)", ip_address):
+    print(matches.group(1))
+    print(matches.group(2))
+    print(matches.group(3))
+    print(matches.group(4))
 else:
     pass
 
