@@ -4,7 +4,7 @@ import pytest
 def main():
 
 
-def test_validate():
+def test_main():
     assert convert("1/3") == 33
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
