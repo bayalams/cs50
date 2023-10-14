@@ -1,20 +1,18 @@
-from fuel import main, validate
+from numb3rs import validate
 import pytest
 
 def main():
+    test_validate()
 
-
-def test_main():
-    assert convert("1/3") == 33
-    with pytest.raises(ZeroDivisionError):
-        convert("1/0")
-    with pytest.raises(ValueError):
-        convert("10/r")
-
-def test_gauge():
-    assert gauge(99) == "F"
-    assert gauge(1) == "E"
-    assert gauge(25) == "25%"
+def test_validate():
+    assert validate("192.168.1.1")
+    assert validate("255.255.255.255")
+    assert validate("127.0.0.1")
+    assert not validate("192.168.1.256")
+    assert not validate("192.168.1")
+    assert not validate("256.256.256.256")
+    assert not validate("300.300.300.300")
+    assert not validate("abcd")
 
 if __name__ == "__main__":
     main()
