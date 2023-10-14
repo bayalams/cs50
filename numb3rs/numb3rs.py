@@ -7,8 +7,10 @@ def main():
     matches = validate(ip_address)
     if matches:
         print("True")
+        return True
     else:
         print("False")
+        return False
 
 def validate(ip_address):
     #the only purpose of this function is to return the pattern
