@@ -3,7 +3,7 @@ import re
 ip_address = input("IPv4 Address: ")
 print(ip_address)
 
-if re.search(r"(.+)/.(.+)/.(.+)/.(.+)", ip_address):
+if re.search(r"(.+)\.(.+)\.(.+)\.(.+)", ip_address):
     print(re.group(1))
     print(re.group(2))
     print(re.group(3))
