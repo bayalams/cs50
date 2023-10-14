@@ -15,7 +15,7 @@ names_before = sys.argv[1]
 names_after = sys.argv[2]
 
 
-#open the file and split the names into last and first
+#open the file for writing
 with open(names_after, "w") as csvfile_2:
     #DEFINE HEADERS
     fieldnames = ["first", "last", "house"]
