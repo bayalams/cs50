@@ -3,6 +3,7 @@ import pytest
 
 def main():
     test_convert()
+    test_gauge()
 
 def test_convert():
     assert convert("1/3") == 33
