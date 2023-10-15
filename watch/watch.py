@@ -9,6 +9,7 @@ def main():
         return None
 
 def parse(iframe_string):
+    print(f"iframe string: {iframe_string}")
     pattern = r'https://www\.youtube\.com/embed/([a-zA-Z0-9_-]+)'
     match = re.search(pattern, iframe_string)
 
