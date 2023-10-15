@@ -15,7 +15,10 @@ def main():
 def validate(ip_address):
     #the only purpose of this function is to return the pattern
     pattern = r"^(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)\.(25[0-5]|2[0-4]\d|[01]?\d\d?)$"
-    return re.search(pattern, ip_address)
+    if re.search(pattern, ip_address):
+        return True
+    else:
+        return False
 
 if __name__ == "__main__":
     main()
