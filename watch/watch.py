@@ -2,6 +2,7 @@ import re
 
 def main():
     iframe_string = input("HTML: ")
+    if iframe_string
     #takes the input and passes it through the function that takes only the url part; this
     short_url = parse(iframe_string)
     #if the short url exists, then it prints it
