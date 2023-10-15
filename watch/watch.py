@@ -2,9 +2,11 @@ import re
 
 def main():
     iframe_string = input("HTML: ")
-    if not iframe_string.startswith("<iframe"):
+
+    # Check if there's a YouTube link outside of an iframe
+    if re.search(r"https?://(?:www\.)?youtube\.com/watch\?v=[a-zA-Z0-9_-]+", iframe_string):
         return None
-        exit(1)
+    
     #takes the input and passes it through the function that takes only the url part; this
     short_url = parse(iframe_string)
     #if the short url exists, then it prints it
