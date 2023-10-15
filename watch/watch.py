@@ -13,9 +13,9 @@ def main():
 
 def parse(iframe_string):
     #creates the pattern with which to compare the input, if the part exists within the input, it will match
-    pattern = r"https?://(www\.)?youtube\.com/embed/([a-zA-Z0-9_-]+)"
+    pattern = r"https?://(?:www\.)?youtube\.com/embed/([a-zA-Z0-9_-]+)"
     match = re.search(pattern, iframe_string)
-    print(match.group(1))
+    print(f"m1: {match.group(1)}")
 
     #if it matches, returns the match formatted as follows, which will be used in the main function
     if match:
