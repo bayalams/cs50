@@ -14,7 +14,7 @@ def main():
 def parse(iframe_string):
 
     # Check if there's a YouTube link outside of an iframe
-    if re.search(r"https?://(?:www\.)?youtube\.com/(?:embed/ | watch\?v=)[a-zA-Z0-9_-]+", iframe_string) or not iframe_string.startswith("<iframe"):
+    if not iframe_string.startswith("<iframe"):
         return None
 
     #creates the pattern with which to compare the input, if the part exists within the input, it will match
