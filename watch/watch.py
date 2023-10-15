@@ -6,7 +6,6 @@ def main():
     if short_url:
         print(f"Shortened URL: {short_url}")
     else:
-        print("Invalid iframe embed code or the embed code does not contain a recognizable YouTube URL.")
         return None
 
 def parse(iframe_string):
