@@ -2,7 +2,9 @@ import re
 
 def main():
     iframe_string = input("HTML: ")
-    if iframe_string
+    if not iframe_string.startswith("<iframe"):
+        return None
+        exit(1)
     #takes the input and passes it through the function that takes only the url part; this
     short_url = parse(iframe_string)
     #if the short url exists, then it prints it
