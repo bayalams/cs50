@@ -2,13 +2,12 @@
 #falta partir em funções
 
 import re
-hours = input("Hours: ")
-
 
 def main():
-    print(convert(input("Hours: ")))
+    hours = input("Hours: ")
+    print(convert(hours))
 
-def convert(s):
+def convert(hours):
     hours_pattern = re.search(r"^(\d{1,2}:\d{2}\s(?:AM|PM))\sto\s(\d{1,2}:\d{2}\s(?:AM|PM))$", hours)
 
     if hours_pattern:
@@ -31,5 +30,8 @@ def convert(s):
     else:
         pass
 
-    print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
+    #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
     return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
+
+if __name__ == "__main__":
+    main()
