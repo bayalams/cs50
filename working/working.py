@@ -13,3 +13,6 @@ hour1, minutes1, half1 = re.split(r":|\s", hours1)
 hour2, minutes2, half2 = re.split(r":|\s", hours2)
 
 print(hour1, minutes1, half1)
+
+if half1 == "PM":
+    
