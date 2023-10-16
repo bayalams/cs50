@@ -16,11 +16,11 @@ print(hour1, minutes1, half1)
 
 if half1 == "PM":
     hour1 = int(hour1)
-    hour1 = int(hour1 + 8)
+    hour1 = int(hour1 + 12)
 elif half2 == "PM":
     hour2 = int(hour2)
-    hour2 = int(hour2 + 8)
+    hour2 = int(hour2 + 12)
 else:
     pass
 
-print(f"{hour1}:{minutes1} {half1} to {hour2}:{minutes2} {half2}")
+print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
