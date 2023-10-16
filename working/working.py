@@ -9,7 +9,7 @@ if hours_pattern:
 else:
     pass
 
-split_hours1 = re.split(r": ", hours1)
+split_hours1 = re.split(r":\s", hours1)
 #hours2, minutes2 = hours1.split(":", " ")
 
 print(split_hours1)
