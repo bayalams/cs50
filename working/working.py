@@ -17,7 +17,10 @@ print(hour1, minutes1, half1)
 if half1 == "PM":
     hour1 = int(hour1)
     hour1 = int(hour1 + 8)
+elif half2 == "PM":
+    hour2 = int(hour2)
+    hour2 = int(hour2 + 8)
 else:
     pass
 
-print(hour1, minutes1, half1)
+print(f"{hour1}:{minutes1} {half1} to {hour2}:{minutes2} {half2}")
