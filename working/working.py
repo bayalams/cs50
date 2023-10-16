@@ -1,7 +1,7 @@
 import re
 hours = input("Hours: ")
 
-hours_pattern = re.search(r"^(\d+)('AM' | 'PM')(\d+)('AM' | 'PM')$", hours)
+hours_pattern = re.search(r"^(\d+)('AM'|'PM')(\d+)('AM'|'PM')$", hours)
 print(hours_pattern.group(1))
 
 if hours_pattern:
