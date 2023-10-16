@@ -15,4 +15,8 @@ hour2, minutes2, half2 = re.split(r":|\s", hours2)
 print(hour1, minutes1, half1)
 
 if half1 == "PM":
-    
+    hours1 = int(hours1 + 8)
+else:
+    pass
+
+print(hour1, minutes1, half1)
