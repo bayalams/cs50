@@ -1,5 +1,4 @@
 #falta o 0 antes da hora se for só 1 dígito
-#falta partir em funções
 
 import re
 
@@ -22,11 +21,9 @@ def convert(hours):
     print(hour1, minutes1, half1)
 
     if half1 == "PM":
-        hour1 = int(hour1)
-        hour1 = int(hour1 + 12)
+        hour1 = int(hour1) + 12
     elif half2 == "PM":
-        hour2 = int(hour2)
-        hour2 = int(hour2 + 12)
+        hour2 = int(hour2) + 12
     else:
         pass
 
