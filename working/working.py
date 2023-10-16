@@ -9,13 +9,7 @@ if hours_pattern:
 else:
     pass
 
-split_hours1 = re.split(r":|\s", hours1)
-split_hours2 = re.split(r":|\s", hours2)
-hours1 = split_hours1[0]
-minutes1 = split_hours1[1]
-hours2 = split_hours2[0]
-minutes2 = split_hours2[1]
+hour1, minutes1, half1 = re.split(r":|\s", hours1)
+hour2, minutes2, half2 = re.split(r":|\s", hours2)
 
-
-print(split_hours1)
-print(split_hours2)
+print(hour1, minutes1, half1)
