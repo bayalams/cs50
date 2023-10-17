@@ -36,12 +36,15 @@ def convert(hours):
         minutes2 = '00'
 
 
-    if half1 == "PM":
+    if half1 == "PM" and int(hour1) != 12:
         hour1 = int(hour1) + 12
-    elif half2 == "PM":
+    else:
+        hour1 = "00"
+
+    if half2 == "PM" and int(hour2) != 12:
         hour2 = int(hour2) + 12
     else:
-        pass
+        hour2 = "00"
 
 
     return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
