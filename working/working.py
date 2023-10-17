@@ -31,6 +31,7 @@ def convert(hours):
         hour2, minutes2, half2 = split_hours2
         print(hour2, minutes2, half2)
     else:
+        hour2, minutes2, half2 = split_hours2
         minutes2 = '00'
 
 
