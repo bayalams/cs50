@@ -44,7 +44,6 @@ def convert(hours):
         pass
 
 
-
     return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
 
 
