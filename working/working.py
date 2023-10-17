@@ -25,13 +25,14 @@ def convert(hours):
         hour1, minutes1, half1 = split_hours1
         print(hour1, minutes1, half1)
     else:
+        hour1, half1 = split_hours1
         minutes1 = '00'
 
     if len(split_hours2) == 3:
         hour2, minutes2, half2 = split_hours2
         print(hour2, minutes2, half2)
     else:
-        hour2, minutes2, half2 = split_hours2
+        hour2, half2 = split_hours2
         minutes2 = '00'
 
 
@@ -42,11 +43,9 @@ def convert(hours):
     else:
         pass
 
-    # if hour1 and hour2== re.search(r"^..$"):
-    #     print("yes")
-    #     return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
-    # else:
-    #     return f"0{hour1}:{minutes1} to 0{hour2}:{minutes2}"
+
+
+    return f"{hour1}:{minutes1} to 0{hour2}:{minutes2}"
 
 
 if __name__ == "__main__":
