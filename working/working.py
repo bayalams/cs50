@@ -16,20 +16,32 @@ def convert(hours):
         pass
 
 
-    hour1 = re.split(r":|\s", hours1)
-    hour2, half2 = re.split(r":|\s", hours2)
+    split_hours1 = re.split(r":|\s", hours1)
+    split_hours2 = re.split(r":|\s", hours2)
 
-    print(hour1, half1)
+    print(split_hours1, split_hours2)
 
-    if half1 == "PM":
-        hour1 = int(hour1) + 12
-    elif half2 == "PM":
-        hour2 = int(hour2) + 12
+    if len(split_hours1) == 2:
+        hours1, half1 = split_hours1
     else:
-        pass
+        hours1, _, half1 = split_hours1
 
-    #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
-    return f"{hour1} to {hour2}"
+    if len(split_hours2) == 2:
+        hours2, half2 = split_hours2
+    else:
+        hours2, _, half2 = split_hours2
+
+
+
+    # if half1 == "PM":
+    #     hour1 = int(hour1) + 12
+    # elif half2 == "PM":
+    #     hour2 = int(hour2) + 12
+    # else:
+    #     pass
+
+    # #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
+    # return f"{hour1} to {hour2}"
 
 if __name__ == "__main__":
     main()
