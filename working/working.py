@@ -3,7 +3,12 @@ import re
 
 def main():
     hours = input("Hours: ")
-    print(convert(find_pattern(hours)))
+    split_hours1, split_hours2 = find_pattern(hours)
+    if split_hours1 and split_hours2:
+        print(convert(split_hours1, split_hours2))
+    else:
+        print("Invalid time format.")
+
 
 def find_pattern(hours):
     hours_pattern = re.search(r"^(\d{1,2}(:\d{2},[0-59])?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
@@ -19,9 +24,7 @@ def find_pattern(hours):
 
     return split_hours1, split_hours2
 
-def convert():
-    split_hours1, split_hours2 = find_pattern(hours)
-
+def convert(split_hours1, split_hours2 ):
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
         print(hour1, minutes1, half1)
