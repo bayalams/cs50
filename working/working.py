@@ -41,10 +41,9 @@ def convert(hours):
     else:
         pass
 
+        
 
-    if len(hour1) == 1 or len(hour2) == 1:
-        return f"0{hour1}:{minutes1} to 0{hour2}:{minutes2}"
-    else:
+
         return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
 if __name__ == "__main__":
     main()
