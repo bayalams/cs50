@@ -7,7 +7,7 @@ def main():
     print(convert(hours))
 
 def convert(hours):
-    hours_pattern = re.search(r"^(\d{1,2}:\d{2}?\s(?:AM|PM))\sto\s(\d{1,2}:\d{2}?\s(?:AM|PM))$", hours)
+    hours_pattern = re.search(r"^(\d{1,2}(?::\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(?::\d{2})?\s(?:AM|PM))$", hours)
 
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(2)
