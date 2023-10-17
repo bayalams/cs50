@@ -26,25 +26,25 @@ def convert(hours):
         print(hour1, minutes1, half1)
     else:
         hour1, half1 = split_hours1
-        minutes1 = '00'
+        minutes1 = "00"
 
     if len(split_hours2) == 3:
         hour2, minutes2, half2 = split_hours2
         print(hour2, minutes2, half2)
     else:
         hour2, half2 = split_hours2
-        minutes2 = '00'
+        minutes2 = "00"
 
 
     if half1 == "PM" and int(hour1) != 12:
-        hour1 = int(hour1) + 12
-    elif half1 == "AM" and int(hour1) == 12:
-        hour1 = 00
+        hour1 = str(int(hour1) + 12)
+    elif half1 == "AM" and hour1 == "12":
+        hour1 = "00"
 
     if half2 == "PM" and int(hour2) != 12:
-        hour2 = int(hour2) + 12
-    elif half2 == "AM" and int(hour2) == 12:
-        hour2 = 00
+        hour2 = str(int(hour2) + 12)
+    elif half2 == "AM" and hour2 == "12":
+        hour2 = "00"
 
 
     return f"{hour1.zfill(2)}:{minutes1} to {hour2.zfill(2)}:{minutes2}"
