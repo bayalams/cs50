@@ -6,7 +6,7 @@ def main():
     hours = input("Hours: ")
     print(convert(hours))
 
-def convert(hours):
+def find_pattern(hours):
     hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
 
     if hours_pattern:
@@ -15,12 +15,14 @@ def convert(hours):
     else:
         pass
 
-
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
 
-    print(split_hours1, split_hours2)
+    return split_hours1, split_hours2
 
+def convert(s, s1):
+
+    split_hours1 = find_pattern(hours)
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
         print(hour1, minutes1, half1)
