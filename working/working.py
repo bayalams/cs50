@@ -12,13 +12,11 @@ def convert(hours):
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
         print(hours1, hours2)
-        if hours_pattern.group(2) and hours_pattern.group(4):
-            print(hours_pattern.group(2), hours_pattern.group(4))
     else:
         pass
 
 
-    hour1, half1 = re.split(r":|\s", hours1)
+    hour1 = re.split(r":|\s", hours1)
     hour2, half2 = re.split(r":|\s", hours2)
 
     print(hour1, half1)
