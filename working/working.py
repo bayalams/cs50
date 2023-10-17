@@ -38,12 +38,12 @@ def convert(hours):
 
     if half1 == "PM" and int(hour1) != 12:
         hour1 = int(hour1) + 12
-    else:
+    elif half1 == "AM" and int(hour1) == 12:
         hour1 = "00"
 
     if half2 == "PM" and int(hour2) != 12:
         hour2 = int(hour2) + 12
-    else:
+    elif half2 == "AM" and int(hour2) == 12:
         hour2 = "00"
 
 
