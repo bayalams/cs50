@@ -23,11 +23,13 @@ def convert(hours):
 
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
+        print(hour1, minutes1, half1)
     else:
         minutes1 = '00'
 
     if len(split_hours2) == 3:
         hour2, minutes2, half2 = split_hours2
+        print(hour2, minutes2, half2)
     else:
         minutes2 = '00'
 
@@ -38,7 +40,7 @@ def convert(hours):
         hour2 = int(hour2) + 12
     else:
         pass
-    
+
 
     if len(hour1) == 1 or len(hour2) == 1:
         return f"0{hour1}:{minutes1} to 0{hour2}:{minutes2}"
