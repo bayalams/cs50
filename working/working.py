@@ -1,10 +1,9 @@
-#falta o 0 antes da hora se for só 1 dígito
 
 import re
 
 def main():
     hours = input("Hours: ")
-    print(convert(hours))
+    print(convert(find_pattern(hours)))
 
 def find_pattern(hours):
     hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
@@ -20,9 +19,9 @@ def find_pattern(hours):
 
     return split_hours1, split_hours2
 
-def convert(s, s1):
+def convert():
+    split_hours1, split_hours2 = find_pattern(hours)
 
-    split_hours1 = find_pattern(hours)
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
         print(hour1, minutes1, half1)
@@ -42,6 +41,7 @@ def convert(s, s1):
         hour1 = str(int(hour1) + 12)
     elif half1 == "AM" and hour1 == "12":
         hour1 = "00"
+
 
     if half2 == "PM" and int(hour2) != 12:
         hour2 = str(int(hour2) + 12)
