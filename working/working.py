@@ -21,27 +21,27 @@ def convert(hours):
 
     print(split_hours1, split_hours2)
 
-    if len(split_hours1) == 2:
-        hours1, half1 = split_hours1
+    if len(split_hours1) == 3:
+        hour1, minutes1, half1 = split_hours1
     else:
-        hours1, _, half1 = split_hours1
+        minutes1 = '00'
 
-    if len(split_hours2) == 2:
-        hours2, half2 = split_hours2
+    if len(split_hours2) == 3:
+        hour2, minutes2, half2 = split_hours2
     else:
-        hours2, _, half2 = split_hours2
+        minutes2 = '00'
 
 
 
-    # if half1 == "PM":
-    #     hour1 = int(hour1) + 12
-    # elif half2 == "PM":
-    #     hour2 = int(hour2) + 12
-    # else:
-    #     pass
+    if half1 == "PM":
+        hour1 = int(hour1) + 12
+    elif half2 == "PM":
+        hour2 = int(hour2) + 12
+    else:
+        pass
 
-    # #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
-    # return f"{hour1} to {hour2}"
+    #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
+    return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
 
 if __name__ == "__main__":
     main()
