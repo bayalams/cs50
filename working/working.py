@@ -32,16 +32,17 @@ def convert(hours):
         minutes2 = '00'
 
 
-
     if half1 == "PM":
         hour1 = int(hour1) + 12
     elif half2 == "PM":
         hour2 = int(hour2) + 12
     else:
         pass
+    
 
-    #print(f"{hour1}:{minutes1} to {hour2}:{minutes2}")
-    return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
-
+    if len(hour1) == 1 or len(hour2) == 1:
+        return f"0{hour1}:{minutes1} to 0{hour2}:{minutes2}"
+    else:
+        return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
 if __name__ == "__main__":
     main()
