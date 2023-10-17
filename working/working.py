@@ -45,7 +45,7 @@ def convert(hours):
 
 
 
-    return f"{hour1}:{minutes1} to 0{hour2}:{minutes2}"
+    return f"{hour1}:{minutes1} to {hour2}:{minutes2}"
 
 
 if __name__ == "__main__":
