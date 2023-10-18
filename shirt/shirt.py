@@ -1,5 +1,4 @@
 from PIL import Image
-from PIL import Image
 from PIL import ImageOps
 import sys
 import os
@@ -11,6 +10,14 @@ def check_puppet(file):
 puppet = sys.argv[1]
 OVERLAY_SHIRT = 'shirt.png'
 puppet_with_shirt = sys.argv[2]
+
+if len(sys.argv) > 3:
+    print("Too many command-line arguments.")
+    sys.exit(-1)
+elif len(sys.argv) < 3:
+    print("Too few command-line arguments.")
+
+if puppet_with_shirt.splitext()
 
 
 if __name__ == '__main__':
