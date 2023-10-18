@@ -24,6 +24,6 @@ if __name__ == '__main__':
     # resize shirt image
     img_shirt = img_shirt.resize(img_puppet.size)
     # paste shirt on top
-    img_puppet.paste(img_shirt, (0,0), img_shirt)
+    img_puppet.paste(img_shirt, (0,-100), img_shirt)
 
     img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
