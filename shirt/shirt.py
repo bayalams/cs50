@@ -20,6 +20,7 @@ def main():
         exit(-1)
 
     extension_validation(input_img, output_img)
+    treat_images(input_img, output_img)
 
 def check_puppet(file):
     return os.path.isfile(file)
@@ -28,7 +29,7 @@ def extension_validation(input_img, output_img):
     input_extension = os.path.splitext(input_img)[-1]
     output_extension = os.path.splitext(output_img)[-1]
 
-    print(input_extension, output_extension)
+    #print(input_extension, output_extension)
     accepted_extensions = [".jpg", ".jpeg", ".png"]
 
     if output_extension not in accepted_extensions:
@@ -38,7 +39,7 @@ def extension_validation(input_img, output_img):
         print("Input and output have different extensions")
         sys.exit(-1)
 
-def treat_images(input_img, ouput_img):
+def treat_images(input_img, output_img):
    # load images
     img_puppet = Image.open(input_img)
     img_shirt = Image.open(OVERLAY_SHIRT)
@@ -46,7 +47,7 @@ def treat_images(input_img, ouput_img):
     img_shirt = img_shirt.resize(input_img.size)
     # paste shirt on top
     img_puppet.paste(img_shirt, (0,-100), img_shirt)
-    img_puppet.save()
+    img_puppet.save(output_img)
 
 
 if __name__ == '__main__':
