@@ -2,17 +2,22 @@ from PIL import Image
 from PIL import Image
 from PIL import ImageOps
 import sys
+import os
 
+
+def check_puppet(file):
+    return os.path.isfile(file)
 
 puppet = sys.argv[1]
+OVERLAY_SHIRT = 'shirt.png'
 #puppet_with_shirt = sys.argv[2]
 
 
-shirt = Image.open("shirt.png")
-print(shirt.format, shirt.size, shirt.mode)
+if __main__ == '__main__':
+    if not check_puppet(file):
+        print(f'invalid puppet {file}. exit.')
+        exit(-1)
 
-print('puppet', puppet)
-im_puppet = Image.open(puppet)
-img1 = ImageOps.fit(im_puppet, bleed=0.0, centering=(0.5, 0.5), size=shirt.size)
-
-img1.save('result.jpg')
+    img_puppet = Image.open(puppet)
+    img_shirt = Image.open(OVERLAY_SHIRT)
+    
