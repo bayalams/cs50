@@ -10,7 +10,7 @@ def check_puppet(file):
 
 puppet = sys.argv[1]
 OVERLAY_SHIRT = 'shirt.png'
-#puppet_with_shirt = sys.argv[2]
+puppet_with_shirt = sys.argv[2]
 
 
 if __name__ == '__main__':
