@@ -6,16 +6,6 @@ import os
 OVERLAY_SHIRT = 'shirt.png'
 
 def main():
-    if not check_puppet(input_img):
-        print(f'invalid puppet {input_img}. exit.')
-        exit(-1)
-
-    extension_validation(input_img, output_img)
-
-def check_puppet(file):
-    return os.path.isfile(file)
-
-def check_argv():
     if len(sys.argv) > 3:
         print("Too many command-line arguments.")
         sys.exit(-1)
@@ -25,6 +15,14 @@ def check_argv():
     input_img = sys.argv[1]
     output_img = sys.argv[2]
 
+    if not check_puppet(input_img):
+        print(f'invalid puppet {input_img}. exit.')
+        exit(-1)
+
+    extension_validation(input_img, output_img)
+
+def check_puppet(file):
+    return os.path.isfile(file)
 
 def extension_validation(input_img, output_img):
     input_extension = os.path.splitext(input_img)[-1]
@@ -41,7 +39,6 @@ def extension_validation(input_img, output_img):
     if input_extension != output_extension:
         print("Input and output have different extensions")
         sys.exit(-1)
-
 
 if __name__ == '__main__':
     main()
