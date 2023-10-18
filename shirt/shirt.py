@@ -44,7 +44,7 @@ def treat_images(input_img, output_img):
     img_puppet = Image.open(input_img)
     img_shirt = Image.open(OVERLAY_SHIRT)
     # resize shirt image
-    img_shirt = img_shirt.resize(input_img.size)
+    img_shirt = img_shirt.resize(img_puppet.size)
     # paste shirt on top
     img_puppet.paste(img_shirt, (0,-100), img_shirt)
     img_puppet.save(output_img)
