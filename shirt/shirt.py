@@ -33,23 +33,22 @@ def extension_validation(input_img, output_img):
 
     if output_extension not in accepted_extensions:
         print("Invalid output")
-    else:
         sys.exit(-1)
-
-    if input_extension != output_extension:
+    elif input_extension != output_extension:
         print("Input and output have different extensions")
         sys.exit(-1)
+
+def treat_images(input_img, ouput_img):
+   # load images
+    img_puppet = Image.open(input_img)
+    img_shirt = Image.open(OVERLAY_SHIRT)
+    # resize shirt image
+    img_shirt = img_shirt.resize(input_img.size)
+    # paste shirt on top
+    img_puppet.paste(img_shirt, (0,-100), img_shirt)
+    img_puppet.save()
 
 
 if __name__ == '__main__':
     main()
 
-    # load images
-    #img_puppet = Image.open(input_img)
-    #img_shirt = Image.open(OVERLAY_SHIRT)
-    # resize shirt image
-    #img_shirt = img_shirt.resize(img_input_img.size)
-    # paste shirt on top
-    #img_puppet.paste(img_shirt, (0,-100), img_shirt)
-
-    #img_puppet.save(f'{input_img.split(".")[0]}_out.jpg')
