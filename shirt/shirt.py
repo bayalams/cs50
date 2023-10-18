@@ -17,7 +17,10 @@ if len(sys.argv) > 3:
 elif len(sys.argv) < 3:
     print("Too few command-line arguments.")
 
-if 
+input_extension = os.path.splitext(puppet)
+output_extension = os.path.splitext(puppet_with_shirt)
+
+print(input_extension, output_extension)
 
 
 if __name__ == '__main__':
@@ -26,11 +29,11 @@ if __name__ == '__main__':
         exit(-1)
 
     # load images
-    img_puppet = Image.open(puppet)
-    img_shirt = Image.open(OVERLAY_SHIRT)
+    #img_puppet = Image.open(puppet)
+    #img_shirt = Image.open(OVERLAY_SHIRT)
     # resize shirt image
-    img_shirt = img_shirt.resize(img_puppet.size)
+    #img_shirt = img_shirt.resize(img_puppet.size)
     # paste shirt on top
-    img_puppet.paste(img_shirt, (0,-100), img_shirt)
+    #img_puppet.paste(img_shirt, (0,-100), img_shirt)
 
-    img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
+    #img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
