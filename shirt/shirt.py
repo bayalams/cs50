@@ -3,9 +3,17 @@ from PIL import ImageOps
 import sys
 import os
 
+def main():
+    if not check_puppet(puppet):
+        print(f'invalid puppet {puppet}. exit.')
+        exit(-1)
+    extension_validation(puppet, puppet_with_shirt)
+
 
 def check_puppet(file):
     return os.path.isfile(file)
+
+
 input_img = sys.argv[1]
 OVERLAY_SHIRT = 'shirt.png'
 output_img = sys.argv[2]
@@ -37,10 +45,6 @@ def extension_validation(puppet, puppet_with_shirt):
 
 if __name__ == '__main__':
 
-    if not check_puppet(puppet):
-        print(f'invalid puppet {puppet}. exit.')
-        exit(-1)
-    extension_validation(puppet, puppet_with_shirt)
 
 
     # load images
