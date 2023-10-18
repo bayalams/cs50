@@ -3,6 +3,8 @@ from PIL import ImageOps
 import sys
 import os
 
+OVERLAY_SHIRT = 'shirt.png'
+
 def main():
     if not check_puppet(input_img):
         print(f'invalid puppet {input_img}. exit.')
@@ -13,10 +15,7 @@ def main():
 def check_puppet(file):
     return os.path.isfile(file)
 
-
-OVERLAY_SHIRT = 'shirt.png'
-
-def check_argv():
+def check_argv(input_img, output_img):
     if len(sys.argv) > 3:
         print("Too many command-line arguments.")
         sys.exit(-1)
