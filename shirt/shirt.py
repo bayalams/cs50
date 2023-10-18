@@ -39,6 +39,7 @@ def extension_validation(input_img, output_img):
         print("Input and output have different extensions")
         sys.exit(-1)
 
+#FALTA PÔR AS IMAGENS DO MESMO TAMANHO
 def treat_images(input_img, output_img):
    # load images
     img_puppet = Image.open(input_img)
