@@ -24,14 +24,13 @@ def extension_validation(puppet, puppet_with_shirt):
     print(input_extension, output_extension)
     accepted_extensions = [".jpg", ".jpeg", ".png"]
 
-    if input_extension in accepted_extensions:
-        print("input extension valid")
+    if output_extension in accepted_extensions:
+        print("Invalid output")
     else:
         sys.exit(-1)
 
-    if output_extension in accepted_extensions:
-        print("output extension valid")
-    else:
+    if output_extension != input_extension:
+        print("Input and output have different extensions")
         sys.exit(-1)
 
 
