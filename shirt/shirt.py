@@ -17,7 +17,7 @@ if len(sys.argv) > 3:
 elif len(sys.argv) < 3:
     print("Too few command-line arguments.")
 
-if puppet_with_shirt.splitext()
+if 
 
 
 if __name__ == '__main__':
