@@ -9,8 +9,8 @@ def main():
     if not check_puppet(input_img):
         print(f'invalid puppet {input_img}. exit.')
         exit(-1)
-    extension_validation(input_img, output_img)
 
+    extension_validation(input_img, output_img)
 
 def check_puppet(file):
     return os.path.isfile(file)
