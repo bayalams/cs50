@@ -17,10 +17,22 @@ if len(sys.argv) > 3:
 elif len(sys.argv) < 3:
     print("Too few command-line arguments.")
 
-input_extension = os.path.splitext(puppet)
-output_extension = os.path.splitext(puppet_with_shirt)
+def extension_validation(puppet, puppet_with_shirt):
+    input_extension = os.path.splitext(puppet)[-1]
+    output_extension = os.path.splitext(puppet_with_shirt)[-1]
 
-print(input_extension, output_extension)
+    print(input_extension, output_extension)
+    accepted_extensions = [".jpg", ".jpeg", ".png"]
+
+    if input_extension in accepted_extensions:
+        print("input extension valid")
+    else:
+        sys.exit(-1)
+
+    if output_extension in accepted_extensions:
+        print("output extension valid")
+    else:
+        sys.exit(-1)
 
 
 if __name__ == '__main__':
