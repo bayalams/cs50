@@ -37,7 +37,7 @@ def extension_validation(input_img, output_img):
     else:
         sys.exit(-1)
 
-    if output_extension != input_extension:
+    if input_extension != output_extension:
         print("Input and output have different extensions")
         sys.exit(-1)
 
