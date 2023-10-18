@@ -11,4 +11,4 @@ puppet = sys.argv[1]
 shirt = Image.open("shirt.png")
 print(shirt.format, shirt.size, shirt.mode)
 
-img1 = ImageOps.fit(puppet, bleed=0.0, centering=(0.5, 0.5))
+img1 = ImageOps.fit(puppet, bleed=0.0, centering=(0.5, 0.5), size=shirt.size)
