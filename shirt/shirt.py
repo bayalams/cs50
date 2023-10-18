@@ -32,7 +32,7 @@ def extension_validation(input_img, output_img):
     print(input_extension, output_extension)
     accepted_extensions = [".jpg", ".jpeg", ".png"]
 
-    if output_extension in accepted_extensions:
+    if output_extension not in accepted_extensions:
         print("Invalid output")
     else:
         sys.exit(-1)
