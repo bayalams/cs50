@@ -4,19 +4,17 @@ import sys
 import os
 
 def main():
-    if not check_puppet(puppet):
-        print(f'invalid puppet {puppet}. exit.')
+    if not check_puppet(input_img):
+        print(f'invalid puppet {input_img}. exit.')
         exit(-1)
-    extension_validation(puppet, puppet_with_shirt)
+    extension_validation(input_img, output_img)
 
 
 def check_puppet(file):
     return os.path.isfile(file)
 
 
-input_img = sys.argv[1]
 OVERLAY_SHIRT = 'shirt.png'
-output_img = sys.argv[2]
 
 def check_argv():
     if len(sys.argv) > 3:
@@ -25,9 +23,12 @@ def check_argv():
     elif len(sys.argv) < 3:
         print("Too few command-line arguments.")
 
-def extension_validation(puppet, puppet_with_shirt):
-    input_extension = os.path.splitext(puppet)[-1]
-    output_extension = os.path.splitext(puppet_with_shirt)[-1]
+    input_img = sys.argv[1]
+    output_img = sys.argv[2]
+
+def extension_validation(input_img, output_img):
+    input_extension = os.path.splitext(input_img)[-1]
+    output_extension = os.path.splitext(output_img)[-1]
 
     print(input_extension, output_extension)
     accepted_extensions = [".jpg", ".jpeg", ".png"]
@@ -42,17 +43,15 @@ def extension_validation(puppet, puppet_with_shirt):
         sys.exit(-1)
 
 
-
 if __name__ == '__main__':
-
-
+    main()
 
     # load images
-    #img_puppet = Image.open(puppet)
+    #img_puppet = Image.open(input_img)
     #img_shirt = Image.open(OVERLAY_SHIRT)
     # resize shirt image
-    #img_shirt = img_shirt.resize(img_puppet.size)
+    #img_shirt = img_shirt.resize(img_input_img.size)
     # paste shirt on top
     #img_puppet.paste(img_shirt, (0,-100), img_shirt)
 
-    #img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
+    #img_puppet.save(f'{input_img.split(".")[0]}_out.jpg')
