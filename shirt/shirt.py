@@ -18,9 +18,12 @@ if __name__ == '__main__':
         print(f'invalid puppet {puppet}. exit.')
         exit(-1)
 
+    # load images
     img_puppet = Image.open(puppet)
     img_shirt = Image.open(OVERLAY_SHIRT)
+    # resize shirt image
     img_shirt = img_shirt.resize(img_puppet.size)
-    img_puppet.paste(img_shirt)
+    # paste shirt on top
+    img_puppet.paste(img_shirt, (0,0), img_shirt)
 
     img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
