@@ -40,6 +40,7 @@ def extension_validation(input_img, output_img):
         print("Input and output have different extensions")
         sys.exit(-1)
 
+
 if __name__ == '__main__':
     main()
 
