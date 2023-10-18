@@ -20,6 +20,7 @@ if __name__ == '__main__':
 
     img_puppet = Image.open(puppet)
     img_shirt = Image.open(OVERLAY_SHIRT)
+    img_shirt = img_shirt.resize(img_puppet.size)
     img_puppet.paste(img_shirt)
 
     img_puppet.save(f'{puppet.split(".")[0]}_out.jpg')
