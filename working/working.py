@@ -25,7 +25,6 @@ def find_pattern(hours):
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
 
-    print(f"1 {split_hours1, split_hours2}")
     return split_hours1, split_hours2
 
 def convert(split_hours1, split_hours2 ):
