@@ -12,7 +12,7 @@ def main():
 
 
 def find_pattern(hours):
-    hours_pattern = re.search(r"^(\d{1,2}(:\d{2}[0-59])?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
+    hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
 
     #see if input matches required pattern and retrieve the grouped information
     if hours_pattern:
