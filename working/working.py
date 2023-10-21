@@ -18,6 +18,8 @@ def find_pattern(hours):
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
         print(hours1, hours2)
+    else:
+        raise ValueError
 
     #split the given hours in hour, minutes and AM/PM
     split_hours1 = re.split(r":|\s", hours1)
@@ -26,6 +28,7 @@ def find_pattern(hours):
     return split_hours1, split_hours2
 
 def convert(split_hours1, split_hours2 ):
+
     #if the input has three sections, i.e hours, minutes and AM/PM, return them, otherwise, if there is not minutes group, minutes = 00
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
@@ -45,7 +48,7 @@ def convert(split_hours1, split_hours2 ):
         hour2, half2 = split_hours2
         minutes2 = "00"
 
-
+    #if it's PM and not noon, add 12 to the hours to turn it into the 24 hour format
     if half1 == "PM" and int(hour1) != 12:
         hour1 = str(int(hour1) + 12)
     elif half1 == "AM" and hour1 == "12":
