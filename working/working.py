@@ -4,6 +4,7 @@ import re
 def main():
     hours = input("Hours: ")
     split_hours1, split_hours2 = find_pattern(hours)
+    print(split_hours1, split_hours2)
     if split_hours1 and split_hours2:
         print(convert(split_hours1, split_hours2))
     else:
@@ -15,7 +16,7 @@ def find_pattern(hours):
 
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
-        #print(hours1, hours2)
+        print(hours1, hours2)
 
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
