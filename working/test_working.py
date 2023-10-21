@@ -6,7 +6,8 @@ def main():
     test_convert()
 
 def test_find_pattern():
-    assert
+    assert "9:00 AM to 5:00 PM" == True
+    assert "9 AM to 5 PM" == True
 
 def test_convert():
 
