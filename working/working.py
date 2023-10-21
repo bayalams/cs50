@@ -15,7 +15,7 @@ def find_pattern(hours):
 
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
-        print(hours1, hours2)
+        #print(hours1, hours2)
 
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
