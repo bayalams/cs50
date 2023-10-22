@@ -28,7 +28,7 @@ def test_split_hours(input_hours, expected_split1, expected_split2):
 
 def test_split_hours_invalid(invalid_hours):
     with pytest.raises(ValueError):
-        test_split_hours_invalid(invalid_hours)
+        split_hours(invalid_hours)
 
 
 @pytest.mark.parametrize("split_hours1, split_hours2, expected_output", [
