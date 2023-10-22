@@ -27,7 +27,7 @@ def split_hours(hours):
 
     return split_hours1, split_hours2
 
-def convert(split_hours1, split_hours2 ):
+def convert(split_hours1, split_hours2):
 
     #if the input has three sections, i.e hours, minutes and AM/PM, return them, otherwise, if there is not minutes group, minutes = 00
     if len(split_hours1) == 3:
