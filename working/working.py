@@ -8,10 +8,9 @@ def main():
 
 
 def split_hours(hours):
-    hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
-
+    hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours
     #see if input matches required pattern and retrieve the grouped information
-    if hours_pattern:
+    if vvhours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
     else:
         raise ValueError
