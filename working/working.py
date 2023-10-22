@@ -2,12 +2,12 @@ import re
 
 def main():
     hours = input("Hours: ")
-    split_hours1, split_hours2 = check_hours(hours)
+    split_hours1, split_hours2 = split_hours(hours)
     if split_hours1 and split_hours2:
         print(convert(split_hours1, split_hours2))
 
 
-def check_hours(hours):
+def split_hours(hours):
     hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
 
     #see if input matches required pattern and retrieve the grouped information
@@ -20,6 +20,11 @@ def check_hours(hours):
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
 
+    return split_hours1, split_hours2
+
+def convert(split_hours1, split_hours2):
+
+    #if the input has three sections, i.e hours, minutes and AM/PM, return them, otherwise, if there is not minutes group, minutes = 00
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
         if int(minutes1) > 59:
@@ -28,7 +33,6 @@ def check_hours(hours):
         hour1, half1 = split_hours1
         minutes1 = "00"
 
-    #if the input has three sections, i.e hours, minutes and AM/PM, return them, otherwise, if there is not minutes group, minutes = 00
     if len(split_hours2) == 3:
         hour2, minutes2, half2 = split_hours2
         if int(minutes2) > 59:
@@ -40,9 +44,6 @@ def check_hours(hours):
     if int(hour1) > 12 or int(hour2) > 12:
         raise ValueError
 
-    return hour1, hour2, minutes1, minutes2, half1, half2
-
-def convert(hour1, hour2, minutes1, minutes2, half1, half2):
 
     #if it's PM and not noon, add 12 to the hours to turn it into the 24 hour format
     if half1 == "PM" and int(hour1) != 12:
