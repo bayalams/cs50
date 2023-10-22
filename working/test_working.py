@@ -31,7 +31,7 @@ def test_convert(split_hours1, split_hours2, expected_output):
     "13 AM to 23 PM", "5 AM - 9 PM", "2 to 3"
     ])
 
-def test_convert_valid_hours(invalid_hours):
+def test_convert_invalid_hours(invalid_hours):
     with pytest.raises(ValueError):
         convert(invalid_hours)
 
