@@ -16,7 +16,6 @@ def split_hours(hours):
 
     hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
 
-
     #split the given hours in hour, minutes and AM/PM
     split_hours1 = re.split(r":|\s", hours1)
     split_hours2 = re.split(r":|\s", hours2)
