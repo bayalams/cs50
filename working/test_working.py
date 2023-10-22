@@ -30,11 +30,13 @@ def test_convert(split_hours1, split_hours2, expected_output):
 
 
 @pytest.mark.parametrize("invalid_split_hours1, invalid_split_hours2",
-                         [(['9', '1', 'AM'], ['15', '00', 'PM']),
-                          (['9'], ['5', 'XM']),
-                          (['25', '00', 'PM'], ['12', '59, 'AM']) ])
+                         [(['9', '1', 'AM'], ['5', '00', 'PM']),
+                          (['9', '00', 'AM'], ['5', 'XM']),
+                          (['25', '00', 'PM'], ['12', '59', 'AM'])])
 
-def test_convert_invalid(invalid_hours)
+def test_convert_invalid(invalid_split_hours1, invalid_split_hours2):
+    with pytest.Raise(ValueError):
+        convert(invalid_split_hours1, invalid_split_hours2)
 
 
 if __name__ == "__main__":
