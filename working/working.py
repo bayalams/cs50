@@ -3,7 +3,7 @@ import re
 
 def main():
     hours = input("Hours: ")
-    split_hours1, split_hours2 = find_pattern(hours)
+    split_hours1, split_hours2 = split_hours(hours)
     print(split_hours1, split_hours2)
     if split_hours1 and split_hours2:
         print(convert(split_hours1, split_hours2))
@@ -11,7 +11,7 @@ def main():
         print("Invalid time format.")
 
 
-def find_pattern(hours):
+def split_hours(hours):
     hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
 
     #see if input matches required pattern and retrieve the grouped information
