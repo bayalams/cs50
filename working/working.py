@@ -40,15 +40,11 @@ def check_hours(hours):
     if int(hour1) > 12 or int(hour2) > 12:
         raise ValueError
 
-    return hour1, hour2, minutes1, minutes2, 
+    return hour1, hour2, minutes1, minutes2, half1, half2
 
-def convert(split_hours1, split_hours2):
-
-
-
+def convert(hour1, hour2, minutes1, minutes2, half1, half2):
 
     #if it's PM and not noon, add 12 to the hours to turn it into the 24 hour format
-
     if half1 == "PM" and int(hour1) != 12:
         hour1 = str(int(hour1) + 12)
     elif half1 == "AM" and hour1 == "12":
