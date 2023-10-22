@@ -48,7 +48,7 @@ def convert(split_hours1, split_hours2 ):
         hour2, half2 = split_hours2
         minutes2 = "00"
 
-    if int(hour1) or int(hour2) > 12:
+    if int(hour1) > 12 or int(hour2) > 12:
         raise ValueError
 
 
