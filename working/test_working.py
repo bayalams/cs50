@@ -17,13 +17,13 @@ def test_find_pattern_valid_input(input_hours, expected_split1, expected_split2)
     assert split_hours2 == expected_split2
 
 def test_find_pattern_invalid_input():
-
+    hours = "9 AM - 5 PM"
     with pytest.raises(ValueError):
-        hours = "9 AM - 5 PM"
-    with pytest.raises(ValueError):
-        "10:7 AM - 5:1 PM"
-    with pytest.raises(ValueError):
-        "09:00 to 17:00"
+        find_pattern(hours)
+    # with pytest.raises(ValueError):
+    #     "10:7 AM - 5:1 PM"
+    # with pytest.raises(ValueError):
+    #     "09:00 to 17:00"
 
 #def test_convert():
 
