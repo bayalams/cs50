@@ -16,6 +16,8 @@ def test_find_pattern_valid_input(input_hours, expected_split1, expected_split2)
     assert split_hours1 == expected_split1
     assert split_hours2 == expected_split2
 
+@pytest.mark.parametrize("input_hours, [("9:00 AM - 5:00 PM"), ("9 AM to 5 PM"), ("13 AM to 23 PM")])
+
 def test_find_pattern_invalid_input():
     hours = "9 AM - 5 PM"
     with pytest.raises(ValueError):
