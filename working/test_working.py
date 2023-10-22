@@ -11,12 +11,10 @@ def main():
     ("12:00 PM to 12:00 AM", ['12', '00', 'PM'], ['12', '00', 'AM'])
 ])
 
-def test_find_pattern_valid_input():
-    split_hours1, split_hours2 = find_pattern(hours)
-    assert split_hours1 == ['9','00', 'AM']
-    assert split_hours2 == ['5', '00', 'PM']
-    assert split_hours1 == ['9', 'AM']
-    assert split_hours2 == ['5', 'PM']
+def test_find_pattern_valid_input(input_hours, expected_split1, expected_split2):
+    split_hours1, split_hours2 = find_pattern(input_hours)
+    assert split_hours1 == expected_split1
+    assert split_hours2 == expected_split2
 
 def test_find_pattern_invalid_input():
 
