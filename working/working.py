@@ -2,19 +2,19 @@ import re
 
 def main():
     hours = input("Hours: ")
-    split_hours1, split_hours2 = split_hours(hours)
+    split_hours1, split_hours2 = check_hours(hours)
     if split_hours1 and split_hours2:
         print(convert(split_hours1, split_hours2))
 
 
-def split_hours(hours):
-    hours_pattern = re.search(r"^([1-9]|1[0-2])(:\d{2})?\s(?:AM|PM)\sto\s([1-9]|1[0-2])(:\d{2})?\s(?:AM|PM)$", hours)
+def check_hours(hours):
+    hours_pattern = re.search(r"^(\d{1,2}(:\d{2})?\s(?:AM|PM))\sto\s(\d{1,2}(:\d{2})?\s(?:AM|PM))$", hours)
 
     #see if input matches required pattern and retrieve the grouped information
     if not hours_pattern:
+        hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
+    else:
         raise ValueError
-
-    hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
 
     #split the given hours in hour, minutes and AM/PM
     split_hours1 = re.split(r":|\s", hours1)
