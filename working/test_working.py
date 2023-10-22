@@ -17,6 +17,11 @@ def test_split_hours(input_hours, expected_split1, expected_split2):
     assert split_hours1 == expected_split1
     assert split_hours2 == expected_split2
 
+def test_split_hours_invalid(hours):
+    hours = "5 AM - 4 PM"
+    with test_split_hours_invalid(hours):
+        raise ValueError
+
 @pytest.mark.parametrize("split_hours1, split_hours2, expected_output", [
     (['9', '00', 'AM'], ['5', '00', 'PM'], "09:00 to 17:00"),
     (['9', 'AM'], ['5', 'PM'], "09:00 to 17:00"),
