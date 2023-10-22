@@ -2,17 +2,24 @@ import pytest
 from working import find_pattern, convert
 
 def main():
-    test_find_pattern()
+    test_find_pattern_valid_input()
     #test_convert()
 
-def test_find_pattern():
-    hours = "9:00 AM to 5:00 PM"
+@pytest.mark.parametrize("input_hours, expected_split1, expected_split2", [
+    ("9:00 AM to 5:00 PM", ['9', '00', 'AM'], ['5', '00', 'PM']),
+    ("9 AM to 5 PM", ['9', 'AM'], ['5', 'PM']),
+    ("12:00 PM to 12:00 AM", ['12', '00', 'PM'], ['12', '00', 'AM'])
+])
+
+def test_find_pattern_valid_input():
     split_hours1, split_hours2 = find_pattern(hours)
     assert split_hours1 == ['9','00', 'AM']
     assert split_hours2 == ['5', '00', 'PM']
-    # hours = "9 AM to 5 PM"
-    # assert split_hours1 == ['9', 'AM']
-    # assert split_hours2 == ['5', 'PM']
+    assert split_hours1 == ['9', 'AM']
+    assert split_hours2 == ['5', 'PM']
+
+def test_find_pattern_invalid_input():
+
     with pytest.raises(ValueError):
         hours = "9 AM - 5 PM"
     with pytest.raises(ValueError):
