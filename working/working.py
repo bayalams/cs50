@@ -40,7 +40,7 @@ def check_hours(hours):
     if int(hour1) > 12 or int(hour2) > 12:
         raise ValueError
 
-    return split_hours1, split_hours2
+    return hour1, hour2, minutes1, minutes2, 
 
 def convert(split_hours1, split_hours2):
 
