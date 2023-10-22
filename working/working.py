@@ -4,11 +4,8 @@ import re
 def main():
     hours = input("Hours: ")
     split_hours1, split_hours2 = split_hours(hours)
-    print(split_hours1, split_hours2)
     if split_hours1 and split_hours2:
         print(convert(split_hours1, split_hours2))
-    else:
-        print("Invalid time format.")
 
 
 def split_hours(hours):
@@ -17,7 +14,6 @@ def split_hours(hours):
     #see if input matches required pattern and retrieve the grouped information
     if hours_pattern:
         hours1, hours2 = hours_pattern.group(1), hours_pattern.group(3)
-        print(hours1, hours2)
     else:
         raise ValueError
 
@@ -32,7 +28,6 @@ def convert(split_hours1, split_hours2):
     #if the input has three sections, i.e hours, minutes and AM/PM, return them, otherwise, if there is not minutes group, minutes = 00
     if len(split_hours1) == 3:
         hour1, minutes1, half1 = split_hours1
-        print(hour1, minutes1, half1)
         if int(minutes1) > 59:
             raise ValueError
     else:
@@ -41,7 +36,6 @@ def convert(split_hours1, split_hours2):
 
     if len(split_hours2) == 3:
         hour2, minutes2, half2 = split_hours2
-        print(hour2, minutes2, half2)
         if int(minutes2) > 59:
             raise ValueError
     else:
