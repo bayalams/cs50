@@ -50,14 +50,19 @@ def treat_images(input_img, output_img):
     print(puppet_height)
 
     #resize shirt image
-    img_shirt = img_shirt.resize(img_puppet.size)
-    shirt_width, shirt_height = img_shirt.size
-    puppet_width, puppet_height = img_puppet.size
-    print(shirt_width, shirt_height)
-    print(puppet_width, puppet_height)
+    img_puppet_resized = ImageOps.fit(img_puppet, (1200, 1600), method = 0,
+                               bleed = 0.0, centering = (0.5, 0.5))
+
+    img_puppet_resized.show()
+
+    # img_shirt = img_shirt.resize(img_puppet.size)
+    # shirt_width, shirt_height = img_shirt.size
+    # puppet_width, puppet_height = img_puppet.size
+    # print(shirt_width, shirt_height)
+    # print(puppet_width, puppet_height)
 
     # paste shirt on top
-    img_puppet.paste(img_shirt, (0,0), img_shirt)
+    img_puppet_resized.paste(img_shirt, (0,0), img_shirt)
     img_puppet.save(output_img)
 
 
