@@ -41,10 +41,10 @@ def extension_validation(input_img, output_img):
 
 #FALTA PÔR AS IMAGENS DO MESMO TAMANHO
 def treat_images(input_img, output_img):
+
    # load images
     img_puppet = Image.open(input_img)
     img_shirt = Image.open(OVERLAY_SHIRT)
-
 
     puppet_width, puppet_height = img_puppet.size
     print(puppet_width, puppet_height)
@@ -53,7 +53,6 @@ def treat_images(input_img, output_img):
     img_puppet_resized = ImageOps.fit(img_puppet, (1200, 1600), method = 0,
                                bleed = 0.0, centering = (0.5, 0.5))
 
-    img_puppet_resized.show()
 
     # img_shirt = img_shirt.resize(img_puppet.size)
     # shirt_width, shirt_height = img_shirt.size
