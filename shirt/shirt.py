@@ -47,7 +47,7 @@ def treat_images(input_img, output_img):
 
 
     puppet_width, puppet_height = img_puppet.size
-    print(puppet_height)
+    print(puppet_width, puppet_height)
 
     #resize shirt image
     img_puppet_resized = ImageOps.fit(img_puppet, (1200, 1600), method = 0,
