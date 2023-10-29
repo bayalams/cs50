@@ -56,8 +56,8 @@ def treat_images(input_img, output_img):
                                bleed = 0.0, centering = (0.5, 0.5))
 
     # paste shirt on top
-    
-    img_puppet.save(output_img)
+    img_puppet_resized.paste(img_shirt_resized)
+    img_puppet_resized.save(output_img)
 
 
 
