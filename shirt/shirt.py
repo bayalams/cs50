@@ -45,13 +45,9 @@ def treat_images(input_img, output_img):
     img_puppet = Image.open(input_img)
     img_shirt = Image.open(OVERLAY_SHIRT)
 
-    #resize puppet image:
-    ImageOps.crop(img_puppet, border=0)
 
     puppet_width, puppet_height = img_puppet.size
     print(puppet_height)
-    desired_height = puppet_height - 150
-    img_puppet = img_puppet.crop((0, 0, puppet_width, desired_height))
 
     #resize shirt image
     img_shirt = img_shirt.resize(img_puppet.size)
