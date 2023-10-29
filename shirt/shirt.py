@@ -52,16 +52,11 @@ def treat_images(input_img, output_img):
     #resize shirt image
     img_puppet_resized = ImageOps.fit(img_puppet, (1200, 1600), method = 0,
                                bleed = 0.0, centering = (0.5, 0.5))
-
-
-    # img_shirt = img_shirt.resize(img_puppet.size)
-    # shirt_width, shirt_height = img_shirt.size
-    # puppet_width, puppet_height = img_puppet.size
-    # print(shirt_width, shirt_height)
-    # print(puppet_width, puppet_height)
+    img_shirt_resized = ImageOps.fit(img_shirt, (1200, 1600), method = 0,
+                               bleed = 0.0, centering = (0.5, 0.5))
 
     # paste shirt on top
-    Image.Image.paste(img_shirt, img_puppet_resized, (0, 0))
+    Image.Image.paste(img_shirt_resized, img_puppet_resized, (0, 0))
     img_puppet.save(output_img)
 
 
