@@ -62,7 +62,7 @@ def treat_images(input_img, output_img):
     # print(puppet_width, puppet_height)
 
     # paste shirt on top
-    img_puppet_resized.paste(img_shirt, (0,0), img_shirt)
+    Image.Image.paste(img_shirt, img_puppet_resized, (0, 0))
     img_puppet.save(output_img)
 
 
